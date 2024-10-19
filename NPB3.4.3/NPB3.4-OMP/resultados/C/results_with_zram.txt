@@ -1,0 +1,69 @@
+Running tests with zRAM...
+Analisando memória com o comando free -h...
+               total       usada       livre    compart.  buff/cache  disponível
+Mem.:           15Gi       4,9Gi       4,4Gi       214Mi       6,2Gi        10Gi
+Swap:          2,0Gi          0B       2,0Gi
+
+Estatísticas do ZRAM antes da execução:
+Número de swaps realizados:
+Dados originais (em bytes):
+Dados comprimidos (em bytes):
+Memória usada total (em bytes):
+Taxa de compressão: 
+Habilitando o zram...
+Saída com o comando /usr/bin/time -v
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - IS Benchmark
+
+ Size:  134217728  (class C)
+ Iterations:  10
+ Number of available threads:  6
+
+
+   iteration
+        1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
+        10
+
+
+ IS Benchmark Completed
+ Class           =                        C
+ Size            =                134217728
+ Iterations      =                       10
+ Time in seconds =                     1.05
+ Total threads   =                        6
+ Avail threads   =                        6
+ Mop/s total     =                  1282.88
+ Mop/s/thread    =                   213.81
+ Operation type  =              keys ranked
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              18 Oct 2024
+
+ Compile options:
+    CC           = gcc
+    CLINK        = $(CC)
+    C_LIB        = -lm
+    C_INC        = (none)
+    CFLAGS       = -O3 -fopenmp
+    CLINKFLAGS   = $(CFLAGS)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Análise da memória depois do teste com o comando free -h
+               total       usada       livre    compart.  buff/cache  disponível
+Mem.:           15Gi       5,0Gi       4,4Gi       214Mi       6,2Gi        10Gi
+Swap:          2,0Gi          0B       2,0Gi
