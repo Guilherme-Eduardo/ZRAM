@@ -13,4 +13,9 @@
 
 # Artigo
 
+# Scripts & automações
+
+* [ ] Verificar se esta sendo executado por SUDO
+* [ ] Verificar se tem ZRAM instalado
+
 # Testes
