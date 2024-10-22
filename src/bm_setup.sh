@@ -8,7 +8,7 @@ source ./bm_functions.sh # Funcoes
 # ZRAM_PORC=(0 25 50 75 100) # Porcentagem de ZRAM a serem testadas
 LOG_ARCHIVE="BM_ZRAM_$(date +"%Y-%m-%d_%H:%M:%S").log" # Criar arquivo de log da execucao
 RESULT_SOURCE="../results" # Onde sera guardado os resultados (*.txt)
-BENCHMARK_DIR="./bin" # Onde esta localizado os benchmarks
+BENCHMARK_DIR="./NPB-OMP" # Onde esta localizado os benchmarks
 
 ### Variaveis testes ###
 BENCHMARKS=('is') # Definir os benchmarks que serão executados
@@ -42,6 +42,18 @@ write_logs $LOG_ARCHIVE "[LOG] Iniciando testes: $(date +"%Y-%m-%d %H:%M:%S")"
 ### Execucao dos testes ###
 for bm in ${BENCHMARKS[@]}
 do
+    # Compilar o algoritmo
+    write_logs $LOG_ARCHIVE "[LOG] Compilando benchmark"
+    write_logs $LOG_ARCHIVE ""
+    make -C $BENCHMARK_DIR $bm >> $LOG_ARCHIVE
+    if [ algo ]; then
+        write_logs $LOG_ARCHIVE ""
+        write_logs $LOG_ARCHIVE "[ERRO] Não foi possivel compilar benchmark ${bm}"
+        write_logs $LOG_ARCHIVE "[LOG] Abortando compilacao... ${bm}"
+        continue
+    fi
+    write_logs $LOG_ARCHIVE ""
+
     for cl in ${BENCH_CLASSES[@]}
     do
         # Log de inicio do teste
@@ -74,13 +86,17 @@ do
                 continue
             fi
 
-            sleep 1 # Ter certeza que desabilitou
+            sleep 10 # Ter certeza que desabilitou
 
             # Identificacao do zram
             echo >> $RESULT_ARCHIVE
             echo "[INFO] Iniciado benchmark com ${zr}% (0 gb) de ZRAM" >> $RESULT_ARCHIVE
             echo "[TIME] Benchmark iniciado: $(date +"%Y-%m-%d %H:%M:%S")" >> $RESULT_ARCHIVE
             write_logs $LOG_ARCHIVE "[LOG] Benchmark ${bm}/${cl} (${zr}% ZRAM) iniciado: $(date +"%Y-%m-%d %H:%M:%S")"
+
+            # Executando benchmark
+            # /usr/bin/time -v "$EXECUTABLE" >> $RESULT_ARCHIVE
+            show_zram_stats $RESULT_ARCHIVE
 
             # Salvar resultados
             show_zram_stats $RESULT_ARCHIVE
