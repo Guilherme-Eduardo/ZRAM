@@ -10,7 +10,7 @@ read C
 
 if [[ $C = 'y' ]]; then
     echo "Deletando"
-    rm $RESULT_DIR/*.txt
+    rm $RESULT_DIR/*.log
     rm $LOG_DIR/BM_ZRAM_*
 else
     echo "Abortando..."
