@@ -12,21 +12,20 @@ function write_logs() {
 function show_zram_stats() {
     AN=$1 # Nome do arquivo
 
-    # Preparacao dos resultados
-
     # Impressao dos resultados
     echo "---------------- RESULTADOS ZRAM (bytes) ---------------- " >> $AN
-    printf "%30s | %20d\n" "Swaps realizados" "$(cat cat_file.txt)" >> $AN
-    printf "%30s | %20d\n" "Dados originais" "$(cat cat_file.txt)" >> $AN
-    printf "%30s | %20d\n" "Dados comprimidos" "$(cat cat_file.txt)" >> $AN
-    printf "%30s | %20d\n" "Memoria usada total" "$(cat cat_file.txt)" >> $AN
-    printf "%30s | %20d\n" "Taxa de compressao" "$(cat cat_file.txt)" >> $AN
+    printf "%30s | %20d\n" "Swaps realizados" "$(cat /sys/block/zram0/stat)" >> $AN
+    printf "%30s | %20d\n" "Dados originais" "$(cat /sys/block/zram0/orig_data_size)" >> $AN
+    printf "%30s | %20d\n" "Dados comprimidos" "$(cat /sys/block/zram0/compr_data_size)" >> $AN
+    printf "%30s | %20d\n" "Memoria usada total" "$(cat /sys/block/zram0/mem_used_total)" >> $AN
+    printf "%30s | %20d\n" "Tamanho original" "$(cat /sys/block/zram0/orig_data_size)" >> $AN
+    printf "%30s | %20d\n" "Tamanho compactado" "$(cat /sys/block/zram0/compr_data_size)" >> $AN
     echo "--------------------------------------------------------- " >> $AN
 }
 
 ### DESABILITAR ZRAM ###
-function disable_zram() {
-    echo "disabilitando zram"
+function disable_zram() { 
+    sudo systemctl disable --now zramswap.service 
 }
 
 ### HABILITAR ZRAM ###
@@ -47,15 +46,12 @@ function enable_zram() {
     # Desabilitar zram
     if [ $PORC -eq 0 ]; then
         disable_zram
+
+    # Habilitar zram
     else
-        # Habilitar zram
-        echo "habilitando zram..."
+        sudo systemctl enable --now zramswap.service
+        # Definir tamanho do zram com base no escolhido
     fi
 
     return 0
-}
-
-### FAZER TESTE ###
-function execute_test() {
-    RESULT_ARCHIVE=$1 # Arquivo de resultado
 }
