@@ -1,6 +1,7 @@
 #!/bin/bash
 
-source ./bm_functions.sh # Funcoes
+### Arquivos de funcoes ###
+source ./bm_functions.sh
 
 ### Variaveis de ambiente ###
 # BENCHMARKS=('is' 'ep' 'cg' 'mg' 'ft' 'bt' 'sp' 'lu') # Definir os benchmarks que serão executados
@@ -33,7 +34,7 @@ write_logs $LOG_ARCHIVE ""
 
 # Desabilitar os modulos para testes
 write_logs $LOG_ARCHIVE "[LOG] Desabilitando XXXXXXX"
-write_logs $LOG_ARCHIVE "[ERRO] Nao foi possivel desabilitar modulo XXXXX"
+write_logs $LOG_ARCHIVE "[ERROR] Nao foi possivel desabilitar modulo XXXXX"
 write_logs $LOG_ARCHIVE ""
 
 # Marcacao de inicio
@@ -42,20 +43,21 @@ write_logs $LOG_ARCHIVE "[LOG] Iniciando testes: $(date +"%Y-%m-%d %H:%M:%S")"
 ### Execucao dos testes ###
 for bm in ${BENCHMARKS[@]}
 do
-    # Compilar o algoritmo
-    write_logs $LOG_ARCHIVE "[LOG] Compilando benchmark"
-    write_logs $LOG_ARCHIVE ""
-    make -C $BENCHMARK_DIR $bm >> $LOG_ARCHIVE
-    if [ algo ]; then
-        write_logs $LOG_ARCHIVE ""
-        write_logs $LOG_ARCHIVE "[ERRO] Não foi possivel compilar benchmark ${bm}"
-        write_logs $LOG_ARCHIVE "[LOG] Abortando compilacao... ${bm}"
-        continue
-    fi
-    write_logs $LOG_ARCHIVE ""
-
     for cl in ${BENCH_CLASSES[@]}
     do
+
+        # Compilar o algoritmo
+        write_logs $LOG_ARCHIVE "[LOG] Compilando benchmark"
+        write_logs $LOG_ARCHIVE ""
+        make -C $BENCHMARK_DIR $bm CLASS=$cl >> $LOG_ARCHIVE
+        if [ $? -ne 0 ]; then
+            write_logs $LOG_ARCHIVE ""
+            write_logs $LOG_ARCHIVE "[ERROR] Não foi possivel compilar benchmark ${bm}/${cl}"
+            write_logs $LOG_ARCHIVE "[LOG] Abortando compilacao... ${bm}/${cl}"
+            continue
+        fi
+        write_logs $LOG_ARCHIVE ""
+
         # Log de inicio do teste
         write_logs $LOG_ARCHIVE "[LOG] Benchmark ${bm}/${cl} iniciado: $(date +"%Y-%m-%d %H:%M:%S")"
 
@@ -81,7 +83,7 @@ do
             ZRAM_RET=$?
             if [ $ZRAM_RET -eq 1 ]; then
                 # Erro ao habilitar o zram
-                write_logs $LOG_ARCHIVE "[ERRO] Erro ao fazer troca de ${zr}% de zram"
+                write_logs $LOG_ARCHIVE "[ERROR] Erro ao fazer troca de ${zr}% de zram"
                 write_logs $LOG_ARCHIVE "[LOG] Pulando teste..."
                 continue
             fi
@@ -95,7 +97,8 @@ do
             write_logs $LOG_ARCHIVE "[LOG] Benchmark ${bm}/${cl} (${zr}% ZRAM) iniciado: $(date +"%Y-%m-%d %H:%M:%S")"
 
             # Executando benchmark
-            # /usr/bin/time -v "$EXECUTABLE" >> $RESULT_ARCHIVE
+            EXECUTABLE="$BENCHMARK_DIR/bin/$bm.$cl.x"
+            /usr/bin/time -v "$EXECUTABLE" >> $RESULT_ARCHIVE
             show_zram_stats $RESULT_ARCHIVE
 
             # Salvar resultados
