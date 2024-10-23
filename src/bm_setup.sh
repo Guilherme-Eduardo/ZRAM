@@ -81,10 +81,11 @@ do
             echo "[TIME] Benchmark iniciado: $(date +"%Y-%m-%d %H:%M:%S")" >> $RESULT_ARCHIVE
             write_logs $LOG_ARCHIVE "[LOG] Benchmark ${bm}/${cl} (${zr}% ZRAM) iniciado: $(date +"%Y-%m-%d %H:%M:%S")"
 
+            show_zram_stats $RESULT_ARCHIVE
+
             # Executando benchmark
             EXECUTABLE="$BENCHMARK_DIR/bin/$bm.$cl.x"
             /usr/bin/time -v "$EXECUTABLE" >> $RESULT_ARCHIVE
-            show_zram_stats $RESULT_ARCHIVE
 
             # Salvar resultados
             show_zram_stats $RESULT_ARCHIVE
