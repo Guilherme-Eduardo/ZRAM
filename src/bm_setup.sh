@@ -35,16 +35,13 @@ do
     do
 
         # Compilar o algoritmo
-        write_logs $LOG_ARCHIVE "[LOG] Compilando benchmark"
-        write_logs $LOG_ARCHIVE ""
-        make -C $BENCHMARK_DIR $bm CLASS=$cl >> $LOG_ARCHIVE
+        write_logs $LOG_ARCHIVE "[LOG] Compilando benchmark ${bm}/${cl}"
+        make -C $BENCHMARK_DIR $bm CLASS=$cl
         if [ $? -ne 0 ]; then
-            write_logs $LOG_ARCHIVE ""
-            write_logs $LOG_ARCHIVE "[ERROR] Não foi possivel compilar benchmark ${bm}/${cl}"
-            write_logs $LOG_ARCHIVE "[LOG] Abortando compilacao... ${bm}/${cl}"
+            write_logs $LOG_ARCHIVE "[ERROR] Não foi possivel compilar"
+            write_logs $LOG_ARCHIVE "[LOG] Abortando compilacao..."
             continue
         fi
-        write_logs $LOG_ARCHIVE ""
 
         # Log de inicio do teste
         write_logs $LOG_ARCHIVE "[LOG] Benchmark ${bm}/${cl} iniciado: $(date +"%Y-%m-%d %H:%M:%S")"
@@ -103,6 +100,7 @@ do
 done
 
 # Finalizacao
+write_logs $LOG_ARCHIVE ""
 write_logs $LOG_ARCHIVE "[LOG] Finalizando testes: $(date +"%Y-%m-%d %H:%M:%S")"
 
 exit 0
