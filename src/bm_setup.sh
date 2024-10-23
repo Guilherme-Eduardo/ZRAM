@@ -36,7 +36,7 @@ do
 
         # Compilar o algoritmo
         write_logs $LOG_ARCHIVE "[LOG] Compilando benchmark ${bm}/${cl}"
-        make -C $BENCHMARK_DIR $bm CLASS=$cl
+        { make -C $BENCHMARK_DIR $bm CLASS=$cl; } >> $LOG_ARCHIVE 2>&1
         if [ $? -ne 0 ]; then
             write_logs $LOG_ARCHIVE "[ERROR] Não foi possivel compilar"
             write_logs $LOG_ARCHIVE "[LOG] Abortando compilacao..."
@@ -64,14 +64,14 @@ do
         for zr in ${ZRAM_PORC[@]}
         do
             # Habilita ou desabilita o zram
-            enable_zram $zr $LOG_ARCHIVE
-            ZRAM_RET=$?
-            if [ $ZRAM_RET -eq 1 ]; then
-                # Erro ao habilitar o zram
-                write_logs $LOG_ARCHIVE "[ERROR] Erro ao fazer troca de ${zr}% de zram"
-                write_logs $LOG_ARCHIVE "[LOG] Pulando teste..."
-                continue
-            fi
+            # enable_zram $zr $LOG_ARCHIVE
+            # ZRAM_RET=$?
+            # if [ $ZRAM_RET -eq 1 ]; then
+            #     # Erro ao habilitar o zram
+            #     write_logs $LOG_ARCHIVE "[ERROR] Erro ao fazer troca de ${zr}% de zram"
+            #     write_logs $LOG_ARCHIVE "[LOG] Pulando teste..."
+            #     continue
+            # fi
 
             sleep 10 # Ter certeza que desabilitou
 
@@ -81,14 +81,14 @@ do
             echo "[TIME] Benchmark iniciado: $(date +"%Y-%m-%d %H:%M:%S")" >> $RESULT_ARCHIVE
             write_logs $LOG_ARCHIVE "[LOG] Benchmark ${bm}/${cl} (${zr}% ZRAM) iniciado: $(date +"%Y-%m-%d %H:%M:%S")"
 
-            show_zram_stats $RESULT_ARCHIVE
+            # show_zram_stats $RESULT_ARCHIVE
 
             # Executando benchmark
             EXECUTABLE="$BENCHMARK_DIR/bin/$bm.$cl.x"
-            /usr/bin/time -v "$EXECUTABLE" >> $RESULT_ARCHIVE
+            { time "$EXECUTABLE"; } >> $RESULT_ARCHIVE 2>&1
 
             # Salvar resultados
-            show_zram_stats $RESULT_ARCHIVE
+            # show_zram_stats $RESULT_ARCHIVE
             write_logs $LOG_ARCHIVE "[LOG] Benchmark ${bm}/${cl} (${zr}% ZRAM) finalizado: $(date +"%Y-%m-%d %H:%M:%S")"
             echo "[TIME] Benchmark finalizado: $(date +"%Y-%m-%d %H:%M:%S")" >> $RESULT_ARCHIVE
         done
