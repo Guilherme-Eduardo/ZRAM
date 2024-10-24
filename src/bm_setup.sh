@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# VERSAO 1.0
+# SCRIPT DE BENCHMARK NASA - ZRAM
+#
+# FAZ OS TESTES DE BENCHMARKS E SWITCH DE ZRAM
+#
+# @tuildes
+
 ### Arquivos de funcoes ###
 source ./bm_functions.sh
 source ./bm_env.sh
@@ -64,14 +71,14 @@ do
         for zr in ${ZRAM_PORC[@]}
         do
             # Habilita ou desabilita o zram
-            # enable_zram $zr $LOG_ARCHIVE
-            # ZRAM_RET=$?
-            # if [ $ZRAM_RET -eq 1 ]; then
-            #     # Erro ao habilitar o zram
-            #     write_logs $LOG_ARCHIVE "[ERROR] Erro ao fazer troca de ${zr}% de zram"
-            #     write_logs $LOG_ARCHIVE "[LOG] Pulando teste..."
-            #     continue
-            # fi
+            enable_zram $zr $LOG_ARCHIVE
+            ZRAM_RET=$?
+            if [ $ZRAM_RET -eq 1 ]; then
+                # Erro ao habilitar o zram
+                write_logs $LOG_ARCHIVE "[ERROR] Erro ao fazer troca de ${zr}% de zram"
+                write_logs $LOG_ARCHIVE "[LOG] Pulando teste..."
+                continue
+            fi
 
             sleep 10 # Ter certeza que desabilitou
 

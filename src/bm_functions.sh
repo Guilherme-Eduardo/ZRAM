@@ -50,7 +50,19 @@ function enable_zram() {
     # Habilitar zram
     else
         sudo systemctl enable --now zramswap.service
-        # Definir tamanho do zram com base no escolhido
+
+        sudo swapoff /dev/zram0
+
+        # Se precisar, habilita
+        if ! lsmod | grep -q zram; then
+            sudo modprobe zram
+        fi
+
+        # TODO: TROCAR PARA O ESPECIFICADO NO FUTURO
+        echo 1 > /sys/block/zram0/reset
+        echo 8G > /sys/block/zram0/disksize
+        sudo mkswap /dev/zram0
+        sudo swapon /dev/zram0
     fi
 
     return 0
