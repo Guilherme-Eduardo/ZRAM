@@ -12,6 +12,9 @@
 source ./bm_functions.sh
 source ./bm_env.sh
 
+### Verificar pacotes ###
+check_packages
+
 ### Verifica se esta em modo SUDO ###
 if [ "$EUID" -ne 0 ]; then 
     echo "Por favor, rode o BENCHMARK como ROOT"

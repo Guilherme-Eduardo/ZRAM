@@ -2,11 +2,47 @@
 
 # FUNCOES PARA BM_SETUP.SH
 
+### Verifica pacotes instalados
+function check_packages() {
+    
+    # Pacote "zram"
+    if [ $(dpkg -l zram-config &>/dev/null) ]; then
+        echo 'Pacote "zram-config" nao instalado'
+        exit 1
+    fi
+
+    # Pacote "fdisk"
+    if [ $(dpkg -l fdisk &>/dev/null) ]; then
+        echo 'Pacote "fdisk" nao instalado'
+        exit 1
+    fi
+
+    # Pacote "lsb-release"
+    if [ $(dpkg -l fdisk &>/dev/null) ]; then
+        echo 'Pacote "lbs-release" nao instalado'
+        exit 1
+    fi
+
+    # Pacote "make"
+    if [ $(dpkg -l gfortran &>/dev/null) ]; then
+        echo 'Pacote "gfortran" nao instalado'
+        exit 1
+    fi
+
+    # Pacote "gcc"
+    if [ $(dpkg -l gcc &>/dev/null) ]; then
+        echo 'Pacote "gcc" nao instalado'
+        exit 1
+    fi
+}
+
 ### LOG TANTO NO TERMINAL QUANTO NO ARQUIVO DE LOG
 function write_logs() {
     echo $2
     echo $2 >> $1
 }
+
+### Titulo tanto no TERMINAL quanto no arquivo de LOG
 function write_logs_title() {
     echo "-~~-~~-~~-~~-~~-~~- ${2} -~~-~~-~~-~~-~~-~~-"
     echo "-~~-~~-~~-~~-~~-~~- ${2} -~~-~~-~~-~~-~~-~~-" >> $1
