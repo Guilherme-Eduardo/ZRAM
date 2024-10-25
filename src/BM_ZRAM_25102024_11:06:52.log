@@ -1,0 +1,423 @@
+-~~-~~-~~-~~-~~-~~- Informacoes de execucao -~~-~~-~~-~~-~~-~~-
+[INFO] Tempo estimado: 000:00:00
+[INFO] Benchmarks a serem executados: is
+[INFO] Classes a serem executadas: S
+[INFO] Porcentagem de ZRAM analisadas: 0 50
+
+-~~-~~-~~-~~-~~-~~- Maquina dos testes -~~-~~-~~-~~-~~-~~-
+[INFO] lsb_release -a:
+LSB Version:	n/a
+Distributor ID:	openSUSE
+Description:	openSUSE Tumbleweed
+Release:	20241023
+Codename:	n/a
+[INFO] Uname -a:
+Linux localhost.localdomain 6.11.3-2-default #1 SMP PREEMPT_DYNAMIC Fri Oct 11 06:48:36 UTC 2024 (7881e90) x86_64 x86_64 x86_64 GNU/Linux
+[INFO] cat /proc/meminfo:
+MemTotal:       14248592 kB
+MemFree:         8342020 kB
+MemAvailable:   10939636 kB
+Buffers:            3588 kB
+Cached:          2847436 kB
+SwapCached:            0 kB
+Active:           895620 kB
+Inactive:        4187216 kB
+Active(anon):       4460 kB
+Inactive(anon):  2273144 kB
+Active(file):     891160 kB
+Inactive(file):  1914072 kB
+Unevictable:         408 kB
+Mlocked:             408 kB
+SwapTotal:       8388604 kB
+SwapFree:        8388604 kB
+Zswap:                 0 kB
+Zswapped:              0 kB
+Dirty:               120 kB
+Writeback:             0 kB
+AnonPages:       2225820 kB
+Mapped:           750480 kB
+Shmem:             45792 kB
+KReclaimable:      80900 kB
+Slab:             237168 kB
+SReclaimable:      80900 kB
+SUnreclaim:       156268 kB
+KernelStack:       18144 kB
+PageTables:        29136 kB
+SecPageTables:      3248 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    15512900 kB
+Committed_AS:    7045168 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      179700 kB
+VmallocChunk:          0 kB
+Percpu:             3840 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:    436224 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:    606208 kB
+FilePmdMapped:    370688 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+Unaccepted:            0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      660500 kB
+DirectMap2M:     9762816 kB
+DirectMap1G:     4194304 kB
+[INFO] cat /proc/cpuinfo | more:
+processor	: 0
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 24
+model name	: AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx
+stepping	: 1
+microcode	: 0x8108109
+cpu MHz		: 3686.973
+cache size	: 512 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb hw_pstate ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif overflow_recov succor smca sev sev_es
+bugs		: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso div0
+bogomips	: 4193.74
+TLB size	: 2560 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate eff_freq_ro [13] [14]
+
+processor	: 1
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 24
+model name	: AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx
+stepping	: 1
+microcode	: 0x8108109
+cpu MHz		: 3690.711
+cache size	: 512 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb hw_pstate ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif overflow_recov succor smca sev sev_es
+bugs		: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso div0
+bogomips	: 4193.74
+TLB size	: 2560 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate eff_freq_ro [13] [14]
+
+processor	: 2
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 24
+model name	: AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx
+stepping	: 1
+microcode	: 0x8108109
+cpu MHz		: 3679.580
+cache size	: 512 KB
+physical id	: 0
+siblings	: 8
+core id		: 1
+cpu cores	: 4
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb hw_pstate ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif overflow_recov succor smca sev sev_es
+bugs		: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso div0
+bogomips	: 4193.74
+TLB size	: 2560 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate eff_freq_ro [13] [14]
+
+processor	: 3
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 24
+model name	: AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx
+stepping	: 1
+microcode	: 0x8108109
+cpu MHz		: 3663.034
+cache size	: 512 KB
+physical id	: 0
+siblings	: 8
+core id		: 1
+cpu cores	: 4
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb hw_pstate ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif overflow_recov succor smca sev sev_es
+bugs		: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso div0
+bogomips	: 4193.74
+TLB size	: 2560 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate eff_freq_ro [13] [14]
+
+processor	: 4
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 24
+model name	: AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx
+stepping	: 1
+microcode	: 0x8108109
+cpu MHz		: 2940.751
+cache size	: 512 KB
+physical id	: 0
+siblings	: 8
+core id		: 2
+cpu cores	: 4
+apicid		: 4
+initial apicid	: 4
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb hw_pstate ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif overflow_recov succor smca sev sev_es
+bugs		: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso div0
+bogomips	: 4193.74
+TLB size	: 2560 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate eff_freq_ro [13] [14]
+
+processor	: 5
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 24
+model name	: AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx
+stepping	: 1
+microcode	: 0x8108109
+cpu MHz		: 2588.301
+cache size	: 512 KB
+physical id	: 0
+siblings	: 8
+core id		: 2
+cpu cores	: 4
+apicid		: 5
+initial apicid	: 5
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb hw_pstate ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif overflow_recov succor smca sev sev_es
+bugs		: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso div0
+bogomips	: 4193.74
+TLB size	: 2560 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate eff_freq_ro [13] [14]
+
+processor	: 6
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 24
+model name	: AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx
+stepping	: 1
+microcode	: 0x8108109
+cpu MHz		: 2503.373
+cache size	: 512 KB
+physical id	: 0
+siblings	: 8
+core id		: 3
+cpu cores	: 4
+apicid		: 6
+initial apicid	: 6
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb hw_pstate ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif overflow_recov succor smca sev sev_es
+bugs		: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso div0
+bogomips	: 4193.74
+TLB size	: 2560 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate eff_freq_ro [13] [14]
+
+processor	: 7
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 24
+model name	: AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx
+stepping	: 1
+microcode	: 0x8108109
+cpu MHz		: 2699.320
+cache size	: 512 KB
+physical id	: 0
+siblings	: 8
+core id		: 3
+cpu cores	: 4
+apicid		: 7
+initial apicid	: 7
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb hw_pstate ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif overflow_recov succor smca sev sev_es
+bugs		: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso div0
+bogomips	: 4193.74
+TLB size	: 2560 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate eff_freq_ro [13] [14]
+
+[INFO] df -ha:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p5  110G   11G   99G  10% /
+devtmpfs        4.0M     0  4.0M   0% /dev
+tmpfs           6.8G  4.0K  6.8G   1% /dev/shm
+devpts             0     0     0    - /dev/pts
+sysfs              0     0     0    - /sys
+securityfs         0     0     0    - /sys/kernel/security
+cgroup2            0     0     0    - /sys/fs/cgroup
+pstore             0     0     0    - /sys/fs/pstore
+efivarfs        148K  132K   12K  93% /sys/firmware/efi/efivars
+bpf                0     0     0    - /sys/fs/bpf
+proc               0     0     0    - /proc
+tmpfs           2.8G  1.9M  2.8G   1% /run
+systemd-1          -     -     -    - /proc/sys/fs/binfmt_misc
+mqueue             0     0     0    - /dev/mqueue
+debugfs            0     0     0    - /sys/kernel/debug
+tracefs            0     0     0    - /sys/kernel/tracing
+hugetlbfs          0     0     0    - /dev/hugepages
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-udev-load-credentials.service
+fusectl            0     0     0    - /sys/fs/fuse/connections
+configfs           0     0     0    - /sys/kernel/config
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-tmpfiles-setup-dev-early.service
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-sysctl.service
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-tmpfiles-setup-dev.service
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-vconsole-setup.service
+tmpfs           6.8G  4.0K  6.8G   1% /tmp
+/dev/nvme0n1p5  110G   11G   99G  10% /.snapshots
+/dev/nvme0n1p5  110G   11G   99G  10% /usr/local
+/dev/nvme0n1p5  110G   11G   99G  10% /boot/grub2/i386-pc
+/dev/nvme0n1p5  110G   11G   99G  10% /srv
+/dev/nvme0n1p5  110G   11G   99G  10% /home
+/dev/nvme0n1p5  110G   11G   99G  10% /root
+/dev/nvme0n1p5  110G   11G   99G  10% /opt
+/dev/nvme0n1p5  110G   11G   99G  10% /var
+/dev/nvme0n1p5  110G   11G   99G  10% /boot/grub2/x86_64-efi
+/dev/nvme0n1p1   96M   38M   59M  39% /boot/efi
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-tmpfiles-setup.service
+tmpfs           1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs           1.4G   80K  1.4G   1% /run/user/1000
+portal          0.0K  0.0K  0.0K    - /run/user/1000/doc
+gvfsd-fuse      0.0K  0.0K  0.0K    - /run/user/1000/gvfs
+tracefs            0     0     0    - /sys/kernel/debug/tracing
+binfmt_misc        0     0     0    - /proc/sys/fs/binfmt_misc
+[INFO] fdisk -l:
+Disk /dev/nvme0n1: 238.47 GiB, 256060514304 bytes, 500118192 sectors
+Disk model: IM2P33F8BR2-256GB                       
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: E2776A72-1917-4DB0-A2C3-1C77B4A4BDF5
+
+Device             Start       End   Sectors   Size Type
+/dev/nvme0n1p1      2048    206847    204800   100M EFI System
+/dev/nvme0n1p2    206848    239615     32768    16M Microsoft reserved
+/dev/nvme0n1p3    239616 244678655 244439040 116.6G Microsoft basic data
+/dev/nvme0n1p4 244678656 245997567   1318912   644M Windows recovery environment
+/dev/nvme0n1p5 245997568 476684287 230686720   110G Linux filesystem
+/dev/nvme0n1p6 476684288 500118158  23433871  11.2G Linux swap
+
+
+Disk /dev/sda: 931.51 GiB, 1000204886016 bytes, 1953525168 sectors
+Disk model: WDC WD10SPZX-21Z
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+Disklabel type: gpt
+Disk identifier: 77814D85-C128-C049-B79F-C3BC76A5179F
+
+Device         Start        End    Sectors   Size Type
+/dev/sda1       2048  614402047  614400000   293G Linux filesystem
+/dev/sda2  614402048 1953523711 1339121664 638.5G Microsoft basic data
+
+
+Disk /dev/zram0: 8 GiB, 8589934592 bytes, 2097152 sectors
+Units: sectors of 1 * 4096 = 4096 bytes
+Sector size (logical/physical): 4096 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+-~~-~~-~~-~~-~~-~~- Preparacao do sistema -~~-~~-~~-~~-~~-~~-
+[LOG] Desabilitando XXXXXXX
+[ERROR] Nao foi possivel desabilitar modulo XXXXX
+
+-~~-~~-~~-~~-~~-~~- Iniciando benchmarks -~~-~~-~~-~~-~~-~~-
+[LOG] Iniciando testes: 25/10/2024 as 11:06:54
+
+-~~-~~-~~-~~-~~-~~- Benchmark is/S -~~-~~-~~-~~-~~-~~-
+[LOG] Compilando benchmark is/S
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd IS; make CLASS=S
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/IS'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+gcc  -o setparams setparams.c
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams is S
+gcc -c  -O3 -fopenmp is.c
+cd ../common; gcc -c  -O3 -fopenmp c_print_results.c
+cd ../common; gcc -c  -O3 -fopenmp c_timers.c
+cd ../common; gcc -c  -O3 -fopenmp -o c_wtime.o ../common/wtime.c
+gcc -O3 -fopenmp -o ../bin/is.S.x is.o ../common/c_print_results.o ../common/c_timers.o ../common/c_wtime.o -lm
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/IS'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+
+[LOG] Benchmark is/S iniciado: 25/10/2024 as 11:06:54
+[FILE] Arquivo criado: ../results/is-S_25102024_11:06:54.log
+[INFO] zramctl:
+[LOG] Benchmark is/S (0% ZRAM) iniciado: 25/10/2024 as 11:07:05
+[LOG] Benchmark is/S (0% ZRAM) finalizado: 25/10/2024 as 11:07:05
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle         8G   4K   74B   12K       8 [SWAP]
+[LOG] Benchmark is/S (50% ZRAM) iniciado: 25/10/2024 as 11:07:15
+[LOG] Benchmark is/S (50% ZRAM) finalizado: 25/10/2024 as 11:07:15
+[LOG] Benchmark is/S finalizado: 25/10/2024 as 11:07:15
+
+-~~-~~-~~-~~-~~-~~- Finalizando benchmarks -~~-~~-~~-~~-~~-~~-
+[LOG] Finalizando testes: 25/10/2024 as 11:07:15
