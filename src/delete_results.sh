@@ -1,6 +1,7 @@
 #!/bin/bash
 
-RESULT_DIR="../results"
+source ./bm_env.sh
+
 LOG_DIR="."
 
 echo "Voce quer realmente deltar TODOS os resultados e logs?"
@@ -10,8 +11,11 @@ read C
 
 if [[ $C = 'y' ]]; then
     echo "Deletando"
-    rm $RESULT_DIR/*.log
-    rm $LOG_DIR/BM_ZRAM_*
+    rm -f $RESULT_SOURCE/*.log
+    rm -f $LOG_DIR/BM_ZRAM_*
+
+    echo "Limpando compilacao"
+    make -C $BENCHMARK_DIR clean 
 else
     echo "Abortando..."
 fi

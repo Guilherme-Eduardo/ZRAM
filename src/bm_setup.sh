@@ -1,9 +1,10 @@
 #!/bin/bash
 
-# VERSAO 1.0
+# VERSAO 1.1
 # SCRIPT DE BENCHMARK NASA - ZRAM
 #
 # FAZ OS TESTES DE BENCHMARKS E SWITCH DE ZRAM
+# UPDATE: Imprime a maquina atual
 #
 # @tuildes
 
@@ -25,6 +26,10 @@ write_logs $LOG_ARCHIVE "[INFO] Tempo estimado: 000:00:00"
 write_logs $LOG_ARCHIVE "[INFO] Benchmarks a serem executados: ${BENCHMARKS[*]}"
 write_logs $LOG_ARCHIVE "[INFO] Classes a serem executadas: ${BENCH_CLASSES[*]}"
 write_logs $LOG_ARCHIVE "[INFO] Porcentagem de ZRAM analisadas: ${ZRAM_PORC[*]}"
+write_logs $LOG_ARCHIVE ""
+
+# Sobre a maquina que esta rodando
+write_logs $LOG_ARCHIVE "[TITLE] Maquina dos testes"
 write_logs $LOG_ARCHIVE ""
 
 # Desabilitar os modulos para testes
@@ -61,26 +66,24 @@ do
         # Identificacao interna
         echo "[ID] Benchmark ${bm} - classe ${cl}" >> $RESULT_ARCHIVE
         echo "[TIME] Benchmark totalmente iniciado: $(date +"%Y-%m-%d %H:%M:%S")" >> $RESULT_ARCHIVE
-
-        # Memoria livre inicial (para controle de tamanho)
         echo >> $RESULT_ARCHIVE
-        echo "Memoria livre e existente na maquina" >> $RESULT_ARCHIVE
-        free -lh >> $RESULT_ARCHIVE
 
         # Testes para cada nivel de ZRAM
         for zr in ${ZRAM_PORC[@]}
         do
             # Habilita ou desabilita o zram
-            enable_zram $zr $LOG_ARCHIVE
-            ZRAM_RET=$?
-            if [ $ZRAM_RET -eq 1 ]; then
-                # Erro ao habilitar o zram
-                write_logs $LOG_ARCHIVE "[ERROR] Erro ao fazer troca de ${zr}% de zram"
-                write_logs $LOG_ARCHIVE "[LOG] Pulando teste..."
-                continue
-            fi
+            if [ $NO_ZRAM_DEBUGGER -eq 0 ]; then
+                enable_zram $zr $LOG_ARCHIVE
+                ZRAM_RET=$?
+                if [ $ZRAM_RET -eq 1 ]; then
+                    # Erro ao habilitar o zram
+                    write_logs $LOG_ARCHIVE "[ERROR] Erro ao fazer troca de ${zr}% de zram"
+                    write_logs $LOG_ARCHIVE "[LOG] Pulando teste..."
+                    continue
+                fi
 
-            sleep 10 # Ter certeza que desabilitou
+                sleep 10 # Ter certeza que desabilitou
+            fi
 
             # Identificacao do zram
             echo >> $RESULT_ARCHIVE
@@ -88,14 +91,18 @@ do
             echo "[TIME] Benchmark iniciado: $(date +"%Y-%m-%d %H:%M:%S")" >> $RESULT_ARCHIVE
             write_logs $LOG_ARCHIVE "[LOG] Benchmark ${bm}/${cl} (${zr}% ZRAM) iniciado: $(date +"%Y-%m-%d %H:%M:%S")"
 
-            # show_zram_stats $RESULT_ARCHIVE
+            if [ $NO_ZRAM_DEBUGGER -eq 0 ]; then
+                show_zram_stats $RESULT_ARCHIVE
+            fi
 
             # Executando benchmark
             EXECUTABLE="$BENCHMARK_DIR/bin/$bm.$cl.x"
             { time "$EXECUTABLE"; } >> $RESULT_ARCHIVE 2>&1
 
             # Salvar resultados
-            # show_zram_stats $RESULT_ARCHIVE
+            if [ $NO_ZRAM_DEBUGGER -eq 0 ]; then
+                show_zram_stats $RESULT_ARCHIVE
+            fi
             write_logs $LOG_ARCHIVE "[LOG] Benchmark ${bm}/${cl} (${zr}% ZRAM) finalizado: $(date +"%Y-%m-%d %H:%M:%S")"
             echo "[TIME] Benchmark finalizado: $(date +"%Y-%m-%d %H:%M:%S")" >> $RESULT_ARCHIVE
         done
