@@ -1,0 +1,129 @@
+[ID] Benchmark is - classe C
+[TIME] Benchmark totalmente iniciado: 2024-10-24 21:18:12
+
+Memoria livre e existente na maquina
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.5Gi        30Mi       2.3Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+
+[INFO] Iniciado benchmark com 0% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 2024-10-24 21:18:22
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - IS Benchmark
+
+ Size:  134217728  (class C)
+ Iterations:  10
+ Number of available threads:  8
+
+
+   iteration
+        1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
+        10
+
+
+ IS Benchmark Completed
+ Class           =                        C
+ Size            =                134217728
+ Iterations      =                       10
+ Time in seconds =                     1.89
+ Total threads   =                        8
+ Avail threads   =                        8
+ Mop/s total     =                   711.73
+ Mop/s/thread    =                    88.97
+ Operation type  =              keys ranked
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              24 Oct 2024
+
+ Compile options:
+    CC           = gcc
+    CLINK        = $(CC)
+    C_LIB        = -lm
+    C_INC        = (none)
+    CFLAGS       = -O3 -fopenmp
+    CLINKFLAGS   = $(CFLAGS)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+real	0m4.451s
+user	0m34.562s
+sys	0m0.870s
+[TIME] Benchmark finalizado: 2024-10-24 21:18:26
+
+[INFO] Iniciado benchmark com 50% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 2024-10-24 21:18:37
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - IS Benchmark
+
+ Size:  134217728  (class C)
+ Iterations:  10
+ Number of available threads:  8
+
+
+   iteration
+        1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
+        10
+
+
+ IS Benchmark Completed
+ Class           =                        C
+ Size            =                134217728
+ Iterations      =                       10
+ Time in seconds =                     1.88
+ Total threads   =                        8
+ Avail threads   =                        8
+ Mop/s total     =                   713.40
+ Mop/s/thread    =                    89.17
+ Operation type  =              keys ranked
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              24 Oct 2024
+
+ Compile options:
+    CC           = gcc
+    CLINK        = $(CC)
+    C_LIB        = -lm
+    C_INC        = (none)
+    CFLAGS       = -O3 -fopenmp
+    CLINKFLAGS   = $(CFLAGS)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+real	0m4.447s
+user	0m34.566s
+sys	0m0.847s
+[TIME] Benchmark finalizado: 2024-10-24 21:18:41
+
+[TIME] Benchmark totalmente finalizado: 2024-10-24 21:18:41

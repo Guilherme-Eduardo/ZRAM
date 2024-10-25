@@ -1,0 +1,127 @@
+[ID] Benchmark mg - classe A
+[TIME] Benchmark totalmente iniciado: 2024-10-24 21:24:18
+
+Memoria livre e existente na maquina
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.2Gi       9.4Gi        32Mi       2.3Gi        11Gi
+Low:            13Gi       4.2Gi       9.4Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+
+[INFO] Iniciado benchmark com 0% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 2024-10-24 21:24:28
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - MG Benchmark
+
+ No input file. Using compiled defaults 
+ Size:  256x 256x 256  (class A)
+ Iterations:                      4
+ Number of available threads:     8
+
+ Initialization time:           0.350 seconds
+
+  iter   1
+  iter   4
+
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ L2 Norm is  0.2433365309069E-05
+ Error is    0.1933646380369E-12
+
+
+ MG Benchmark Completed.
+ Class           =                        A
+ Size            =            256x 256x 256
+ Iterations      =                        4
+ Time in seconds =                     0.56
+ Total threads   =                        8
+ Avail threads   =                        8
+ Mop/s total     =                  6992.00
+ Mop/s/thread    =                   874.00
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              24 Oct 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+real	0m0.912s
+user	0m6.776s
+sys	0m0.385s
+[TIME] Benchmark finalizado: 2024-10-24 21:24:29
+
+[INFO] Iniciado benchmark com 50% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 2024-10-24 21:24:39
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - MG Benchmark
+
+ No input file. Using compiled defaults 
+ Size:  256x 256x 256  (class A)
+ Iterations:                      4
+ Number of available threads:     8
+
+ Initialization time:           0.349 seconds
+
+  iter   1
+  iter   4
+
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ L2 Norm is  0.2433365309069E-05
+ Error is    0.1935386836157E-12
+
+
+ MG Benchmark Completed.
+ Class           =                        A
+ Size            =            256x 256x 256
+ Iterations      =                        4
+ Time in seconds =                     0.56
+ Total threads   =                        8
+ Avail threads   =                        8
+ Mop/s total     =                  6989.87
+ Mop/s/thread    =                   873.73
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              24 Oct 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+real	0m0.910s
+user	0m6.749s
+sys	0m0.391s
+[TIME] Benchmark finalizado: 2024-10-24 21:24:40
+
+[TIME] Benchmark totalmente finalizado: 2024-10-24 21:24:40

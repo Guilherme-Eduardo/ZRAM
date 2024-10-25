@@ -1,0 +1,1390 @@
+[INFO] Tempo estimado: 000:00:00
+[INFO] Benchmarks a serem executados: is ep cg mg ft bt sp lu
+[INFO] Classes a serem executadas: S A B C
+[INFO] Porcentagem de ZRAM analisadas: 0 50
+
+[LOG] Desabilitando XXXXXXX
+[ERROR] Nao foi possivel desabilitar modulo XXXXX
+
+[LOG] Iniciando testes: 2024-10-24 21:17:07
+[LOG] Compilando benchmark is/S
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd IS; make CLASS=S
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/IS'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams is S
+gcc -O3 -fopenmp -o ../bin/is.S.x is.o ../common/c_print_results.o ../common/c_timers.o ../common/c_wtime.o -lm
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/IS'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark is/S iniciado: 2024-10-24 21:17:07
+[FILE] Arquivo criado: ../results/is-S_2024-10-24_21:17:07.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.5Gi        30Mi       2.3Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark is/S (0% ZRAM) iniciado: 2024-10-24 21:17:17
+[LOG] Benchmark is/S (0% ZRAM) finalizado: 2024-10-24 21:17:17
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.5Gi        30Mi       2.3Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark is/S (50% ZRAM) iniciado: 2024-10-24 21:17:27
+[LOG] Benchmark is/S (50% ZRAM) finalizado: 2024-10-24 21:17:27
+[LOG] Benchmark is/S finalizado: 2024-10-24 21:17:27
+[LOG] Compilando benchmark is/A
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd IS; make CLASS=A
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/IS'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams is A
+gcc -c  -O3 -fopenmp is.c
+gcc -O3 -fopenmp -o ../bin/is.A.x is.o ../common/c_print_results.o ../common/c_timers.o ../common/c_wtime.o -lm
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/IS'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark is/A iniciado: 2024-10-24 21:17:28
+[FILE] Arquivo criado: ../results/is-A_2024-10-24_21:17:28.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.5Gi        30Mi       2.3Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark is/A (0% ZRAM) iniciado: 2024-10-24 21:17:38
+[LOG] Benchmark is/A (0% ZRAM) finalizado: 2024-10-24 21:17:38
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.5Gi        30Mi       2.3Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark is/A (50% ZRAM) iniciado: 2024-10-24 21:17:48
+[LOG] Benchmark is/A (50% ZRAM) finalizado: 2024-10-24 21:17:49
+[LOG] Benchmark is/A finalizado: 2024-10-24 21:17:49
+[LOG] Compilando benchmark is/B
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd IS; make CLASS=B
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/IS'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams is B
+gcc -c  -O3 -fopenmp is.c
+gcc -O3 -fopenmp -o ../bin/is.B.x is.o ../common/c_print_results.o ../common/c_timers.o ../common/c_wtime.o -lm
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/IS'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark is/B iniciado: 2024-10-24 21:17:49
+[FILE] Arquivo criado: ../results/is-B_2024-10-24_21:17:49.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.5Gi        30Mi       2.3Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark is/B (0% ZRAM) iniciado: 2024-10-24 21:17:59
+[LOG] Benchmark is/B (0% ZRAM) finalizado: 2024-10-24 21:18:00
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.5Gi        30Mi       2.3Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark is/B (50% ZRAM) iniciado: 2024-10-24 21:18:10
+[LOG] Benchmark is/B (50% ZRAM) finalizado: 2024-10-24 21:18:11
+[LOG] Benchmark is/B finalizado: 2024-10-24 21:18:11
+[LOG] Compilando benchmark is/C
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd IS; make CLASS=C
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/IS'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams is C
+gcc -c  -O3 -fopenmp is.c
+gcc -O3 -fopenmp -o ../bin/is.C.x is.o ../common/c_print_results.o ../common/c_timers.o ../common/c_wtime.o -lm
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/IS'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark is/C iniciado: 2024-10-24 21:18:12
+[FILE] Arquivo criado: ../results/is-C_2024-10-24_21:18:12.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.5Gi        30Mi       2.3Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark is/C (0% ZRAM) iniciado: 2024-10-24 21:18:22
+[LOG] Benchmark is/C (0% ZRAM) finalizado: 2024-10-24 21:18:26
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.5Gi        30Mi       2.3Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark is/C (50% ZRAM) iniciado: 2024-10-24 21:18:37
+[LOG] Benchmark is/C (50% ZRAM) finalizado: 2024-10-24 21:18:41
+[LOG] Benchmark is/C finalizado: 2024-10-24 21:18:41
+[LOG] Compilando benchmark ep/S
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd EP; make CLASS=S
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/EP'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams ep S
+gfortran -O3 -fopenmp -o ../bin/ep.S.x ep.o ep_data.o verify.o ../common/print_results.o ../common/randi8.o ../common/timers.o ../common/wtime.o 
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/EP'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark ep/S iniciado: 2024-10-24 21:18:41
+[FILE] Arquivo criado: ../results/ep-S_2024-10-24_21:18:41.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.5Gi        30Mi       2.3Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark ep/S (0% ZRAM) iniciado: 2024-10-24 21:18:51
+[LOG] Benchmark ep/S (0% ZRAM) finalizado: 2024-10-24 21:18:51
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.5Gi        30Mi       2.3Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark ep/S (50% ZRAM) iniciado: 2024-10-24 21:19:02
+[LOG] Benchmark ep/S (50% ZRAM) finalizado: 2024-10-24 21:19:02
+[LOG] Benchmark ep/S finalizado: 2024-10-24 21:19:02
+[LOG] Compilando benchmark ep/A
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd EP; make CLASS=A
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/EP'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams ep A
+gfortran -c  -O3 -fopenmp ep_data.f90
+gfortran -c  -O3 -fopenmp ep.f90
+gfortran -O3 -fopenmp -o ../bin/ep.A.x ep.o ep_data.o verify.o ../common/print_results.o ../common/randi8.o ../common/timers.o ../common/wtime.o 
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/EP'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark ep/A iniciado: 2024-10-24 21:19:02
+[FILE] Arquivo criado: ../results/ep-A_2024-10-24_21:19:02.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.5Gi        30Mi       2.3Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark ep/A (0% ZRAM) iniciado: 2024-10-24 21:19:12
+[LOG] Benchmark ep/A (0% ZRAM) finalizado: 2024-10-24 21:19:14
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.5Gi        30Mi       2.3Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark ep/A (50% ZRAM) iniciado: 2024-10-24 21:19:24
+[LOG] Benchmark ep/A (50% ZRAM) finalizado: 2024-10-24 21:19:25
+[LOG] Benchmark ep/A finalizado: 2024-10-24 21:19:25
+[LOG] Compilando benchmark ep/B
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd EP; make CLASS=B
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/EP'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams ep B
+gfortran -c  -O3 -fopenmp ep_data.f90
+gfortran -c  -O3 -fopenmp ep.f90
+gfortran -O3 -fopenmp -o ../bin/ep.B.x ep.o ep_data.o verify.o ../common/print_results.o ../common/randi8.o ../common/timers.o ../common/wtime.o 
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/EP'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark ep/B iniciado: 2024-10-24 21:19:25
+[FILE] Arquivo criado: ../results/ep-B_2024-10-24_21:19:25.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.5Gi        30Mi       2.3Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark ep/B (0% ZRAM) iniciado: 2024-10-24 21:19:35
+[LOG] Benchmark ep/B (0% ZRAM) finalizado: 2024-10-24 21:19:40
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.5Gi        30Mi       2.3Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark ep/B (50% ZRAM) iniciado: 2024-10-24 21:19:50
+[LOG] Benchmark ep/B (50% ZRAM) finalizado: 2024-10-24 21:19:55
+[LOG] Benchmark ep/B finalizado: 2024-10-24 21:19:55
+[LOG] Compilando benchmark ep/C
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd EP; make CLASS=C
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/EP'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams ep C
+gfortran -c  -O3 -fopenmp ep_data.f90
+gfortran -c  -O3 -fopenmp ep.f90
+gfortran -O3 -fopenmp -o ../bin/ep.C.x ep.o ep_data.o verify.o ../common/print_results.o ../common/randi8.o ../common/timers.o ../common/wtime.o 
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/EP'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark ep/C iniciado: 2024-10-24 21:19:56
+[FILE] Arquivo criado: ../results/ep-C_2024-10-24_21:19:56.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.5Gi        30Mi       2.3Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark ep/C (0% ZRAM) iniciado: 2024-10-24 21:20:06
+[LOG] Benchmark ep/C (0% ZRAM) finalizado: 2024-10-24 21:20:26
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.2Gi       9.4Gi        30Mi       2.3Gi        11Gi
+Low:            13Gi       4.1Gi       9.4Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark ep/C (50% ZRAM) iniciado: 2024-10-24 21:20:36
+[LOG] Benchmark ep/C (50% ZRAM) finalizado: 2024-10-24 21:20:56
+[LOG] Benchmark ep/C finalizado: 2024-10-24 21:20:56
+[LOG] Compilando benchmark cg/S
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd CG; make CLASS=S
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/CG'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams cg S
+gfortran -O3 -fopenmp -o ../bin/cg.S.x cg.o cg_data.o ../common/print_results.o ../common/randi8.o ../common/timers.o ../common/wtime.o 
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/CG'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark cg/S iniciado: 2024-10-24 21:20:56
+[FILE] Arquivo criado: ../results/cg-S_2024-10-24_21:20:56.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.5Gi        30Mi       2.3Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark cg/S (0% ZRAM) iniciado: 2024-10-24 21:21:06
+[LOG] Benchmark cg/S (0% ZRAM) finalizado: 2024-10-24 21:21:07
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.2Gi       9.4Gi        30Mi       2.3Gi        11Gi
+Low:            13Gi       4.1Gi       9.4Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark cg/S (50% ZRAM) iniciado: 2024-10-24 21:21:17
+[LOG] Benchmark cg/S (50% ZRAM) finalizado: 2024-10-24 21:21:17
+[LOG] Benchmark cg/S finalizado: 2024-10-24 21:21:17
+[LOG] Compilando benchmark cg/A
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd CG; make CLASS=A
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/CG'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams cg A
+gfortran -c  -O3 -fopenmp cg_data.f90
+gfortran -c  -O3 -fopenmp cg.f90
+gfortran -O3 -fopenmp -o ../bin/cg.A.x cg.o cg_data.o ../common/print_results.o ../common/randi8.o ../common/timers.o ../common/wtime.o 
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/CG'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark cg/A iniciado: 2024-10-24 21:21:17
+[FILE] Arquivo criado: ../results/cg-A_2024-10-24_21:21:17.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.5Gi        30Mi       2.3Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark cg/A (0% ZRAM) iniciado: 2024-10-24 21:21:28
+[LOG] Benchmark cg/A (0% ZRAM) finalizado: 2024-10-24 21:21:28
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.5Gi        30Mi       2.3Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark cg/A (50% ZRAM) iniciado: 2024-10-24 21:21:38
+[LOG] Benchmark cg/A (50% ZRAM) finalizado: 2024-10-24 21:21:39
+[LOG] Benchmark cg/A finalizado: 2024-10-24 21:21:39
+[LOG] Compilando benchmark cg/B
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd CG; make CLASS=B
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/CG'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams cg B
+gfortran -c  -O3 -fopenmp cg_data.f90
+gfortran -c  -O3 -fopenmp cg.f90
+gfortran -O3 -fopenmp -o ../bin/cg.B.x cg.o cg_data.o ../common/print_results.o ../common/randi8.o ../common/timers.o ../common/wtime.o 
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/CG'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark cg/B iniciado: 2024-10-24 21:21:39
+[FILE] Arquivo criado: ../results/cg-B_2024-10-24_21:21:39.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.5Gi        30Mi       2.3Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark cg/B (0% ZRAM) iniciado: 2024-10-24 21:21:50
+[LOG] Benchmark cg/B (0% ZRAM) finalizado: 2024-10-24 21:22:02
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.5Gi        30Mi       2.3Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark cg/B (50% ZRAM) iniciado: 2024-10-24 21:22:12
+[LOG] Benchmark cg/B (50% ZRAM) finalizado: 2024-10-24 21:22:28
+[LOG] Benchmark cg/B finalizado: 2024-10-24 21:22:28
+[LOG] Compilando benchmark cg/C
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd CG; make CLASS=C
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/CG'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams cg C
+gfortran -c  -O3 -fopenmp cg_data.f90
+gfortran -c  -O3 -fopenmp cg.f90
+gfortran -O3 -fopenmp -o ../bin/cg.C.x cg.o cg_data.o ../common/print_results.o ../common/randi8.o ../common/timers.o ../common/wtime.o 
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/CG'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark cg/C iniciado: 2024-10-24 21:22:29
+[FILE] Arquivo criado: ../results/cg-C_2024-10-24_21:22:29.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.5Gi        31Mi       2.3Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark cg/C (0% ZRAM) iniciado: 2024-10-24 21:22:39
+[LOG] Benchmark cg/C (0% ZRAM) finalizado: 2024-10-24 21:23:13
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.2Gi       9.4Gi        31Mi       2.3Gi        11Gi
+Low:            13Gi       4.2Gi       9.4Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark cg/C (50% ZRAM) iniciado: 2024-10-24 21:23:23
+[LOG] Benchmark cg/C (50% ZRAM) finalizado: 2024-10-24 21:23:56
+[LOG] Benchmark cg/C finalizado: 2024-10-24 21:23:56
+[LOG] Compilando benchmark mg/S
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd MG; make CLASS=S
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/MG'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams mg S
+gfortran -O3 -fopenmp -o ../bin/mg.S.x mg.o mg_data.o ../common/print_results.o ../common/randi8.o ../common/timers.o ../common/wtime.o 
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/MG'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark mg/S iniciado: 2024-10-24 21:23:56
+[FILE] Arquivo criado: ../results/mg-S_2024-10-24_21:23:56.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.5Gi        31Mi       2.3Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark mg/S (0% ZRAM) iniciado: 2024-10-24 21:24:06
+[LOG] Benchmark mg/S (0% ZRAM) finalizado: 2024-10-24 21:24:06
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.2Gi       9.4Gi        31Mi       2.3Gi        11Gi
+Low:            13Gi       4.2Gi       9.4Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark mg/S (50% ZRAM) iniciado: 2024-10-24 21:24:17
+[LOG] Benchmark mg/S (50% ZRAM) finalizado: 2024-10-24 21:24:17
+[LOG] Benchmark mg/S finalizado: 2024-10-24 21:24:17
+[LOG] Compilando benchmark mg/A
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd MG; make CLASS=A
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/MG'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams mg A
+gfortran -c  -O3 -fopenmp mg_data.f90
+gfortran -c  -O3 -fopenmp mg.f90
+gfortran -O3 -fopenmp -o ../bin/mg.A.x mg.o mg_data.o ../common/print_results.o ../common/randi8.o ../common/timers.o ../common/wtime.o 
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/MG'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark mg/A iniciado: 2024-10-24 21:24:18
+[FILE] Arquivo criado: ../results/mg-A_2024-10-24_21:24:18.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.4Gi        31Mi       2.3Gi        11Gi
+Low:            13Gi       4.2Gi       9.4Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark mg/A (0% ZRAM) iniciado: 2024-10-24 21:24:28
+[LOG] Benchmark mg/A (0% ZRAM) finalizado: 2024-10-24 21:24:29
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.2Gi       9.4Gi        31Mi       2.3Gi        11Gi
+Low:            13Gi       4.2Gi       9.4Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark mg/A (50% ZRAM) iniciado: 2024-10-24 21:24:39
+[LOG] Benchmark mg/A (50% ZRAM) finalizado: 2024-10-24 21:24:40
+[LOG] Benchmark mg/A finalizado: 2024-10-24 21:24:40
+[LOG] Compilando benchmark mg/B
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd MG; make CLASS=B
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/MG'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams mg B
+gfortran -c  -O3 -fopenmp mg_data.f90
+gfortran -c  -O3 -fopenmp mg.f90
+gfortran -O3 -fopenmp -o ../bin/mg.B.x mg.o mg_data.o ../common/print_results.o ../common/randi8.o ../common/timers.o ../common/wtime.o 
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/MG'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark mg/B iniciado: 2024-10-24 21:24:41
+[FILE] Arquivo criado: ../results/mg-B_2024-10-24_21:24:41.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.2Gi       9.4Gi        32Mi       2.3Gi        11Gi
+Low:            13Gi       4.2Gi       9.4Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark mg/B (0% ZRAM) iniciado: 2024-10-24 21:24:52
+[LOG] Benchmark mg/B (0% ZRAM) finalizado: 2024-10-24 21:24:55
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.2Gi       9.4Gi        31Mi       2.3Gi        11Gi
+Low:            13Gi       4.2Gi       9.4Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark mg/B (50% ZRAM) iniciado: 2024-10-24 21:25:05
+[LOG] Benchmark mg/B (50% ZRAM) finalizado: 2024-10-24 21:25:08
+[LOG] Benchmark mg/B finalizado: 2024-10-24 21:25:08
+[LOG] Compilando benchmark mg/C
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd MG; make CLASS=C
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/MG'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams mg C
+gfortran -c  -O3 -fopenmp mg_data.f90
+gfortran -c  -O3 -fopenmp mg.f90
+gfortran -O3 -fopenmp -o ../bin/mg.C.x mg.o mg_data.o ../common/print_results.o ../common/randi8.o ../common/timers.o ../common/wtime.o 
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/MG'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark mg/C iniciado: 2024-10-24 21:25:09
+[FILE] Arquivo criado: ../results/mg-C_2024-10-24_21:25:09.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.5Gi        31Mi       2.3Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark mg/C (0% ZRAM) iniciado: 2024-10-24 21:25:19
+[LOG] Benchmark mg/C (0% ZRAM) finalizado: 2024-10-24 21:25:43
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.2Gi       9.4Gi        31Mi       2.3Gi        11Gi
+Low:            13Gi       4.2Gi       9.4Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark mg/C (50% ZRAM) iniciado: 2024-10-24 21:25:53
+[LOG] Benchmark mg/C (50% ZRAM) finalizado: 2024-10-24 21:26:16
+[LOG] Benchmark mg/C finalizado: 2024-10-24 21:26:16
+[LOG] Compilando benchmark ft/S
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd FT; make CLASS=S
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/FT'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams ft S
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/FT'
+sed -e 's/=0/=32/' blk_par0.h > blk_par.h_wk
+gfortran -O3 -fopenmp -o ../bin/ft.S.x ft.o ft_data.o ../common/randi8.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/FT'
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/FT'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark ft/S iniciado: 2024-10-24 21:26:16
+[FILE] Arquivo criado: ../results/ft-S_2024-10-24_21:26:16.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.5Gi        31Mi       2.3Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark ft/S (0% ZRAM) iniciado: 2024-10-24 21:26:27
+[LOG] Benchmark ft/S (0% ZRAM) finalizado: 2024-10-24 21:26:27
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.2Gi       9.4Gi        31Mi       2.3Gi        11Gi
+Low:            13Gi       4.2Gi       9.4Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark ft/S (50% ZRAM) iniciado: 2024-10-24 21:26:37
+[LOG] Benchmark ft/S (50% ZRAM) finalizado: 2024-10-24 21:26:37
+[LOG] Benchmark ft/S finalizado: 2024-10-24 21:26:37
+[LOG] Compilando benchmark ft/A
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd FT; make CLASS=A
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/FT'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams ft A
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/FT'
+sed -e 's/=0/=32/' blk_par0.h > blk_par.h_wk
+gfortran -c  -O3 -fopenmp ft_data.f90
+gfortran -c  -O3 -fopenmp ft.f90
+gfortran -O3 -fopenmp -o ../bin/ft.A.x ft.o ft_data.o ../common/randi8.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/FT'
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/FT'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark ft/A iniciado: 2024-10-24 21:26:37
+[FILE] Arquivo criado: ../results/ft-A_2024-10-24_21:26:37.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.4Gi        31Mi       2.3Gi        11Gi
+Low:            13Gi       4.2Gi       9.4Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark ft/A (0% ZRAM) iniciado: 2024-10-24 21:26:48
+[LOG] Benchmark ft/A (0% ZRAM) finalizado: 2024-10-24 21:26:49
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.2Gi       9.4Gi        31Mi       2.3Gi        11Gi
+Low:            13Gi       4.2Gi       9.4Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark ft/A (50% ZRAM) iniciado: 2024-10-24 21:26:59
+[LOG] Benchmark ft/A (50% ZRAM) finalizado: 2024-10-24 21:27:00
+[LOG] Benchmark ft/A finalizado: 2024-10-24 21:27:00
+[LOG] Compilando benchmark ft/B
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd FT; make CLASS=B
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/FT'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams ft B
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/FT'
+sed -e 's/=0/=32/' blk_par0.h > blk_par.h_wk
+gfortran -c  -O3 -fopenmp ft_data.f90
+gfortran -c  -O3 -fopenmp ft.f90
+gfortran -O3 -fopenmp -o ../bin/ft.B.x ft.o ft_data.o ../common/randi8.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/FT'
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/FT'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark ft/B iniciado: 2024-10-24 21:27:00
+[FILE] Arquivo criado: ../results/ft-B_2024-10-24_21:27:00.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.4Gi        31Mi       2.3Gi        11Gi
+Low:            13Gi       4.2Gi       9.4Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark ft/B (0% ZRAM) iniciado: 2024-10-24 21:27:11
+[LOG] Benchmark ft/B (0% ZRAM) finalizado: 2024-10-24 21:27:23
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.2Gi       9.4Gi        31Mi       2.3Gi        11Gi
+Low:            13Gi       4.2Gi       9.4Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark ft/B (50% ZRAM) iniciado: 2024-10-24 21:27:33
+[LOG] Benchmark ft/B (50% ZRAM) finalizado: 2024-10-24 21:27:46
+[LOG] Benchmark ft/B finalizado: 2024-10-24 21:27:46
+[LOG] Compilando benchmark ft/C
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd FT; make CLASS=C
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/FT'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams ft C
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/FT'
+sed -e 's/=0/=32/' blk_par0.h > blk_par.h_wk
+gfortran -c  -O3 -fopenmp ft_data.f90
+gfortran -c  -O3 -fopenmp ft.f90
+gfortran -O3 -fopenmp -o ../bin/ft.C.x ft.o ft_data.o ../common/randi8.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/FT'
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/FT'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark ft/C iniciado: 2024-10-24 21:27:46
+[FILE] Arquivo criado: ../results/ft-C_2024-10-24_21:27:46.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.5Gi        31Mi       2.3Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark ft/C (0% ZRAM) iniciado: 2024-10-24 21:27:56
+[LOG] Benchmark ft/C (0% ZRAM) finalizado: 2024-10-24 21:29:07
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.2Gi       9.4Gi        31Mi       2.3Gi        11Gi
+Low:            13Gi       4.2Gi       9.4Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark ft/C (50% ZRAM) iniciado: 2024-10-24 21:29:17
+[LOG] Benchmark ft/C (50% ZRAM) finalizado: 2024-10-24 21:30:27
+[LOG] Benchmark ft/C finalizado: 2024-10-24 21:30:27
+[LOG] Compilando benchmark bt/S
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd BT; make CLASS=S VERSION=
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/BT'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams bt S
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/BT'
+sed -e 's/= 0/= 0/' blk_par0.h > blk_par.h_wk
+gfortran -O3 -fopenmp -o ../bin/bt.S.x bt.o bt_data.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o  rhs.o x_solve.o y_solve.o solve_subs.o z_solve.o add.o error.o verify.o work_lhs.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/BT'
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/BT'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark bt/S iniciado: 2024-10-24 21:30:28
+[FILE] Arquivo criado: ../results/bt-S_2024-10-24_21:30:28.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.1Gi       9.4Gi        31Mi       2.3Gi        11Gi
+Low:            13Gi       4.1Gi       9.4Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark bt/S (0% ZRAM) iniciado: 2024-10-24 21:30:38
+[LOG] Benchmark bt/S (0% ZRAM) finalizado: 2024-10-24 21:30:38
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.2Gi       9.4Gi        31Mi       2.3Gi        11Gi
+Low:            13Gi       4.2Gi       9.4Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark bt/S (50% ZRAM) iniciado: 2024-10-24 21:30:48
+[LOG] Benchmark bt/S (50% ZRAM) finalizado: 2024-10-24 21:30:48
+[LOG] Benchmark bt/S finalizado: 2024-10-24 21:30:48
+[LOG] Compilando benchmark bt/A
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd BT; make CLASS=A VERSION=
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/BT'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams bt A
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/BT'
+gfortran -c  -O3 -fopenmp bt_data.f90
+sed -e 's/= 0/= 0/' blk_par0.h > blk_par.h_wk
+gfortran -c  -O3 -fopenmp bt.f90
+gfortran -c  -O3 -fopenmp initialize.f90
+gfortran -c  -O3 -fopenmp exact_solution.f90
+gfortran -c  -O3 -fopenmp exact_rhs.f90
+gfortran -c  -O3 -fopenmp set_constants.f90
+gfortran -c  -O3 -fopenmp adi.f90
+gfortran -c  -O3 -fopenmp rhs.f90
+gfortran -c  -O3 -fopenmp work_lhs.f90
+gfortran -c  -O3 -fopenmp x_solve.f90
+gfortran -c  -O3 -fopenmp y_solve.f90
+gfortran -c  -O3 -fopenmp solve_subs.f90
+gfortran -c  -O3 -fopenmp z_solve.f90
+gfortran -c  -O3 -fopenmp add.f90
+gfortran -c  -O3 -fopenmp error.f90
+gfortran -c  -O3 -fopenmp verify.f90
+gfortran -O3 -fopenmp -o ../bin/bt.A.x bt.o bt_data.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o  rhs.o x_solve.o y_solve.o solve_subs.o z_solve.o add.o error.o verify.o work_lhs.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/BT'
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/BT'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark bt/A iniciado: 2024-10-24 21:30:52
+[FILE] Arquivo criado: ../results/bt-A_2024-10-24_21:30:52.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.2Gi       9.4Gi        31Mi       2.3Gi        11Gi
+Low:            13Gi       4.2Gi       9.4Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark bt/A (0% ZRAM) iniciado: 2024-10-24 21:31:03
+[LOG] Benchmark bt/A (0% ZRAM) finalizado: 2024-10-24 21:31:18
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.0Gi       9.6Gi        31Mi       2.3Gi        11Gi
+Low:            13Gi       4.0Gi       9.6Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark bt/A (50% ZRAM) iniciado: 2024-10-24 21:31:28
+[LOG] Benchmark bt/A (50% ZRAM) finalizado: 2024-10-24 21:31:43
+[LOG] Benchmark bt/A finalizado: 2024-10-24 21:31:43
+[LOG] Compilando benchmark bt/B
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd BT; make CLASS=B VERSION=
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/BT'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams bt B
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/BT'
+gfortran -c  -O3 -fopenmp bt_data.f90
+sed -e 's/= 0/= 0/' blk_par0.h > blk_par.h_wk
+gfortran -c  -O3 -fopenmp bt.f90
+gfortran -c  -O3 -fopenmp initialize.f90
+gfortran -c  -O3 -fopenmp exact_solution.f90
+gfortran -c  -O3 -fopenmp exact_rhs.f90
+gfortran -c  -O3 -fopenmp set_constants.f90
+gfortran -c  -O3 -fopenmp adi.f90
+gfortran -c  -O3 -fopenmp rhs.f90
+gfortran -c  -O3 -fopenmp work_lhs.f90
+gfortran -c  -O3 -fopenmp x_solve.f90
+gfortran -c  -O3 -fopenmp y_solve.f90
+gfortran -c  -O3 -fopenmp solve_subs.f90
+gfortran -c  -O3 -fopenmp z_solve.f90
+gfortran -c  -O3 -fopenmp add.f90
+gfortran -c  -O3 -fopenmp error.f90
+gfortran -c  -O3 -fopenmp verify.f90
+gfortran -O3 -fopenmp -o ../bin/bt.B.x bt.o bt_data.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o  rhs.o x_solve.o y_solve.o solve_subs.o z_solve.o add.o error.o verify.o work_lhs.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/BT'
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/BT'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark bt/B iniciado: 2024-10-24 21:31:48
+[FILE] Arquivo criado: ../results/bt-B_2024-10-24_21:31:48.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.0Gi       9.5Gi        31Mi       2.3Gi        11Gi
+Low:            13Gi       4.0Gi       9.5Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark bt/B (0% ZRAM) iniciado: 2024-10-24 21:31:58
+[LOG] Benchmark bt/B (0% ZRAM) finalizado: 2024-10-24 21:32:59
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.0Gi       9.6Gi        31Mi       2.3Gi        11Gi
+Low:            13Gi       4.0Gi       9.6Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark bt/B (50% ZRAM) iniciado: 2024-10-24 21:33:09
+[LOG] Benchmark bt/B (50% ZRAM) finalizado: 2024-10-24 21:34:11
+[LOG] Benchmark bt/B finalizado: 2024-10-24 21:34:11
+[LOG] Compilando benchmark bt/C
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd BT; make CLASS=C VERSION=
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/BT'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams bt C
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/BT'
+gfortran -c  -O3 -fopenmp bt_data.f90
+sed -e 's/= 0/= 0/' blk_par0.h > blk_par.h_wk
+gfortran -c  -O3 -fopenmp bt.f90
+gfortran -c  -O3 -fopenmp initialize.f90
+gfortran -c  -O3 -fopenmp exact_solution.f90
+gfortran -c  -O3 -fopenmp exact_rhs.f90
+gfortran -c  -O3 -fopenmp set_constants.f90
+gfortran -c  -O3 -fopenmp adi.f90
+gfortran -c  -O3 -fopenmp rhs.f90
+gfortran -c  -O3 -fopenmp work_lhs.f90
+gfortran -c  -O3 -fopenmp x_solve.f90
+gfortran -c  -O3 -fopenmp y_solve.f90
+gfortran -c  -O3 -fopenmp solve_subs.f90
+gfortran -c  -O3 -fopenmp z_solve.f90
+gfortran -c  -O3 -fopenmp add.f90
+gfortran -c  -O3 -fopenmp error.f90
+gfortran -c  -O3 -fopenmp verify.f90
+gfortran -O3 -fopenmp -o ../bin/bt.C.x bt.o bt_data.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o  rhs.o x_solve.o y_solve.o solve_subs.o z_solve.o add.o error.o verify.o work_lhs.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/BT'
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/BT'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark bt/C iniciado: 2024-10-24 21:34:15
+[FILE] Arquivo criado: ../results/bt-C_2024-10-24_21:34:15.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.0Gi       9.6Gi        31Mi       2.3Gi        11Gi
+Low:            13Gi       4.0Gi       9.6Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark bt/C (0% ZRAM) iniciado: 2024-10-24 21:34:25
+[LOG] Benchmark bt/C (0% ZRAM) finalizado: 2024-10-24 21:38:52
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.3Gi       9.3Gi        32Mi       2.4Gi        11Gi
+Low:            13Gi       4.3Gi       9.3Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark bt/C (50% ZRAM) iniciado: 2024-10-24 21:39:03
+[LOG] Benchmark bt/C (50% ZRAM) finalizado: 2024-10-24 21:43:10
+[LOG] Benchmark bt/C finalizado: 2024-10-24 21:43:10
+[LOG] Compilando benchmark sp/S
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd SP; make CLASS=S
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams sp S
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+sed -e 's/= 0/= 0/' blk_par0.h > blk_par.h_wk
+gfortran -O3 -fopenmp -o ../bin/sp.S.x sp.o sp_data.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o rhs.o work_lhs.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark sp/S iniciado: 2024-10-24 21:43:10
+[FILE] Arquivo criado: ../results/sp-S_2024-10-24_21:43:10.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.0Gi       9.5Gi        32Mi       2.4Gi        11Gi
+Low:            13Gi       4.0Gi       9.5Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark sp/S (0% ZRAM) iniciado: 2024-10-24 21:43:20
+[LOG] Benchmark sp/S (0% ZRAM) finalizado: 2024-10-24 21:43:20
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.0Gi       9.5Gi        32Mi       2.4Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark sp/S (50% ZRAM) iniciado: 2024-10-24 21:43:30
+[LOG] Benchmark sp/S (50% ZRAM) finalizado: 2024-10-24 21:43:30
+[LOG] Benchmark sp/S finalizado: 2024-10-24 21:43:30
+[LOG] Compilando benchmark sp/A
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd SP; make CLASS=A
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams sp A
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+gfortran -c  -O3 -fopenmp sp_data.f90
+sed -e 's/= 0/= 0/' blk_par0.h > blk_par.h_wk
+gfortran -c  -O3 -fopenmp sp.f90
+gfortran -c  -O3 -fopenmp initialize.f90
+gfortran -c  -O3 -fopenmp exact_solution.f90
+gfortran -c  -O3 -fopenmp exact_rhs.f90
+gfortran -c  -O3 -fopenmp set_constants.f90
+gfortran -c  -O3 -fopenmp adi.f90
+gfortran -c  -O3 -fopenmp rhs.f90
+gfortran -c  -O3 -fopenmp work_lhs.f90
+gfortran -c  -O3 -fopenmp x_solve.f90
+gfortran -c  -O3 -fopenmp ninvr.f90
+gfortran -c  -O3 -fopenmp y_solve.f90
+gfortran -c  -O3 -fopenmp pinvr.f90
+gfortran -c  -O3 -fopenmp z_solve.f90
+gfortran -c  -O3 -fopenmp tzetar.f90
+gfortran -c  -O3 -fopenmp add.f90
+gfortran -c  -O3 -fopenmp txinvr.f90
+gfortran -c  -O3 -fopenmp error.f90
+gfortran -c  -O3 -fopenmp verify.f90
+gfortran -O3 -fopenmp -o ../bin/sp.A.x sp.o sp_data.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o rhs.o work_lhs.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark sp/A iniciado: 2024-10-24 21:43:35
+[FILE] Arquivo criado: ../results/sp-A_2024-10-24_21:43:35.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.0Gi       9.5Gi        32Mi       2.4Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark sp/A (0% ZRAM) iniciado: 2024-10-24 21:43:45
+[LOG] Benchmark sp/A (0% ZRAM) finalizado: 2024-10-24 21:43:55
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.0Gi       9.5Gi        32Mi       2.4Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark sp/A (50% ZRAM) iniciado: 2024-10-24 21:44:05
+[LOG] Benchmark sp/A (50% ZRAM) finalizado: 2024-10-24 21:44:15
+[LOG] Benchmark sp/A finalizado: 2024-10-24 21:44:15
+[LOG] Compilando benchmark sp/B
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd SP; make CLASS=B
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams sp B
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+gfortran -c  -O3 -fopenmp sp_data.f90
+sed -e 's/= 0/= 0/' blk_par0.h > blk_par.h_wk
+gfortran -c  -O3 -fopenmp sp.f90
+gfortran -c  -O3 -fopenmp initialize.f90
+gfortran -c  -O3 -fopenmp exact_solution.f90
+gfortran -c  -O3 -fopenmp exact_rhs.f90
+gfortran -c  -O3 -fopenmp set_constants.f90
+gfortran -c  -O3 -fopenmp adi.f90
+gfortran -c  -O3 -fopenmp rhs.f90
+gfortran -c  -O3 -fopenmp work_lhs.f90
+gfortran -c  -O3 -fopenmp x_solve.f90
+gfortran -c  -O3 -fopenmp ninvr.f90
+gfortran -c  -O3 -fopenmp y_solve.f90
+gfortran -c  -O3 -fopenmp pinvr.f90
+gfortran -c  -O3 -fopenmp z_solve.f90
+gfortran -c  -O3 -fopenmp tzetar.f90
+gfortran -c  -O3 -fopenmp add.f90
+gfortran -c  -O3 -fopenmp txinvr.f90
+gfortran -c  -O3 -fopenmp error.f90
+gfortran -c  -O3 -fopenmp verify.f90
+gfortran -O3 -fopenmp -o ../bin/sp.B.x sp.o sp_data.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o rhs.o work_lhs.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark sp/B iniciado: 2024-10-24 21:44:19
+[FILE] Arquivo criado: ../results/sp-B_2024-10-24_21:44:19.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.0Gi       9.5Gi        32Mi       2.4Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark sp/B (0% ZRAM) iniciado: 2024-10-24 21:44:30
+[LOG] Benchmark sp/B (0% ZRAM) finalizado: 2024-10-24 21:45:13
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.0Gi       9.5Gi        32Mi       2.4Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark sp/B (50% ZRAM) iniciado: 2024-10-24 21:45:23
+[LOG] Benchmark sp/B (50% ZRAM) finalizado: 2024-10-24 21:46:07
+[LOG] Benchmark sp/B finalizado: 2024-10-24 21:46:07
+[LOG] Compilando benchmark sp/C
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd SP; make CLASS=C
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams sp C
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+gfortran -c  -O3 -fopenmp sp_data.f90
+sed -e 's/= 0/= 0/' blk_par0.h > blk_par.h_wk
+gfortran -c  -O3 -fopenmp sp.f90
+gfortran -c  -O3 -fopenmp initialize.f90
+gfortran -c  -O3 -fopenmp exact_solution.f90
+gfortran -c  -O3 -fopenmp exact_rhs.f90
+gfortran -c  -O3 -fopenmp set_constants.f90
+gfortran -c  -O3 -fopenmp adi.f90
+gfortran -c  -O3 -fopenmp rhs.f90
+gfortran -c  -O3 -fopenmp work_lhs.f90
+gfortran -c  -O3 -fopenmp x_solve.f90
+gfortran -c  -O3 -fopenmp ninvr.f90
+gfortran -c  -O3 -fopenmp y_solve.f90
+gfortran -c  -O3 -fopenmp pinvr.f90
+gfortran -c  -O3 -fopenmp z_solve.f90
+gfortran -c  -O3 -fopenmp tzetar.f90
+gfortran -c  -O3 -fopenmp add.f90
+gfortran -c  -O3 -fopenmp txinvr.f90
+gfortran -c  -O3 -fopenmp error.f90
+gfortran -c  -O3 -fopenmp verify.f90
+gfortran -O3 -fopenmp -o ../bin/sp.C.x sp.o sp_data.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o rhs.o work_lhs.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark sp/C iniciado: 2024-10-24 21:46:11
+[FILE] Arquivo criado: ../results/sp-C_2024-10-24_21:46:11.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.0Gi       9.5Gi        32Mi       2.4Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark sp/C (0% ZRAM) iniciado: 2024-10-24 21:46:21
+[LOG] Benchmark sp/C (0% ZRAM) finalizado: 2024-10-24 21:49:20
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.0Gi       9.5Gi        32Mi       2.4Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark sp/C (50% ZRAM) iniciado: 2024-10-24 21:49:30
+[LOG] Benchmark sp/C (50% ZRAM) finalizado: 2024-10-24 21:52:31
+[LOG] Benchmark sp/C finalizado: 2024-10-24 21:52:31
+[LOG] Compilando benchmark lu/S
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd LU; make CLASS=S VERSION=
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams lu S
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+gfortran -O3 -fopenmp -o ../bin/lu.S.x lu.o lu_data.o read_input.o domain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o syncs.o 
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark lu/S iniciado: 2024-10-24 21:52:31
+[FILE] Arquivo criado: ../results/lu-S_2024-10-24_21:52:31.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.0Gi       9.5Gi        32Mi       2.5Gi        11Gi
+Low:            13Gi       4.1Gi       9.5Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark lu/S (0% ZRAM) iniciado: 2024-10-24 21:52:41
+[LOG] Benchmark lu/S (0% ZRAM) finalizado: 2024-10-24 21:52:41
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.0Gi       9.4Gi        32Mi       2.5Gi        11Gi
+Low:            13Gi       4.2Gi       9.4Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark lu/S (50% ZRAM) iniciado: 2024-10-24 21:52:51
+[LOG] Benchmark lu/S (50% ZRAM) finalizado: 2024-10-24 21:52:51
+[LOG] Benchmark lu/S finalizado: 2024-10-24 21:52:51
+[LOG] Compilando benchmark lu/A
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd LU; make CLASS=A VERSION=
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams lu A
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+gfortran -c  -O3 -fopenmp lu_data.f90
+gfortran -c  -O3 -fopenmp lu.f90
+gfortran -c  -O3 -fopenmp read_input.f90
+gfortran -c  -O3 -fopenmp domain.f90
+gfortran -c  -O3 -fopenmp setcoeff.f90
+gfortran -c  -O3 -fopenmp setbv.f90
+gfortran -c  -O3 -fopenmp exact.f90
+gfortran -c  -O3 -fopenmp setiv.f90
+gfortran -c  -O3 -fopenmp erhs.f90
+gfortran -c  -O3 -fopenmp ssor.f90
+gfortran -c  -O3 -fopenmp rhs.f90
+gfortran -c  -O3 -fopenmp jacld.f90
+gfortran -c  -O3 -fopenmp jacu.f90
+gfortran -c  -O3 -fopenmp error.f90
+gfortran -c  -O3 -fopenmp pintgr.f90
+gfortran -c  -O3 -fopenmp verify.f90
+gfortran -c  -O3 -fopenmp syncs.f90
+gfortran -O3 -fopenmp -o ../bin/lu.A.x lu.o lu_data.o read_input.o domain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o syncs.o 
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark lu/A iniciado: 2024-10-24 21:52:55
+[FILE] Arquivo criado: ../results/lu-A_2024-10-24_21:52:55.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.0Gi       9.4Gi        32Mi       2.5Gi        11Gi
+Low:            13Gi       4.2Gi       9.4Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark lu/A (0% ZRAM) iniciado: 2024-10-24 21:53:06
+[LOG] Benchmark lu/A (0% ZRAM) finalizado: 2024-10-24 21:53:12
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.0Gi       9.4Gi        32Mi       2.5Gi        11Gi
+Low:            13Gi       4.2Gi       9.4Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark lu/A (50% ZRAM) iniciado: 2024-10-24 21:53:22
+[LOG] Benchmark lu/A (50% ZRAM) finalizado: 2024-10-24 21:53:29
+[LOG] Benchmark lu/A finalizado: 2024-10-24 21:53:29
+[LOG] Compilando benchmark lu/B
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd LU; make CLASS=B VERSION=
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams lu B
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+gfortran -c  -O3 -fopenmp lu_data.f90
+gfortran -c  -O3 -fopenmp lu.f90
+gfortran -c  -O3 -fopenmp read_input.f90
+gfortran -c  -O3 -fopenmp domain.f90
+gfortran -c  -O3 -fopenmp setcoeff.f90
+gfortran -c  -O3 -fopenmp setbv.f90
+gfortran -c  -O3 -fopenmp exact.f90
+gfortran -c  -O3 -fopenmp setiv.f90
+gfortran -c  -O3 -fopenmp erhs.f90
+gfortran -c  -O3 -fopenmp ssor.f90
+gfortran -c  -O3 -fopenmp rhs.f90
+gfortran -c  -O3 -fopenmp jacld.f90
+gfortran -c  -O3 -fopenmp jacu.f90
+gfortran -c  -O3 -fopenmp error.f90
+gfortran -c  -O3 -fopenmp pintgr.f90
+gfortran -c  -O3 -fopenmp verify.f90
+gfortran -c  -O3 -fopenmp syncs.f90
+gfortran -O3 -fopenmp -o ../bin/lu.B.x lu.o lu_data.o read_input.o domain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o syncs.o 
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark lu/B iniciado: 2024-10-24 21:53:33
+[FILE] Arquivo criado: ../results/lu-B_2024-10-24_21:53:33.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.0Gi       9.4Gi        32Mi       2.5Gi        11Gi
+Low:            13Gi       4.2Gi       9.4Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark lu/B (0% ZRAM) iniciado: 2024-10-24 21:53:43
+[LOG] Benchmark lu/B (0% ZRAM) finalizado: 2024-10-24 21:54:12
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.0Gi       9.4Gi        32Mi       2.5Gi        11Gi
+Low:            13Gi       4.2Gi       9.4Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark lu/B (50% ZRAM) iniciado: 2024-10-24 21:54:22
+[LOG] Benchmark lu/B (50% ZRAM) finalizado: 2024-10-24 21:54:49
+[LOG] Benchmark lu/B finalizado: 2024-10-24 21:54:49
+[LOG] Compilando benchmark lu/C
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd LU; make CLASS=C VERSION=
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams lu C
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+gfortran -c  -O3 -fopenmp lu_data.f90
+gfortran -c  -O3 -fopenmp lu.f90
+gfortran -c  -O3 -fopenmp read_input.f90
+gfortran -c  -O3 -fopenmp domain.f90
+gfortran -c  -O3 -fopenmp setcoeff.f90
+gfortran -c  -O3 -fopenmp setbv.f90
+gfortran -c  -O3 -fopenmp exact.f90
+gfortran -c  -O3 -fopenmp setiv.f90
+gfortran -c  -O3 -fopenmp erhs.f90
+gfortran -c  -O3 -fopenmp ssor.f90
+gfortran -c  -O3 -fopenmp rhs.f90
+gfortran -c  -O3 -fopenmp jacld.f90
+gfortran -c  -O3 -fopenmp jacu.f90
+gfortran -c  -O3 -fopenmp error.f90
+gfortran -c  -O3 -fopenmp pintgr.f90
+gfortran -c  -O3 -fopenmp verify.f90
+gfortran -c  -O3 -fopenmp syncs.f90
+gfortran -O3 -fopenmp -o ../bin/lu.C.x lu.o lu_data.o read_input.o domain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o syncs.o 
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+[LOG] Benchmark lu/C iniciado: 2024-10-24 21:54:53
+[FILE] Arquivo criado: ../results/lu-C_2024-10-24_21:54:53.log
+[LOG] Memoria (free -lh) com 0% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.0Gi       9.4Gi        32Mi       2.5Gi        11Gi
+Low:            13Gi       4.2Gi       9.4Gi
+High:             0B          0B          0B
+Swap:             0B          0B          0B
+[LOG] Benchmark lu/C (0% ZRAM) iniciado: 2024-10-24 21:55:03
+[LOG] Benchmark lu/C (0% ZRAM) finalizado: 2024-10-24 21:56:58
+[LOG] Memoria (free -lh) com 50% zram
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.0Gi       9.4Gi        32Mi       2.5Gi        11Gi
+Low:            13Gi       4.2Gi       9.4Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+[LOG] Benchmark lu/C (50% ZRAM) iniciado: 2024-10-24 21:57:08
+[LOG] Benchmark lu/C (50% ZRAM) finalizado: 2024-10-24 21:59:03
+[LOG] Benchmark lu/C finalizado: 2024-10-24 21:59:03
+
+[LOG] Finalizando testes: 2024-10-24 21:59:03

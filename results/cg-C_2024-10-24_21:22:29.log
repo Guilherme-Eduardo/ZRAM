@@ -1,0 +1,153 @@
+[ID] Benchmark cg - classe C
+[TIME] Benchmark totalmente iniciado: 2024-10-24 21:22:29
+
+Memoria livre e existente na maquina
+               total        used        free      shared  buff/cache   available
+Mem:            13Gi       2.2Gi       9.4Gi        31Mi       2.3Gi        11Gi
+Low:            13Gi       4.2Gi       9.4Gi
+High:             0B          0B          0B
+Swap:          8.0Gi          0B       8.0Gi
+
+[INFO] Iniciado benchmark com 0% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 2024-10-24 21:22:39
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - CG Benchmark
+
+ Size:      150000
+ Iterations:                     75
+ Number of available threads:     8
+
+ Initialization time =           2.649 seconds
+
+   iteration           ||r||                 zeta
+        1       0.35311478879062E-12   109.9994423237398
+        5       0.89175824436289E-15    28.6471670038896
+       10       0.91197320459885E-15    28.9496695449001
+       15       0.90772743646944E-15    28.9716336228371
+       20       0.91443417516888E-15    28.9734210663752
+       25       0.90733321782088E-15    28.9735863059386
+       30       0.90848773094417E-15    28.9736033967633
+       35       0.90985654641571E-15    28.9736053266247
+       40       0.90692645796370E-15    28.9736055590699
+       45       0.90838475838635E-15    28.9736055884130
+       50       0.91075723809157E-15    28.9736055922483
+       55       0.90333989166902E-15    28.9736055927634
+       60       0.90756584667950E-15    28.9736055928341
+       65       0.90601035982173E-15    28.9736055928440
+       70       0.90314514329080E-15    28.9736055928451
+       75       0.90191582489982E-15    28.9736055928456
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.2897360559285E+02
+ Error is    0.1974165419122E-13
+
+
+ CG Benchmark Completed.
+ Class           =                        C
+ Size            =                   150000
+ Iterations      =                       75
+ Time in seconds =                    31.34
+ Total threads   =                        8
+ Avail threads   =                        8
+ Mop/s total     =                  4574.28
+ Mop/s/thread    =                   571.78
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              24 Oct 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+real	0m33.995s
+user	4m22.801s
+sys	0m1.055s
+[TIME] Benchmark finalizado: 2024-10-24 21:23:13
+
+[INFO] Iniciado benchmark com 50% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 2024-10-24 21:23:23
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - CG Benchmark
+
+ Size:      150000
+ Iterations:                     75
+ Number of available threads:     8
+
+ Initialization time =           2.667 seconds
+
+   iteration           ||r||                 zeta
+        1       0.35317815560006E-12   109.9994423237398
+        5       0.89139350955387E-15    28.6471670038896
+       10       0.91160130814503E-15    28.9496695449000
+       15       0.90690148444017E-15    28.9716336228371
+       20       0.91349799832216E-15    28.9734210663752
+       25       0.90826267647864E-15    28.9735863059386
+       30       0.90992272040263E-15    28.9736033967633
+       35       0.91006294159424E-15    28.9736053266247
+       40       0.90710227023732E-15    28.9736055590699
+       45       0.90914636907150E-15    28.9736055884130
+       50       0.90992888094746E-15    28.9736055922483
+       55       0.90266001443763E-15    28.9736055927634
+       60       0.90847941192308E-15    28.9736055928341
+       65       0.90643340377434E-15    28.9736055928440
+       70       0.90180641711389E-15    28.9736055928451
+       75       0.90250016383346E-15    28.9736055928456
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ Zeta is     0.2897360559285E+02
+ Error is    0.2023213007175E-13
+
+
+ CG Benchmark Completed.
+ Class           =                        C
+ Size            =                   150000
+ Iterations      =                       75
+ Time in seconds =                    30.23
+ Total threads   =                        8
+ Avail threads   =                        8
+ Mop/s total     =                  4741.40
+ Mop/s/thread    =                   592.67
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              24 Oct 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+real	0m32.908s
+user	4m21.758s
+sys	0m0.827s
+[TIME] Benchmark finalizado: 2024-10-24 21:23:56
+
+[TIME] Benchmark totalmente finalizado: 2024-10-24 21:23:56
