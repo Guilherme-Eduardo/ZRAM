@@ -1,0 +1,76 @@
+-~~-~~-~~-~~-~~-~~- Benchmark cg - classe D -~~-~~-~~-~~-~~-~~-
+[TIME] Benchmark totalmente iniciado: 25/10/2024 as 15:03:53
+
+-~~-~~-~~-~~-~~-~~- 0% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Iniciado benchmark com 0% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 25/10/2024 as 15:04:04
+./bm_setup.sh: line 93:  5526 Killed                  "$EXECUTABLE"
+
+real	1m3.398s
+user	8m4.513s
+sys	0m13.722s
+[TIME] Benchmark finalizado: 25/10/2024 as 15:05:07
+
+-~~-~~-~~-~~-~~-~~- 50% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Iniciado benchmark com 50% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 25/10/2024 as 15:05:17
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+8589934592
+INITSTATE: 
+8589934592
+WRITEBACK_LIMIT_ENABLE: 
+8589934592
+MAX_COMP_STREAMS: 
+8589934592
+COMP_ALGORITHM: 
+8589934592
+DEBUG_STAT: 
+8589934592
+BACKING_DEV: 
+8589934592
+STATS: 
+      51        0     2360        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+./bm_setup.sh: line 93:  5592 Killed                  "$EXECUTABLE"
+
+real	1m20.427s
+user	8m5.407s
+sys	0m22.596s
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+8589934592
+INITSTATE: 
+8589934592
+WRITEBACK_LIMIT_ENABLE: 
+8589934592
+MAX_COMP_STREAMS: 
+8589934592
+COMP_ALGORITHM: 
+8589934592
+DEBUG_STAT: 
+8589934592
+BACKING_DEV: 
+8589934592
+STATS: 
+    1494        0    13904        6   187622        0 17848888    10848        0     5100    10855        0        0        0        0        0        0
+STATS I/O: 
+       0    28761 0  3571106
+STATS mm: 
+808943616 206089842 213790720        0 7907479552    13487       47      228  1880734
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+[TIME] Benchmark finalizado: 25/10/2024 as 15:06:38
+
+[TIME] Benchmark totalmente finalizado: 25/10/2024 as 15:06:38

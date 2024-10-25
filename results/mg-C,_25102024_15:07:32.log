@@ -1,0 +1,180 @@
+-~~-~~-~~-~~-~~-~~- Benchmark mg - classe C, -~~-~~-~~-~~-~~-~~-
+[TIME] Benchmark totalmente iniciado: 25/10/2024 as 15:07:32
+
+-~~-~~-~~-~~-~~-~~- 0% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Iniciado benchmark com 0% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 25/10/2024 as 15:07:42
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - MG Benchmark
+
+ No input file. Using compiled defaults 
+ Size:  512x 512x 512  (class C)
+ Iterations:                     20
+ Number of available threads:     8
+
+ Initialization time:           2.663 seconds
+
+  iter   1
+  iter   5
+  iter  10
+  iter  15
+  iter  20
+
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ L2 Norm is  0.5706732285739E-06
+ Error is    0.1322855316214E-12
+
+
+ MG Benchmark Completed.
+ Class           =                        C
+ Size            =            512x 512x 512
+ Iterations      =                       20
+ Time in seconds =                    20.71
+ Total threads   =                        8
+ Avail threads   =                        8
+ Mop/s total     =                  7518.08
+ Mop/s/thread    =                   939.76
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              25 Oct 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+real	0m23.387s
+user	3m2.811s
+sys	0m2.966s
+[TIME] Benchmark finalizado: 25/10/2024 as 15:08:05
+
+-~~-~~-~~-~~-~~-~~- 50% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Iniciado benchmark com 50% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 25/10/2024 as 15:08:15
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+8589934592
+INITSTATE: 
+8589934592
+WRITEBACK_LIMIT_ENABLE: 
+8589934592
+MAX_COMP_STREAMS: 
+8589934592
+COMP_ALGORITHM: 
+8589934592
+DEBUG_STAT: 
+8589934592
+BACKING_DEV: 
+8589934592
+STATS: 
+      51        0     2360        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - MG Benchmark
+
+ No input file. Using compiled defaults 
+ Size:  512x 512x 512  (class C)
+ Iterations:                     20
+ Number of available threads:     8
+
+ Initialization time:           2.661 seconds
+
+  iter   1
+  iter   5
+  iter  10
+  iter  15
+  iter  20
+
+ Benchmark completed 
+ VERIFICATION SUCCESSFUL 
+ L2 Norm is  0.5706732285739E-06
+ Error is    0.1322855316214E-12
+
+
+ MG Benchmark Completed.
+ Class           =                        C
+ Size            =            512x 512x 512
+ Iterations      =                       20
+ Time in seconds =                    20.69
+ Total threads   =                        8
+ Avail threads   =                        8
+ Mop/s total     =                  7525.16
+ Mop/s/thread    =                   940.65
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              25 Oct 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = randi8
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+real	0m23.365s
+user	3m2.879s
+sys	0m3.056s
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+8589934592
+INITSTATE: 
+8589934592
+WRITEBACK_LIMIT_ENABLE: 
+8589934592
+MAX_COMP_STREAMS: 
+8589934592
+COMP_ALGORITHM: 
+8589934592
+DEBUG_STAT: 
+8589934592
+BACKING_DEV: 
+8589934592
+STATS: 
+      51        0     2360        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+[TIME] Benchmark finalizado: 25/10/2024 as 15:08:39
+
+[TIME] Benchmark totalmente finalizado: 25/10/2024 as 15:08:39
