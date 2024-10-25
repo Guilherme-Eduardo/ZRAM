@@ -3,7 +3,7 @@
 ### Variaveis de ambiente ###
 
 BENCHMARKS=('is' 'ep' 'cg' 'mg' 'ft' 'bt' 'sp' 'lu') # Definir os benchmarks que serão executados
-BENCH_CLASSES=('S') # Classes a serem testadas (S (fast to test), A, B, C (medium 4x), D, E, F (large 16x))
+BENCH_CLASSES=('A', 'B', 'C', 'D') # Classes a serem testadas (S (fast to test), A, B, C (medium 4x), D, E, F (large 16x))
 ZRAM_PORC=(0 50) # Porcentagem de ZRAM a serem testadas
 COMPRESSION_ALGS=('null')
 
