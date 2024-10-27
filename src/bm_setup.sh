@@ -25,8 +25,12 @@ fi
 touch $LOG_ARCHIVE # Arquivo de LOG desta execucao
 echo "[FILE] Arquivo de LOG de execucao criado: ${LOG_ARCHIVE}"
 
+# Calculo de tempo de execucao
+total_combinations=$((${#BENCHMARKS[@]} * ${#BENCH_CLASSES[@]} * ${#ZRAM_PORC[@]}))
+total_time=$((total_combinations * 403)) # Combinacoes * tempo medio em segundos
+
 write_logs_title $LOG_ARCHIVE "Informacoes de execucao"
-write_logs $LOG_ARCHIVE "[INFO] Tempo estimado: 000:00:00"
+write_logs $LOG_ARCHIVE "[INFO] Tempo estimado: $(date -u -d @$total_time +"%Hh %Mm %Ss")"
 write_logs $LOG_ARCHIVE "[INFO] Benchmarks a serem executados: ${BENCHMARKS[*]}"
 write_logs $LOG_ARCHIVE "[INFO] Classes a serem executadas: ${BENCH_CLASSES[*]}"
 write_logs $LOG_ARCHIVE "[INFO] Porcentagem de ZRAM analisadas: ${ZRAM_PORC[*]}"
@@ -121,11 +125,11 @@ do
             fi
 
             # Executando benchmark
-            EXECUTABLE="$BENCHMARK_DIR/bin/$bm.$cl.x"
-            { time "$EXECUTABLE"; } >> $RESULT_ARCHIVE 2>&1
-            if [ $? -nt 0 ]; then
-                write_logs $LOG_ARCHIVE "[ERROR] Erro na execucao do benchmark"
-            fi
+            # EXECUTABLE="$BENCHMARK_DIR/bin/$bm.$cl.x"
+            # { time "$EXECUTABLE"; } >> $RESULT_ARCHIVE 2>&1
+            # if [ $? -nt 0 ]; then
+            #     write_logs $LOG_ARCHIVE "[ERROR] Erro na execucao do benchmark"
+            # fi
 
             # Salvar resultados
             if [ $NO_ZRAM_DEBUGGER -eq 0 ]; then
