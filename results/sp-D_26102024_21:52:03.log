@@ -1,16 +1,16 @@
--~~-~~-~~-~~-~~-~~- Benchmark sp - classe B, -~~-~~-~~-~~-~~-~~-
-[TIME] Benchmark totalmente iniciado: 25/10/2024 as 18:28:31
+-~~-~~-~~-~~-~~-~~- Benchmark sp - classe D -~~-~~-~~-~~-~~-~~-
+[TIME] Benchmark totalmente iniciado: 26/10/2024 as 21:52:03
 
 -~~-~~-~~-~~-~~-~~- 0% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
 [INFO] Iniciado benchmark com 0% (0 gb) de ZRAM
-[TIME] Benchmark iniciado: 25/10/2024 as 18:28:41
+[TIME] Benchmark iniciado: 26/10/2024 as 21:52:14
 
 
  NAS Parallel Benchmarks (NPB3.4-OMP) - SP Benchmark
 
  No input file inputsp.data. Using compiled defaults
- Size:  102x 102x 102
- Iterations:  400    dt:    0.0010000
+ Size:  408x 408x 408
+ Iterations:  500    dt:    0.0003000
  Number of available threads:     8
 
  Time step    1
@@ -34,36 +34,41 @@
  Time step  360
  Time step  380
  Time step  400
- Verification being performed for class B
+ Time step  420
+ Time step  440
+ Time step  460
+ Time step  480
+ Time step  500
+ Verification being performed for class D
  accuracy setting for epsilon =  0.1000000000000E-07
  Comparison of RMS-norms of residual
-           1 0.6903293579998E+02 0.6903293579998E+02 0.5331674408143E-13
-           2 0.3095134488084E+02 0.3095134488084E+02 0.8069302725979E-13
-           3 0.4103336647017E+02 0.4103336647017E+02 0.1092653381464E-12
-           4 0.3864769009604E+02 0.3864769009604E+02 0.3768951274160E-13
-           5 0.5643482272596E+02 0.5643482272596E+02 0.5539820781445E-13
+           1 0.1044696216887E+05 0.1044696216887E+05 0.2247845145812E-12
+           2 0.3204427762578E+04 0.3204427762578E+04 0.1061503156462E-12
+           3 0.4648680733030E+04 0.4648680733032E+04 0.3838569924148E-12
+           4 0.4238923283692E+04 0.4238923283697E+04 0.1080513850237E-11
+           5 0.7588412036136E+04 0.7588412036136E+04 0.6472067365592E-14
  Comparison of RMS-norms of solution error
-           1 0.9810006190188E-02 0.9810006190188E-02 0.4986663726214E-13
-           2 0.1022827905670E-02 0.1022827905670E-02 0.3911416568021E-12
-           3 0.1720597911692E-02 0.1720597911692E-02 0.1523656884189E-12
-           4 0.1694479428231E-02 0.1694479428231E-02 0.1073657912348E-12
-           5 0.1847456263981E-01 0.1847456263981E-01 0.8338137560821E-13
+           1 0.5089471423669E+01 0.5089471423669E+01 0.8271911479451E-13
+           2 0.5323514855894E+00 0.5323514855894E+00 0.8383740216394E-13
+           3 0.1187051008970E+01 0.1187051008971E+01 0.4356526223070E-12
+           4 0.1083734951938E+01 0.1083734951938E+01 0.2909413767912E-13
+           5 0.1164108338568E+02 0.1164108338568E+02 0.3921659974427E-13
  Verification Successful
 
 
  SP Benchmark Completed.
- Class           =                        B
- Size            =            102x 102x 102
- Iterations      =                      400
- Time in seconds =                    43.26
+ Class           =                        D
+ Size            =            408x 408x 408
+ Iterations      =                      500
+ Time in seconds =                  3656.64
  Total threads   =                        8
  Avail threads   =                        8
- Mop/s total     =                  8205.69
- Mop/s/thread    =                  1025.71
+ Mop/s total     =                  8077.36
+ Mop/s/thread    =                  1009.67
  Operation type  =           floating point
  Verification    =               SUCCESSFUL
  Version         =                    3.4.3
- Compile date    =              25 Oct 2024
+ Compile date    =              26 Oct 2024
 
  Compile options:
     FC           = gfortran
@@ -82,14 +87,14 @@
 
 
 
-real	0m43.554s
-user	5m30.182s
-sys	0m0.400s
-[TIME] Benchmark finalizado: 25/10/2024 as 18:29:25
+real	61m14.834s
+user	475m3.158s
+sys	0m18.575s
+[TIME] Benchmark finalizado: 26/10/2024 as 22:53:28
 
 -~~-~~-~~-~~-~~-~~- 50% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
 [INFO] Iniciado benchmark com 50% (0 gb) de ZRAM
-[TIME] Benchmark iniciado: 25/10/2024 as 18:29:35
+[TIME] Benchmark iniciado: 26/10/2024 as 22:53:39
 ---------------- RESULTADOS ZRAM (bytes) ---------------- 
 More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
 
@@ -112,7 +117,7 @@ STATS:
 STATS I/O: 
        0        0 0        0
 STATS mm: 
-    4096       74    12288        0    12288        0        0        0        0
+    4096       75    12288        0    12288        0        0        0        0
 STATS bd: 
        0        0        0
 --------------------------------------------------------- 
@@ -121,8 +126,8 @@ STATS bd:
  NAS Parallel Benchmarks (NPB3.4-OMP) - SP Benchmark
 
  No input file inputsp.data. Using compiled defaults
- Size:  102x 102x 102
- Iterations:  400    dt:    0.0010000
+ Size:  408x 408x 408
+ Iterations:  500    dt:    0.0003000
  Number of available threads:     8
 
  Time step    1
@@ -146,36 +151,41 @@ STATS bd:
  Time step  360
  Time step  380
  Time step  400
- Verification being performed for class B
+ Time step  420
+ Time step  440
+ Time step  460
+ Time step  480
+ Time step  500
+ Verification being performed for class D
  accuracy setting for epsilon =  0.1000000000000E-07
  Comparison of RMS-norms of residual
-           1 0.6903293579998E+02 0.6903293579998E+02 0.5331674408143E-13
-           2 0.3095134488084E+02 0.3095134488084E+02 0.8069302725979E-13
-           3 0.4103336647017E+02 0.4103336647017E+02 0.1092653381464E-12
-           4 0.3864769009604E+02 0.3864769009604E+02 0.3768951274160E-13
-           5 0.5643482272596E+02 0.5643482272596E+02 0.5539820781445E-13
+           1 0.1044696216887E+05 0.1044696216887E+05 0.2247845145812E-12
+           2 0.3204427762578E+04 0.3204427762578E+04 0.1060084034595E-12
+           3 0.4648680733030E+04 0.4648680733032E+04 0.3838569924148E-12
+           4 0.4238923283692E+04 0.4238923283697E+04 0.1080513850237E-11
+           5 0.7588412036136E+04 0.7588412036136E+04 0.6472067365592E-14
  Comparison of RMS-norms of solution error
-           1 0.9810006190188E-02 0.9810006190188E-02 0.4986663726214E-13
-           2 0.1022827905670E-02 0.1022827905670E-02 0.3911416568021E-12
-           3 0.1720597911692E-02 0.1720597911692E-02 0.1523656884189E-12
-           4 0.1694479428231E-02 0.1694479428231E-02 0.1074937599967E-12
-           5 0.1847456263981E-01 0.1847456263981E-01 0.8338137560821E-13
+           1 0.5089471423669E+01 0.5089471423669E+01 0.8271911479451E-13
+           2 0.5323514855894E+00 0.5323514855894E+00 0.8383740216394E-13
+           3 0.1187051008970E+01 0.1187051008971E+01 0.4356526223070E-12
+           4 0.1083734951938E+01 0.1083734951938E+01 0.2909413767912E-13
+           5 0.1164108338568E+02 0.1164108338568E+02 0.3921659974427E-13
  Verification Successful
 
 
  SP Benchmark Completed.
- Class           =                        B
- Size            =            102x 102x 102
- Iterations      =                      400
- Time in seconds =                    42.94
+ Class           =                        D
+ Size            =            408x 408x 408
+ Iterations      =                      500
+ Time in seconds =                  3626.52
  Total threads   =                        8
  Avail threads   =                        8
- Mop/s total     =                  8267.20
- Mop/s/thread    =                  1033.40
+ Mop/s total     =                  8144.45
+ Mop/s/thread    =                  1018.06
  Operation type  =           floating point
  Verification    =               SUCCESSFUL
  Version         =                    3.4.3
- Compile date    =              25 Oct 2024
+ Compile date    =              26 Oct 2024
 
  Compile options:
     FC           = gfortran
@@ -194,9 +204,9 @@ STATS bd:
 
 
 
-real	0m43.235s
-user	5m32.329s
-sys	0m0.300s
+real	60m44.951s
+user	471m50.049s
+sys	0m15.193s
 ---------------- RESULTADOS ZRAM (bytes) ---------------- 
 More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
 
@@ -215,14 +225,14 @@ DEBUG_STAT:
 BACKING_DEV: 
 8589934592
 STATS: 
-      51        0     2360        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+      51        0     2360        0     1907        0    15256        9        0       10        9        0        0        0        0        0        0
 STATS I/O: 
        0        0 0        0
 STATS mm: 
-    4096       74    12288        0    12288        0        0        0        0
+ 7811072  2174534  3416064        0  3416064       47        0        0        0
 STATS bd: 
        0        0        0
 --------------------------------------------------------- 
-[TIME] Benchmark finalizado: 25/10/2024 as 18:30:18
+[TIME] Benchmark finalizado: 26/10/2024 as 23:54:24
 
-[TIME] Benchmark totalmente finalizado: 25/10/2024 as 18:30:18
+[TIME] Benchmark totalmente finalizado: 26/10/2024 as 23:54:24

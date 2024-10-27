@@ -1,9 +1,9 @@
--~~-~~-~~-~~-~~-~~- Benchmark sp - classe A, -~~-~~-~~-~~-~~-~~-
-[TIME] Benchmark totalmente iniciado: 25/10/2024 as 18:27:46
+-~~-~~-~~-~~-~~-~~- Benchmark sp - classe A -~~-~~-~~-~~-~~-~~-
+[TIME] Benchmark totalmente iniciado: 26/10/2024 as 21:43:05
 
 -~~-~~-~~-~~-~~-~~- 0% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
 [INFO] Iniciado benchmark com 0% (0 gb) de ZRAM
-[TIME] Benchmark iniciado: 25/10/2024 as 18:27:56
+[TIME] Benchmark iniciado: 26/10/2024 as 21:43:15
 
 
  NAS Parallel Benchmarks (NPB3.4-OMP) - SP Benchmark
@@ -55,15 +55,15 @@
  Class           =                        A
  Size            =             64x  64x  64
  Iterations      =                      400
- Time in seconds =                    10.28
+ Time in seconds =                    10.01
  Total threads   =                        8
  Avail threads   =                        8
- Mop/s total     =                  8268.70
- Mop/s/thread    =                  1033.59
+ Mop/s total     =                  8496.52
+ Mop/s/thread    =                  1062.06
  Operation type  =           floating point
  Verification    =               SUCCESSFUL
  Version         =                    3.4.3
- Compile date    =              25 Oct 2024
+ Compile date    =              26 Oct 2024
 
  Compile options:
     FC           = gfortran
@@ -82,14 +82,14 @@
 
 
 
-real	0m10.367s
-user	1m22.275s
-sys	0m0.104s
-[TIME] Benchmark finalizado: 25/10/2024 as 18:28:06
+real	0m10.110s
+user	1m19.177s
+sys	0m0.053s
+[TIME] Benchmark finalizado: 26/10/2024 as 21:43:25
 
 -~~-~~-~~-~~-~~-~~- 50% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
 [INFO] Iniciado benchmark com 50% (0 gb) de ZRAM
-[TIME] Benchmark iniciado: 25/10/2024 as 18:28:16
+[TIME] Benchmark iniciado: 26/10/2024 as 21:43:35
 ---------------- RESULTADOS ZRAM (bytes) ---------------- 
 More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
 
@@ -152,12 +152,12 @@ STATS bd:
            1 0.2479982239930E+01 0.2479982239930E+01 0.3939529267346E-13
            2 0.1127633796437E+01 0.1127633796437E+01 0.9904672654385E-13
            3 0.1502897788877E+01 0.1502897788877E+01 0.4225487420273E-13
-           4 0.1421781621170E+01 0.1421781621170E+01 0.7855526799215E-13
+           4 0.1421781621170E+01 0.1421781621170E+01 0.7871144148717E-13
            5 0.2129211303514E+01 0.2129211303514E+01 0.3837684614841E-13
  Comparison of RMS-norms of solution error
            1 0.1090014029782E-03 0.1090014029782E-03 0.4226096045084E-12
            2 0.3734395176929E-04 0.3734395176928E-04 0.1230267951901E-12
-           3 0.5009278540654E-04 0.5009278540654E-04 0.1704455449828E-13
+           3 0.5009278540654E-04 0.5009278540654E-04 0.1690928025623E-13
            4 0.4767109393954E-04 0.4767109393953E-04 0.2328354317797E-12
            5 0.1362161339921E-03 0.1362161339921E-03 0.5293017967640E-13
  Verification Successful
@@ -167,15 +167,15 @@ STATS bd:
  Class           =                        A
  Size            =             64x  64x  64
  Iterations      =                      400
- Time in seconds =                    10.29
+ Time in seconds =                     9.97
  Total threads   =                        8
  Avail threads   =                        8
- Mop/s total     =                  8259.04
- Mop/s/thread    =                  1032.38
+ Mop/s total     =                  8526.77
+ Mop/s/thread    =                  1065.85
  Operation type  =           floating point
  Verification    =               SUCCESSFUL
  Version         =                    3.4.3
- Compile date    =              25 Oct 2024
+ Compile date    =              26 Oct 2024
 
  Compile options:
     FC           = gfortran
@@ -194,9 +194,9 @@ STATS bd:
 
 
 
-real	0m10.377s
-user	1m22.046s
-sys	0m0.107s
+real	0m10.052s
+user	1m19.250s
+sys	0m0.074s
 ---------------- RESULTADOS ZRAM (bytes) ---------------- 
 More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
 
@@ -223,6 +223,6 @@ STATS mm:
 STATS bd: 
        0        0        0
 --------------------------------------------------------- 
-[TIME] Benchmark finalizado: 25/10/2024 as 18:28:27
+[TIME] Benchmark finalizado: 26/10/2024 as 21:43:45
 
-[TIME] Benchmark totalmente finalizado: 25/10/2024 as 18:28:27
+[TIME] Benchmark totalmente finalizado: 26/10/2024 as 21:43:45

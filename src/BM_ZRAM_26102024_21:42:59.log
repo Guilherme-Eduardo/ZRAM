@@ -1,0 +1,797 @@
+-~~-~~-~~-~~-~~-~~- Informacoes de execucao -~~-~~-~~-~~-~~-~~-
+[INFO] Tempo estimado: 000:00:00
+[INFO] Benchmarks a serem executados: sp lu
+[INFO] Classes a serem executadas: A B C D
+[INFO] Porcentagem de ZRAM analisadas: 0 50
+
+-~~-~~-~~-~~-~~-~~- Maquina dos testes -~~-~~-~~-~~-~~-~~-
+[INFO] lsb_release -a:
+LSB Version:	n/a
+Distributor ID:	openSUSE
+Description:	openSUSE Tumbleweed
+Release:	20241023
+Codename:	n/a
+[INFO] Uname -a:
+Linux localhost.localdomain 6.11.3-2-default #1 SMP PREEMPT_DYNAMIC Fri Oct 11 06:48:36 UTC 2024 (7881e90) x86_64 x86_64 x86_64 GNU/Linux
+[INFO] cat /proc/meminfo:
+MemTotal:       14248596 kB
+MemFree:        10593036 kB
+MemAvailable:   12532176 kB
+Buffers:            1684 kB
+Cached:          2180960 kB
+SwapCached:            0 kB
+Active:          1438792 kB
+Inactive:        1487976 kB
+Active(anon):       1936 kB
+Inactive(anon):   766340 kB
+Active(file):    1436856 kB
+Inactive(file):   721636 kB
+Unevictable:          16 kB
+Mlocked:              16 kB
+SwapTotal:      11716928 kB
+SwapFree:       11716928 kB
+Zswap:                 0 kB
+Zswapped:              0 kB
+Dirty:               344 kB
+Writeback:             0 kB
+AnonPages:        723188 kB
+Mapped:           472216 kB
+Shmem:             24148 kB
+KReclaimable:      69720 kB
+Slab:             215244 kB
+SReclaimable:      69720 kB
+SUnreclaim:       145524 kB
+KernelStack:        9696 kB
+PageTables:        15896 kB
+SecPageTables:      3248 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    18841224 kB
+Committed_AS:    4306884 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      139008 kB
+VmallocChunk:          0 kB
+Percpu:             3552 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:    237568 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:    206848 kB
+FilePmdMapped:    141312 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+Unaccepted:            0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      640020 kB
+DirectMap2M:    12929024 kB
+DirectMap1G:     1048576 kB
+[INFO] cat /proc/cpuinfo | more:
+processor	: 0
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 24
+model name	: AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx
+stepping	: 1
+microcode	: 0x8108109
+cpu MHz		: 3672.609
+cache size	: 512 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb hw_pstate ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif overflow_recov succor smca sev sev_es
+bugs		: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso div0
+bogomips	: 4193.59
+TLB size	: 2560 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate eff_freq_ro [13] [14]
+
+processor	: 1
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 24
+model name	: AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx
+stepping	: 1
+microcode	: 0x8108109
+cpu MHz		: 3691.968
+cache size	: 512 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb hw_pstate ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif overflow_recov succor smca sev sev_es
+bugs		: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso div0
+bogomips	: 4193.59
+TLB size	: 2560 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate eff_freq_ro [13] [14]
+
+processor	: 2
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 24
+model name	: AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx
+stepping	: 1
+microcode	: 0x8108109
+cpu MHz		: 1477.084
+cache size	: 512 KB
+physical id	: 0
+siblings	: 8
+core id		: 1
+cpu cores	: 4
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb hw_pstate ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif overflow_recov succor smca sev sev_es
+bugs		: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso div0
+bogomips	: 4193.59
+TLB size	: 2560 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate eff_freq_ro [13] [14]
+
+processor	: 3
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 24
+model name	: AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx
+stepping	: 1
+microcode	: 0x8108109
+cpu MHz		: 1476.607
+cache size	: 512 KB
+physical id	: 0
+siblings	: 8
+core id		: 1
+cpu cores	: 4
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb hw_pstate ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif overflow_recov succor smca sev sev_es
+bugs		: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso div0
+bogomips	: 4193.59
+TLB size	: 2560 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate eff_freq_ro [13] [14]
+
+processor	: 4
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 24
+model name	: AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx
+stepping	: 1
+microcode	: 0x8108109
+cpu MHz		: 3572.816
+cache size	: 512 KB
+physical id	: 0
+siblings	: 8
+core id		: 2
+cpu cores	: 4
+apicid		: 4
+initial apicid	: 4
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb hw_pstate ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif overflow_recov succor smca sev sev_es
+bugs		: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso div0
+bogomips	: 4193.59
+TLB size	: 2560 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate eff_freq_ro [13] [14]
+
+processor	: 5
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 24
+model name	: AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx
+stepping	: 1
+microcode	: 0x8108109
+cpu MHz		: 2954.777
+cache size	: 512 KB
+physical id	: 0
+siblings	: 8
+core id		: 2
+cpu cores	: 4
+apicid		: 5
+initial apicid	: 5
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb hw_pstate ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif overflow_recov succor smca sev sev_es
+bugs		: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso div0
+bogomips	: 4193.59
+TLB size	: 2560 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate eff_freq_ro [13] [14]
+
+processor	: 6
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 24
+model name	: AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx
+stepping	: 1
+microcode	: 0x8108109
+cpu MHz		: 2460.414
+cache size	: 512 KB
+physical id	: 0
+siblings	: 8
+core id		: 3
+cpu cores	: 4
+apicid		: 6
+initial apicid	: 6
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb hw_pstate ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif overflow_recov succor smca sev sev_es
+bugs		: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso div0
+bogomips	: 4193.59
+TLB size	: 2560 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate eff_freq_ro [13] [14]
+
+processor	: 7
+vendor_id	: AuthenticAMD
+cpu family	: 23
+model		: 24
+model name	: AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx
+stepping	: 1
+microcode	: 0x8108109
+cpu MHz		: 2461.901
+cache size	: 512 KB
+physical id	: 0
+siblings	: 8
+core id		: 3
+cpu cores	: 4
+apicid		: 7
+initial apicid	: 7
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb hw_pstate ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 clzero irperf xsaveerptr arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif overflow_recov succor smca sev sev_es
+bugs		: sysret_ss_attrs null_seg spectre_v1 spectre_v2 spec_store_bypass retbleed smt_rsb srso div0
+bogomips	: 4193.59
+TLB size	: 2560 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 43 bits physical, 48 bits virtual
+power management: ts ttp tm hwpstate eff_freq_ro [13] [14]
+
+[INFO] df -ha:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p5  110G   11G   98G  11% /
+devtmpfs        4.0M     0  4.0M   0% /dev
+tmpfs           6.8G     0  6.8G   0% /dev/shm
+devpts             0     0     0    - /dev/pts
+sysfs              0     0     0    - /sys
+securityfs         0     0     0    - /sys/kernel/security
+cgroup2            0     0     0    - /sys/fs/cgroup
+pstore             0     0     0    - /sys/fs/pstore
+efivarfs        148K  144K     0 100% /sys/firmware/efi/efivars
+bpf                0     0     0    - /sys/fs/bpf
+proc               0     0     0    - /proc
+tmpfs           2.8G  1.9M  2.8G   1% /run
+systemd-1          -     -     -    - /proc/sys/fs/binfmt_misc
+mqueue             0     0     0    - /dev/mqueue
+hugetlbfs          0     0     0    - /dev/hugepages
+debugfs            0     0     0    - /sys/kernel/debug
+tracefs            0     0     0    - /sys/kernel/tracing
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-udev-load-credentials.service
+configfs           0     0     0    - /sys/kernel/config
+fusectl            0     0     0    - /sys/fs/fuse/connections
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-tmpfiles-setup-dev-early.service
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-sysctl.service
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-tmpfiles-setup-dev.service
+/dev/nvme0n1p5  110G   11G   98G  11% /.snapshots
+/dev/nvme0n1p5  110G   11G   98G  11% /boot/grub2/i386-pc
+/dev/nvme0n1p5  110G   11G   98G  11% /boot/grub2/x86_64-efi
+/dev/nvme0n1p5  110G   11G   98G  11% /opt
+/dev/nvme0n1p5  110G   11G   98G  11% /home
+/dev/nvme0n1p5  110G   11G   98G  11% /root
+/dev/nvme0n1p5  110G   11G   98G  11% /srv
+tmpfs           6.8G  4.0K  6.8G   1% /tmp
+/dev/nvme0n1p5  110G   11G   98G  11% /usr/local
+/dev/nvme0n1p5  110G   11G   98G  11% /var
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-vconsole-setup.service
+/dev/nvme0n1p1   96M   38M   59M  39% /boot/efi
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-tmpfiles-setup.service
+tmpfs           1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs           1.4G   64K  1.4G   1% /run/user/1000
+portal          0.0K  0.0K  0.0K    - /run/user/1000/doc
+gvfsd-fuse      0.0K  0.0K  0.0K    - /run/user/1000/gvfs
+tracefs            0     0     0    - /sys/kernel/debug/tracing
+binfmt_misc        0     0     0    - /proc/sys/fs/binfmt_misc
+[INFO] fdisk -l:
+Disk /dev/nvme0n1: 238.47 GiB, 256060514304 bytes, 500118192 sectors
+Disk model: IM2P33F8BR2-256GB                       
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: E2776A72-1917-4DB0-A2C3-1C77B4A4BDF5
+
+Device             Start       End   Sectors   Size Type
+/dev/nvme0n1p1      2048    206847    204800   100M EFI System
+/dev/nvme0n1p2    206848    239615     32768    16M Microsoft reserved
+/dev/nvme0n1p3    239616 244678655 244439040 116.6G Microsoft basic data
+/dev/nvme0n1p4 244678656 245997567   1318912   644M Windows recovery environment
+/dev/nvme0n1p5 245997568 476684287 230686720   110G Linux filesystem
+/dev/nvme0n1p6 476684288 500118158  23433871  11.2G Linux swap
+
+
+Disk /dev/sda: 931.51 GiB, 1000204886016 bytes, 1953525168 sectors
+Disk model: WDC WD10SPZX-21Z
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+Disklabel type: gpt
+Disk identifier: 77814D85-C128-C049-B79F-C3BC76A5179F
+
+Device         Start        End    Sectors   Size Type
+/dev/sda1       2048  614402047  614400000   293G Linux filesystem
+/dev/sda2  614402048 1953523711 1339121664 638.5G Microsoft basic data
+
+-~~-~~-~~-~~-~~-~~- Preparacao do sistema -~~-~~-~~-~~-~~-~~-
+[LOG] Desabilitando XXXXXXX
+[ERROR] Nao foi possivel desabilitar modulo XXXXX
+
+-~~-~~-~~-~~-~~-~~- Iniciando benchmarks -~~-~~-~~-~~-~~-~~-
+[LOG] Iniciando testes: 26/10/2024 as 21:43:00
+
+-~~-~~-~~-~~-~~-~~- Benchmark sp/A -~~-~~-~~-~~-~~-~~-
+[LOG] Compilando benchmark sp/A
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd SP; make CLASS=A
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams sp A
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+gfortran -c  -O3 -fopenmp sp_data.f90
+sed -e 's/= 0/= 0/' blk_par0.h > blk_par.h_wk
+gfortran -c  -O3 -fopenmp sp.f90
+gfortran -c  -O3 -fopenmp initialize.f90
+gfortran -c  -O3 -fopenmp exact_solution.f90
+gfortran -c  -O3 -fopenmp exact_rhs.f90
+gfortran -c  -O3 -fopenmp set_constants.f90
+gfortran -c  -O3 -fopenmp adi.f90
+gfortran -c  -O3 -fopenmp rhs.f90
+gfortran -c  -O3 -fopenmp work_lhs.f90
+gfortran -c  -O3 -fopenmp x_solve.f90
+gfortran -c  -O3 -fopenmp ninvr.f90
+gfortran -c  -O3 -fopenmp y_solve.f90
+gfortran -c  -O3 -fopenmp pinvr.f90
+gfortran -c  -O3 -fopenmp z_solve.f90
+gfortran -c  -O3 -fopenmp tzetar.f90
+gfortran -c  -O3 -fopenmp add.f90
+gfortran -c  -O3 -fopenmp txinvr.f90
+gfortran -c  -O3 -fopenmp error.f90
+gfortran -c  -O3 -fopenmp verify.f90
+gfortran -O3 -fopenmp -o ../bin/sp.A.x sp.o sp_data.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o rhs.o work_lhs.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+
+[LOG] Benchmark sp/A iniciado: 26/10/2024 as 21:43:05
+[FILE] Arquivo criado: ../results/sp-A_26102024_21:43:05.log
+[INFO] zramctl:
+[LOG] Benchmark sp/A (0% ZRAM) iniciado: 26/10/2024 as 21:43:15
+[LOG] Benchmark sp/A (0% ZRAM) finalizado: 26/10/2024 as 21:43:25
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle         8G   4K   74B   12K       8 [SWAP]
+[LOG] Benchmark sp/A (50% ZRAM) iniciado: 26/10/2024 as 21:43:35
+[LOG] Benchmark sp/A (50% ZRAM) finalizado: 26/10/2024 as 21:43:45
+[LOG] Benchmark sp/A finalizado: 26/10/2024 as 21:43:45
+
+-~~-~~-~~-~~-~~-~~- Benchmark sp/B -~~-~~-~~-~~-~~-~~-
+[LOG] Compilando benchmark sp/B
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd SP; make CLASS=B
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams sp B
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+gfortran -c  -O3 -fopenmp sp_data.f90
+sed -e 's/= 0/= 0/' blk_par0.h > blk_par.h_wk
+gfortran -c  -O3 -fopenmp sp.f90
+gfortran -c  -O3 -fopenmp initialize.f90
+gfortran -c  -O3 -fopenmp exact_solution.f90
+gfortran -c  -O3 -fopenmp exact_rhs.f90
+gfortran -c  -O3 -fopenmp set_constants.f90
+gfortran -c  -O3 -fopenmp adi.f90
+gfortran -c  -O3 -fopenmp rhs.f90
+gfortran -c  -O3 -fopenmp work_lhs.f90
+gfortran -c  -O3 -fopenmp x_solve.f90
+gfortran -c  -O3 -fopenmp ninvr.f90
+gfortran -c  -O3 -fopenmp y_solve.f90
+gfortran -c  -O3 -fopenmp pinvr.f90
+gfortran -c  -O3 -fopenmp z_solve.f90
+gfortran -c  -O3 -fopenmp tzetar.f90
+gfortran -c  -O3 -fopenmp add.f90
+gfortran -c  -O3 -fopenmp txinvr.f90
+gfortran -c  -O3 -fopenmp error.f90
+gfortran -c  -O3 -fopenmp verify.f90
+gfortran -O3 -fopenmp -o ../bin/sp.B.x sp.o sp_data.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o rhs.o work_lhs.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+
+[LOG] Benchmark sp/B iniciado: 26/10/2024 as 21:43:49
+[FILE] Arquivo criado: ../results/sp-B_26102024_21:43:49.log
+[INFO] zramctl:
+[LOG] Benchmark sp/B (0% ZRAM) iniciado: 26/10/2024 as 21:43:59
+[LOG] Benchmark sp/B (0% ZRAM) finalizado: 26/10/2024 as 21:44:42
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle         8G   4K   74B   12K       8 [SWAP]
+[LOG] Benchmark sp/B (50% ZRAM) iniciado: 26/10/2024 as 21:44:53
+[LOG] Benchmark sp/B (50% ZRAM) finalizado: 26/10/2024 as 21:45:36
+[LOG] Benchmark sp/B finalizado: 26/10/2024 as 21:45:36
+
+-~~-~~-~~-~~-~~-~~- Benchmark sp/C -~~-~~-~~-~~-~~-~~-
+[LOG] Compilando benchmark sp/C
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd SP; make CLASS=C
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams sp C
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+gfortran -c  -O3 -fopenmp sp_data.f90
+sed -e 's/= 0/= 0/' blk_par0.h > blk_par.h_wk
+gfortran -c  -O3 -fopenmp sp.f90
+gfortran -c  -O3 -fopenmp initialize.f90
+gfortran -c  -O3 -fopenmp exact_solution.f90
+gfortran -c  -O3 -fopenmp exact_rhs.f90
+gfortran -c  -O3 -fopenmp set_constants.f90
+gfortran -c  -O3 -fopenmp adi.f90
+gfortran -c  -O3 -fopenmp rhs.f90
+gfortran -c  -O3 -fopenmp work_lhs.f90
+gfortran -c  -O3 -fopenmp x_solve.f90
+gfortran -c  -O3 -fopenmp ninvr.f90
+gfortran -c  -O3 -fopenmp y_solve.f90
+gfortran -c  -O3 -fopenmp pinvr.f90
+gfortran -c  -O3 -fopenmp z_solve.f90
+gfortran -c  -O3 -fopenmp tzetar.f90
+gfortran -c  -O3 -fopenmp add.f90
+gfortran -c  -O3 -fopenmp txinvr.f90
+gfortran -c  -O3 -fopenmp error.f90
+gfortran -c  -O3 -fopenmp verify.f90
+gfortran -O3 -fopenmp -o ../bin/sp.C.x sp.o sp_data.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o rhs.o work_lhs.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+
+[LOG] Benchmark sp/C iniciado: 26/10/2024 as 21:45:40
+[FILE] Arquivo criado: ../results/sp-C_26102024_21:45:40.log
+[INFO] zramctl:
+[LOG] Benchmark sp/C (0% ZRAM) iniciado: 26/10/2024 as 21:45:50
+[LOG] Benchmark sp/C (0% ZRAM) finalizado: 26/10/2024 as 21:48:49
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle         8G   4K   74B   12K       8 [SWAP]
+[LOG] Benchmark sp/C (50% ZRAM) iniciado: 26/10/2024 as 21:49:00
+[LOG] Benchmark sp/C (50% ZRAM) finalizado: 26/10/2024 as 21:51:59
+[LOG] Benchmark sp/C finalizado: 26/10/2024 as 21:51:59
+
+-~~-~~-~~-~~-~~-~~- Benchmark sp/D -~~-~~-~~-~~-~~-~~-
+[LOG] Compilando benchmark sp/D
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd SP; make CLASS=D
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams sp D
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+gfortran -c  -O3 -fopenmp sp_data.f90
+sed -e 's/= 0/= 0/' blk_par0.h > blk_par.h_wk
+gfortran -c  -O3 -fopenmp sp.f90
+gfortran -c  -O3 -fopenmp initialize.f90
+gfortran -c  -O3 -fopenmp exact_solution.f90
+gfortran -c  -O3 -fopenmp exact_rhs.f90
+gfortran -c  -O3 -fopenmp set_constants.f90
+gfortran -c  -O3 -fopenmp adi.f90
+gfortran -c  -O3 -fopenmp rhs.f90
+gfortran -c  -O3 -fopenmp work_lhs.f90
+gfortran -c  -O3 -fopenmp x_solve.f90
+gfortran -c  -O3 -fopenmp ninvr.f90
+gfortran -c  -O3 -fopenmp y_solve.f90
+gfortran -c  -O3 -fopenmp pinvr.f90
+gfortran -c  -O3 -fopenmp z_solve.f90
+gfortran -c  -O3 -fopenmp tzetar.f90
+gfortran -c  -O3 -fopenmp add.f90
+gfortran -c  -O3 -fopenmp txinvr.f90
+gfortran -c  -O3 -fopenmp error.f90
+gfortran -c  -O3 -fopenmp verify.f90
+gfortran -O3 -fopenmp -o ../bin/sp.D.x sp.o sp_data.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o rhs.o work_lhs.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/SP'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+
+[LOG] Benchmark sp/D iniciado: 26/10/2024 as 21:52:03
+[FILE] Arquivo criado: ../results/sp-D_26102024_21:52:03.log
+[INFO] zramctl:
+[LOG] Benchmark sp/D (0% ZRAM) iniciado: 26/10/2024 as 21:52:14
+[LOG] Benchmark sp/D (0% ZRAM) finalizado: 26/10/2024 as 22:53:28
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle         8G   4K   75B   12K       8 [SWAP]
+[LOG] Benchmark sp/D (50% ZRAM) iniciado: 26/10/2024 as 22:53:39
+[LOG] Benchmark sp/D (50% ZRAM) finalizado: 26/10/2024 as 23:54:24
+[LOG] Benchmark sp/D finalizado: 26/10/2024 as 23:54:24
+
+-~~-~~-~~-~~-~~-~~- Benchmark lu/A -~~-~~-~~-~~-~~-~~-
+[LOG] Compilando benchmark lu/A
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd LU; make CLASS=A VERSION=
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams lu A
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+gfortran -c  -O3 -fopenmp lu_data.f90
+gfortran -c  -O3 -fopenmp lu.f90
+gfortran -c  -O3 -fopenmp read_input.f90
+gfortran -c  -O3 -fopenmp domain.f90
+gfortran -c  -O3 -fopenmp setcoeff.f90
+gfortran -c  -O3 -fopenmp setbv.f90
+gfortran -c  -O3 -fopenmp exact.f90
+gfortran -c  -O3 -fopenmp setiv.f90
+gfortran -c  -O3 -fopenmp erhs.f90
+gfortran -c  -O3 -fopenmp ssor.f90
+gfortran -c  -O3 -fopenmp rhs.f90
+gfortran -c  -O3 -fopenmp l2norm.f90
+gfortran -c  -O3 -fopenmp jacld.f90
+gfortran -c  -O3 -fopenmp blts.f90
+gfortran -c  -O3 -fopenmp jacu.f90
+gfortran -c  -O3 -fopenmp buts.f90
+gfortran -c  -O3 -fopenmp error.f90
+gfortran -c  -O3 -fopenmp pintgr.f90
+gfortran -c  -O3 -fopenmp verify.f90
+gfortran -c  -O3 -fopenmp syncs.f90
+gfortran -O3 -fopenmp -o ../bin/lu.A.x lu.o lu_data.o read_input.o domain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o syncs.o 
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+
+[LOG] Benchmark lu/A iniciado: 26/10/2024 as 23:54:28
+[FILE] Arquivo criado: ../results/lu-A_26102024_23:54:28.log
+[INFO] zramctl:
+[LOG] Benchmark lu/A (0% ZRAM) iniciado: 26/10/2024 as 23:54:38
+[LOG] Benchmark lu/A (0% ZRAM) finalizado: 26/10/2024 as 23:54:45
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle         8G   4K   74B   12K       8 [SWAP]
+[LOG] Benchmark lu/A (50% ZRAM) iniciado: 26/10/2024 as 23:54:55
+[LOG] Benchmark lu/A (50% ZRAM) finalizado: 26/10/2024 as 23:55:02
+[LOG] Benchmark lu/A finalizado: 26/10/2024 as 23:55:02
+
+-~~-~~-~~-~~-~~-~~- Benchmark lu/B -~~-~~-~~-~~-~~-~~-
+[LOG] Compilando benchmark lu/B
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd LU; make CLASS=B VERSION=
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams lu B
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+gfortran -c  -O3 -fopenmp lu_data.f90
+gfortran -c  -O3 -fopenmp lu.f90
+gfortran -c  -O3 -fopenmp read_input.f90
+gfortran -c  -O3 -fopenmp domain.f90
+gfortran -c  -O3 -fopenmp setcoeff.f90
+gfortran -c  -O3 -fopenmp setbv.f90
+gfortran -c  -O3 -fopenmp exact.f90
+gfortran -c  -O3 -fopenmp setiv.f90
+gfortran -c  -O3 -fopenmp erhs.f90
+gfortran -c  -O3 -fopenmp ssor.f90
+gfortran -c  -O3 -fopenmp rhs.f90
+gfortran -c  -O3 -fopenmp jacld.f90
+gfortran -c  -O3 -fopenmp jacu.f90
+gfortran -c  -O3 -fopenmp error.f90
+gfortran -c  -O3 -fopenmp pintgr.f90
+gfortran -c  -O3 -fopenmp verify.f90
+gfortran -c  -O3 -fopenmp syncs.f90
+gfortran -O3 -fopenmp -o ../bin/lu.B.x lu.o lu_data.o read_input.o domain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o syncs.o 
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+
+[LOG] Benchmark lu/B iniciado: 26/10/2024 as 23:55:06
+[FILE] Arquivo criado: ../results/lu-B_26102024_23:55:06.log
+[INFO] zramctl:
+[LOG] Benchmark lu/B (0% ZRAM) iniciado: 26/10/2024 as 23:55:16
+[LOG] Benchmark lu/B (0% ZRAM) finalizado: 26/10/2024 as 23:55:43
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle         8G   4K   74B   12K       8 [SWAP]
+[LOG] Benchmark lu/B (50% ZRAM) iniciado: 26/10/2024 as 23:55:53
+[LOG] Benchmark lu/B (50% ZRAM) finalizado: 26/10/2024 as 23:56:20
+[LOG] Benchmark lu/B finalizado: 26/10/2024 as 23:56:20
+
+-~~-~~-~~-~~-~~-~~- Benchmark lu/C -~~-~~-~~-~~-~~-~~-
+[LOG] Compilando benchmark lu/C
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd LU; make CLASS=C VERSION=
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams lu C
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+gfortran -c  -O3 -fopenmp lu_data.f90
+gfortran -c  -O3 -fopenmp lu.f90
+gfortran -c  -O3 -fopenmp read_input.f90
+gfortran -c  -O3 -fopenmp domain.f90
+gfortran -c  -O3 -fopenmp setcoeff.f90
+gfortran -c  -O3 -fopenmp setbv.f90
+gfortran -c  -O3 -fopenmp exact.f90
+gfortran -c  -O3 -fopenmp setiv.f90
+gfortran -c  -O3 -fopenmp erhs.f90
+gfortran -c  -O3 -fopenmp ssor.f90
+gfortran -c  -O3 -fopenmp rhs.f90
+gfortran -c  -O3 -fopenmp jacld.f90
+gfortran -c  -O3 -fopenmp jacu.f90
+gfortran -c  -O3 -fopenmp error.f90
+gfortran -c  -O3 -fopenmp pintgr.f90
+gfortran -c  -O3 -fopenmp verify.f90
+gfortran -c  -O3 -fopenmp syncs.f90
+gfortran -O3 -fopenmp -o ../bin/lu.C.x lu.o lu_data.o read_input.o domain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o syncs.o 
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+
+[LOG] Benchmark lu/C iniciado: 26/10/2024 as 23:56:24
+[FILE] Arquivo criado: ../results/lu-C_26102024_23:56:24.log
+[INFO] zramctl:
+[LOG] Benchmark lu/C (0% ZRAM) iniciado: 26/10/2024 as 23:56:35
+[LOG] Benchmark lu/C (0% ZRAM) finalizado: 26/10/2024 as 23:58:27
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle         8G   4K   74B   12K       8 [SWAP]
+[LOG] Benchmark lu/C (50% ZRAM) iniciado: 26/10/2024 as 23:58:37
+[LOG] Benchmark lu/C (50% ZRAM) finalizado: 27/10/2024 as 00:00:29
+[LOG] Benchmark lu/C finalizado: 27/10/2024 as 00:00:29
+
+-~~-~~-~~-~~-~~-~~- Benchmark lu/D -~~-~~-~~-~~-~~-~~-
+[LOG] Compilando benchmark lu/D
+make: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd LU; make CLASS=D VERSION=
+make[1]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/sys'
+../sys/setparams lu D
+make[2]: Entering directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+gfortran -c  -O3 -fopenmp lu_data.f90
+gfortran -c  -O3 -fopenmp lu.f90
+gfortran -c  -O3 -fopenmp read_input.f90
+gfortran -c  -O3 -fopenmp domain.f90
+gfortran -c  -O3 -fopenmp setcoeff.f90
+gfortran -c  -O3 -fopenmp setbv.f90
+gfortran -c  -O3 -fopenmp exact.f90
+gfortran -c  -O3 -fopenmp setiv.f90
+gfortran -c  -O3 -fopenmp erhs.f90
+gfortran -c  -O3 -fopenmp ssor.f90
+gfortran -c  -O3 -fopenmp rhs.f90
+gfortran -c  -O3 -fopenmp jacld.f90
+gfortran -c  -O3 -fopenmp jacu.f90
+gfortran -c  -O3 -fopenmp error.f90
+gfortran -c  -O3 -fopenmp pintgr.f90
+gfortran -c  -O3 -fopenmp verify.f90
+gfortran -c  -O3 -fopenmp syncs.f90
+gfortran -O3 -fopenmp -o ../bin/lu.D.x lu.o lu_data.o read_input.o domain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o syncs.o 
+make[2]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+make[1]: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP/LU'
+make: Leaving directory '/home/tuildes/workspace/ZRAM/src/NPB-OMP'
+
+[LOG] Benchmark lu/D iniciado: 27/10/2024 as 00:00:33
+[FILE] Arquivo criado: ../results/lu-D_27102024_00:00:33.log
+[INFO] zramctl:
+[LOG] Benchmark lu/D (0% ZRAM) iniciado: 27/10/2024 as 00:00:43
+[LOG] Benchmark lu/D (0% ZRAM) finalizado: 27/10/2024 as 00:36:47
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle         8G   4K   74B   12K       8 [SWAP]
+[LOG] Benchmark lu/D (50% ZRAM) iniciado: 27/10/2024 as 00:36:57
+[LOG] Benchmark lu/D (50% ZRAM) finalizado: 27/10/2024 as 01:12:59
+[LOG] Benchmark lu/D finalizado: 27/10/2024 as 01:12:59
+
+-~~-~~-~~-~~-~~-~~- Finalizando benchmarks -~~-~~-~~-~~-~~-~~-
+[LOG] Finalizando testes: 27/10/2024 as 01:12:59
