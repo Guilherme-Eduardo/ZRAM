@@ -1,5 +1,23 @@
-para [0, 25, 50, 75, 100] % ZRAM
-    para todo BENCHMARK
-        para classe A ate B
-            Rodar Benchmarks
-            Imprimir resultados
+desabiltiar_turbo_boost
+desabilitar_DVFS
+desabiltiar_CPU_Frecuency_Scaling
+
+setar_o_numero_de_threads <- nucleos do processador
+
+imprime_especifacoes_maquina
+imprime_tempo_estimado
+
+para todo BENCHMARKS
+    para toda CLASSE
+        compilar_benchmark/classe
+
+        para todo [0, 25, 50, 75, 100] % ZRAM
+            se zram == 0%
+                desabilitar_zram
+                rodar_benchmark
+                imprimir_resultados
+            se nao
+                habilitar_%_zram
+                para todo ALGORITMOS_COMPRESSAO
+                    rodar_benchmark
+                    imprimir_resultados
