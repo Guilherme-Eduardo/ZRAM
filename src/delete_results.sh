@@ -9,11 +9,13 @@ read C
 
 if [[ $C = 'y' ]]; then
     echo "Deletando"
-    rm -f $RESULT_SOURCE/*.log
-    rm -f $RESULT_SOURCE/EXECUTION_bm*
+    rm -f $RESULT_SOURCE/*.csv
+    rm -f $RESULT_SOURCE/*_EXECUTION_bm*
+    rm -rf $RESULT_SOURCE/*_*_benchmarks
 
     echo "Limpando compilacao"
     make -C $BENCHMARK_DIR clean 
+    rm -f $BENCHMARK_DIR/bin/*.x
 else
     echo "Abortando..."
 fi

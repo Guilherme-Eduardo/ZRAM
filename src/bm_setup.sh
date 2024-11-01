@@ -36,6 +36,13 @@ write_logs $LOG_ARCHIVE "[INFO] Classes a serem executadas: ${BENCH_CLASSES[*]}"
 write_logs $LOG_ARCHIVE "[INFO] Porcentagem de ZRAM analisadas: ${ZRAM_PORC[*]}"
 write_logs $LOG_ARCHIVE ""
 
+touch $CSV_RESULT # Arquivo de LOG desta execucao
+echo "[FILE] Arquivo CSV de resultado criado: ${CSV_RESULT}"
+csv_writer_title $CSV_RESULT
+
+mkdir "${DIR_BENCH_RESULT}"
+echo "[FILE] Criado diretorio de trabalho: ${DIR_BENCH_RESULT}/"
+
 # Sobre a maquina que esta rodando
 write_logs_title $LOG_ARCHIVE "Maquina dos testes"
 write_logs $LOG_ARCHIVE "[INFO] lsb_release -a:"
@@ -53,10 +60,10 @@ fdisk -l >> $LOG_ARCHIVE
 write_logs $LOG_ARCHIVE ""
 
 # Desabilitar os modulos para testes
-write_logs_title $LOG_ARCHIVE "Preparacao do sistema"
-write_logs $LOG_ARCHIVE "[LOG] Desabilitando XXXXXXX"
-write_logs $LOG_ARCHIVE "[ERROR] Nao foi possivel desabilitar modulo XXXXX"
-write_logs $LOG_ARCHIVE ""
+# write_logs_title $LOG_ARCHIVE "Preparacao do sistema"
+# write_logs $LOG_ARCHIVE "[LOG] Desabilitando XXXXXXX"
+# write_logs $LOG_ARCHIVE "[ERROR] Nao foi possivel desabilitar modulo XXXXX"
+# write_logs $LOG_ARCHIVE ""
 # set mem_limit = 0
 
 # Marcacao de inicio
@@ -85,7 +92,7 @@ do
         write_logs $LOG_ARCHIVE "[LOG] Benchmark ${bm}/${cl} iniciado: $(date +"%d/%m/%Y as %H:%M:%S")"
 
         # Criar arquivo de resultado
-        RESULT_ARCHIVE="${RESULT_SOURCE}/${bm}-${cl}_$(date +"%d%m%Y_%H:%M:%S").log"
+        RESULT_ARCHIVE="${DIR_BENCH_RESULT}/${bm}-${cl}.log"
         touch $RESULT_ARCHIVE
         write_logs $LOG_ARCHIVE "[FILE] Arquivo criado: ${RESULT_ARCHIVE}"
 
@@ -115,28 +122,40 @@ do
                 sleep 10 # Ter certeza que desabilitou
             fi
 
-            # Identificacao do zram
-            echo "[INFO] Iniciado benchmark com ${zr}% (0 gb) de ZRAM" >> $RESULT_ARCHIVE
-            echo "[TIME] Benchmark iniciado: $(date +"%d/%m/%Y as %H:%M:%S")" >> $RESULT_ARCHIVE
-            write_logs $LOG_ARCHIVE "[LOG] Benchmark ${bm}/${cl} (${zr}% ZRAM) iniciado: $(date +"%d/%m/%Y as %H:%M:%S")"
+            for i in $( eval echo {0..$NUM_OF_REPETITIONS} )
+            do
+                
+                # Identificacao do zram
+                START_BM_DATE="$(date +"%d/%m/%Y %H:%M:%S")"
+                echo "[INFO] Teste $i" >> $RESULT_ARCHIVE
+                echo "[INFO] Iniciado benchmark com ${zr}% (0 gb) de ZRAM" >> $RESULT_ARCHIVE
+                echo "[TIME] Benchmark iniciado: $START_BM_DATE" >> $RESULT_ARCHIVE
+                write_logs $LOG_ARCHIVE "[LOG] Benchmark ${bm}/${cl} (${zr}% ZRAM) iniciado: $START_BM_DATE"
+                write_logs $LOG_ARCHIVE "[LOG] Teste $i iniciado: $START_BM_DATE"
 
-            if [ $NO_ZRAM_DEBUGGER -eq 0 ]; then
-                show_zram_stats $RESULT_ARCHIVE
-            fi
+                if [ $NO_ZRAM_DEBUGGER -eq 0 ]; then
+                    show_zram_stats $RESULT_ARCHIVE
+                fi
 
-            # Executando benchmark
-            # EXECUTABLE="$BENCHMARK_DIR/bin/$bm.$cl.x"
-            # { time "$EXECUTABLE"; } >> $RESULT_ARCHIVE 2>&1
-            # if [ $? -nt 0 ]; then
-            #     write_logs $LOG_ARCHIVE "[ERROR] Erro na execucao do benchmark"
-            # fi
+                # Executando benchmark
+                EXECUTABLE="$BENCHMARK_DIR/bin/$bm.$cl.x"
+                BM_DURATION="$({ time $EXECUTABLE; } 2>&1 | grep real | awk '{print $2}')"
+                echo "$BM_DURATION" >> $RESULT_ARCHIVE
+                if [ $? -nt 0 ]; then
+                    write_logs $LOG_ARCHIVE "[ERROR] Erro na execucao do benchmark"
+                fi
 
-            # Salvar resultados
-            if [ $NO_ZRAM_DEBUGGER -eq 0 ]; then
-                show_zram_stats $RESULT_ARCHIVE
-            fi
-            write_logs $LOG_ARCHIVE "[LOG] Benchmark ${bm}/${cl} (${zr}% ZRAM) finalizado: $(date +"%d/%m/%Y as %H:%M:%S")"
-            echo "[TIME] Benchmark finalizado: $(date +"%d/%m/%Y as %H:%M:%S")" >> $RESULT_ARCHIVE
+                # Salvar resultados
+                if [ $NO_ZRAM_DEBUGGER -eq 0 ]; then
+                    show_zram_stats $RESULT_ARCHIVE
+                fi
+
+                END_BM_DATE="$(date +"%d/%m/%Y %H:%M:%S")"
+                write_logs $LOG_ARCHIVE "[LOG] Benchmark ${bm}/${cl} (${zr}% ZRAM) finalizado: $END_BM_DATE"
+                echo "[TIME] Benchmark finalizado: $END_BM_DATE" >> $RESULT_ARCHIVE
+                write_logs $LOG_ARCHIVE "[INFO] Escrevendo resultados no csv..."
+                csv_writer $CSV_RESULT $i "$START_BM_DATE" "$END_BM_DATE" "$BM_DURATION" $bm $cl $zr 0
+            done
         done
 
         # Log de finalizacao
