@@ -7,31 +7,31 @@ function check_packages() {
     
     # Pacote "zram"
     if [ $(dpkg -l zram-config &>/dev/null) ]; then
-        echo 'Pacote "zram-config" nao instalado'
+        echo "Pacote "zram-config" nao instalado"
         exit 1
     fi
 
     # Pacote "fdisk"
     if [ $(dpkg -l fdisk &>/dev/null) ]; then
-        echo 'Pacote "fdisk" nao instalado'
+        echo "Pacote "fdisk" nao instalado"
         exit 1
     fi
 
     # Pacote "lsb-release"
     if [ $(dpkg -l fdisk &>/dev/null) ]; then
-        echo 'Pacote "lbs-release" nao instalado'
+        echo "Pacote "lbs-release" nao instalado"
         exit 1
     fi
 
     # Pacote "make"
     if [ $(dpkg -l gfortran &>/dev/null) ]; then
-        echo 'Pacote "gfortran" nao instalado'
+        echo "Pacote "gfortran" nao instalado"
         exit 1
     fi
 
     # Pacote "gcc"
     if [ $(dpkg -l gcc &>/dev/null) ]; then
-        echo 'Pacote "gcc" nao instalado'
+        echo "Pacote "gcc" nao instalado"
         exit 1
     fi
 }
@@ -116,7 +116,7 @@ function change_zram_porc() {
     fi
 
     # Verifica se eh OPENSUSE
-    if [ $(lsb_release -si 2>/dev/null) = 'openSUSE' ]; then
+    if [ $(lsb_release -si 2>/dev/null) = "openSUSE" ]; then
 	if [ $PORC -eq 0 ]; then
             sudo zramswapoff
 	    #systemctl disable --now zramswap.service
@@ -163,4 +163,17 @@ function change_zram_porc() {
 	zramctl >> $LOG_ARCHIVE
 
     return 0
+}
+
+### FUNCOES DE CSV ###
+function csv_writer_title() {
+    CSV=$1
+
+    printf ""Repetion",\"Start date\",\"End date\",Duration,Benchmark,\"Class\",\"Zram %% (gb)\"" >> $CSV
+}
+
+function csv_writer() {
+    CSV=$1
+
+    printf "\n%d,\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%3d%% (%2d gb)\"" $2 "$3" "$4" "$5" $6 $7 $8 $9 >> $CSV
 }
