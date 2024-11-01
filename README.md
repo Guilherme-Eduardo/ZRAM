@@ -1,5 +1,10 @@
 # ZRAM
 
+### Algoritmos de ZRAM suportados
+
+* Ative o ZRAM
+* cat /sys/block/zram0/comp_algorithm
+
 http://www.nas.nasa.gov/Software/NPB
 
 NAS Parallel Benchmarks Version 3.4.3 (NPB3.4.3)
