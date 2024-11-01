@@ -17,4 +17,4 @@ CSV_RESULT="${RESULT_SOURCE}/$(date +"%d%m%Y_%H%M%S")_RESULT.csv"
 
 ### Variaveis de debug ###
 
-NO_ZRAM_DEBUGGER=1 # Ative se quiser INATIVAR testes com zram
+NO_ZRAM_DEBUGGER=0 # Ative se quiser INATIVAR testes com zram
