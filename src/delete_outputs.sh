@@ -1,11 +1,13 @@
 #!/bin/bash
 
-source ./bm_env.sh
+source ./env.sh
 
 echo "Voce quer realmente deltar TODOS os resultados e logs?"
 echo "Esta escolha nao tem volta! [y|N]"
 
 read C
+
+echo "Memoria: $memoria_calculada"
 
 if [[ $C = 'y' ]]; then
     echo "Deletando"

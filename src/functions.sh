@@ -115,6 +115,9 @@ function change_zram_porc() {
         return 1 
     fi
 
+    TOTAL_MEMORY_KB=$(grep MemTotal /proc/meminfo | awk '{print $2}')
+    ZRAM_DISKSIZE=$((TOTAL_MEMORY_KB * PORC / 100))
+
     # Verifica se eh OPENSUSE
     if [ $(lsb_release -si 2>/dev/null) = "openSUSE" ]; then
 	if [ $PORC -eq 0 ]; then
@@ -133,7 +136,7 @@ function change_zram_porc() {
 
             # TODO: TROCAR PARA O ESPECIFICADO NO FUTURO
             echo 1 > /sys/block/zram0/reset
-            echo 8G > /sys/block/zram0/disksize
+            echo ${ZRAM_DISKSIZE}KB > /sys/block/zram0/disksize
             
 	    sudo zramswapon
     	fi
@@ -169,7 +172,7 @@ function change_zram_porc() {
 function csv_writer_title() {
     CSV=$1
 
-    printf ""Repetion",\"Start date\",\"End date\",Duration,Benchmark,\"Class\",\"Zram %% (gb)\"" >> $CSV
+    printf ""Repetition",\"Start date\",\"End date\",Duration,Benchmark,\"Class\",\"Zram %% (gb)\"" >> $CSV
 }
 
 function csv_writer() {

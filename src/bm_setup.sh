@@ -1,16 +1,13 @@
 #!/bin/bash
 
-# VERSAO 1.1
+# VERSAO 1.3
 # SCRIPT DE BENCHMARK NASA - ZRAM
-#
-# FAZ OS TESTES DE BENCHMARKS E SWITCH DE ZRAM
-# UPDATE: Imprime a maquina atual
 #
 # @tuildes
 
 ### Arquivos de funcoes ###
-source ./bm_functions.sh
-source ./bm_env.sh
+source ./functions.sh
+source ./env.sh
 
 ### Verificar pacotes ###
 check_packages
@@ -60,11 +57,10 @@ fdisk -l >> $LOG_ARCHIVE
 write_logs $LOG_ARCHIVE ""
 
 # Desabilitar os modulos para testes
-# write_logs_title $LOG_ARCHIVE "Preparacao do sistema"
-# write_logs $LOG_ARCHIVE "[LOG] Desabilitando XXXXXXX"
-# write_logs $LOG_ARCHIVE "[ERROR] Nao foi possivel desabilitar modulo XXXXX"
-# write_logs $LOG_ARCHIVE ""
-# set mem_limit = 0
+write_logs_title $LOG_ARCHIVE "Preparacao do sistema"
+write_logs $LOG_ARCHIVE "[LOG] Desabilitando DVFS (CPU frequency scaling) usando cpufrequtils"
+write_logs $LOG_ARCHIVE "[LOG] Desabilitando Turbo boost (echo "1" > /sys/devices/system/cpu/intel_pstate/no_turbo)"
+write_logs $LOG_ARCHIVE ""
 
 # Marcacao de inicio
 write_logs_title $LOG_ARCHIVE "Iniciando benchmarks"
