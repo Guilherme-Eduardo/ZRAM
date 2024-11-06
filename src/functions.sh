@@ -120,26 +120,21 @@ function change_zram_porc() {
 
     # Verifica se eh OPENSUSE
     if [ $(lsb_release -si 2>/dev/null) = "openSUSE" ]; then
-	if [ $PORC -eq 0 ]; then
+        if [ $PORC -eq 0 ]; then
             sudo zramswapoff
-	    #systemctl disable --now zramswap.service
-
-        # Habilitar zram
         else
-	    sudo zramswapoff
-	    # systemctl enable --now zramswap.service
+            sudo zramswapoff
 
             # Se precisar, habilita
             if ! lsmod | grep -q zram; then
                 sudo modprobe zram
             fi
 
-            # TODO: TROCAR PARA O ESPECIFICADO NO FUTURO
             echo 1 > /sys/block/zram0/reset
             echo ${ZRAM_DISKSIZE}KB > /sys/block/zram0/disksize
-            
-	    sudo zramswapon
-    	fi
+                
+            sudo zramswapon
+        fi
     else
     	# Desabilitar zram
     	if [ $PORC -eq 0 ]; then
@@ -172,11 +167,15 @@ function change_zram_porc() {
 function csv_writer_title() {
     CSV=$1
 
-    printf ""Repetition",\"Start date\",\"End date\",Duration,Benchmark,\"Class\",\"Zram %% (gb)\"" >> $CSV
+    printf "Repetition,\"Start date\",\"End date\",Duration,Benchmark,\"Class\",\"Zram %% (gb)\"," >> $CSV
+    printf "\"Tempo de CPU\",\"Memoria media (KB)\",\"Falhas maiores\",\"Falhas menores\"," >> $CSV
+    printf "Swaps,\"Troca de contextos\",\"Troca de contextos voluntarias\",\"Uso de cpu\"" >> $CSV
 }
 
 function csv_writer() {
     CSV=$1
 
-    printf "\n%d,\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%3d%% (%2d gb)\"" $2 "$3" "$4" "$5" $6 $7 $8 $9 >> $CSV
+    printf "\n%d,\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%3d%% (%2d gb)\"," $2 "$3" "$4" "$5" $6 $7 $8 $9 >> $CSV
+    printf "\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\"" "${10}" "${11}" "${12}" "${13}" "${14}" "${15}" "${16}" "${17}" >> $CSV
+
 }

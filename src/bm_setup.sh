@@ -118,7 +118,7 @@ do
                 sleep 10 # Ter certeza que desabilitou
             fi
 
-            for i in $( eval echo {0..$NUM_OF_REPETITIONS} )
+            for i in $( eval echo {1..$NUM_OF_REPETITIONS} )
             do
                 
                 # Identificacao do zram
@@ -135,11 +135,21 @@ do
 
                 # Executando benchmark
                 EXECUTABLE="$BENCHMARK_DIR/bin/$bm.$cl.x"
-                BM_DURATION="$({ time $EXECUTABLE; } 2>&1 | grep real | awk '{print $2}')"
-                echo "$BM_DURATION" >> $RESULT_ARCHIVE
+                OUTPUT_TIME=$(/usr/bin/time -f "Tempo real: %E\nSegundos de CPU: %S\nMedia de Memoria total (KB): %K\nMajor page fault: %F\nMinor page faults: %R\nSwaps totais: %W\nTrocas de contexto: %c\nEsperas com troca de contexto voluntarias: %w\nUso da CPU para este JOB: %P\n" $EXECUTABLE 2>&1)
+                echo "$OUTPUT_TIME" >> $RESULT_ARCHIVE
                 if [ $? -nt 0 ]; then
                     write_logs $LOG_ARCHIVE "[ERROR] Erro na execucao do benchmark"
                 fi
+
+                real_time=$(echo "$OUTPUT_TIME" | grep "Tempo real" | awk '{print $3}')
+                cpu_seconds=$(echo "$OUTPUT_TIME" | grep "Segundos de CPU" | awk '{print $4}')
+                avg_memory=$(echo "$OUTPUT_TIME" | grep "Media de Memoria total (KB)" | awk '{print $6}')
+                major_faults=$(echo "$OUTPUT_TIME" | grep "Major page fault:" | awk '{print $4}')
+                minor_faults=$(echo "$OUTPUT_TIME" | grep "Minor page faults:" | awk '{print $4}')
+                SWAPS=$(echo "$OUTPUT_TIME" | grep "Swaps totais:" | awk '{print $3}')
+                context_switches=$(echo "$OUTPUT_TIME" | grep "Trocas de contexto:" | awk '{print $4}')
+                voluntary_context_switches=$(echo "$OUTPUT_TIME" | grep "Esperas com troca de contexto voluntarias:" | awk '{print $7}')
+                cpu_usage=$(echo "$OUTPUT_TIME" | grep "Uso da CPU para este JOB:" | awk '{print $7}')
 
                 # Salvar resultados
                 if [ $NO_ZRAM_DEBUGGER -eq 0 ]; then
@@ -150,7 +160,7 @@ do
                 write_logs $LOG_ARCHIVE "[LOG] Benchmark ${bm}/${cl} (${zr}% ZRAM) finalizado: $END_BM_DATE"
                 echo "[TIME] Benchmark finalizado: $END_BM_DATE" >> $RESULT_ARCHIVE
                 write_logs $LOG_ARCHIVE "[INFO] Escrevendo resultados no csv..."
-                csv_writer $CSV_RESULT $i "$START_BM_DATE" "$END_BM_DATE" "$BM_DURATION" $bm $cl $zr 0
+                csv_writer $CSV_RESULT $i "$START_BM_DATE" "$END_BM_DATE" "$real_time" "$bm" "$cl" "$zr" 0 "$cpu_seconds" $avg_memory $major_faults $minor_faults $SWAPS $context_switches $voluntary_context_switches $cpu_usage
             done
         done
 
