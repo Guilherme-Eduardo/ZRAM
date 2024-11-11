@@ -55,15 +55,6 @@ function show_zram_stats() {
     if [[ $(zramctl) ]]; then
 
 	LOC="/sys/block/zram0"	
-    # Impressao dos resultados
-    # echo "---------------- RESULTADOS ZRAM (bytes) ---------------- " >> $AN
-    # printf "%30s | %20d\n" "Swaps realizados" "$(cat /sys/block/zram0/stat)" >> $AN
-    # printf "%30s | %20d\n" "Dados originais" "$(cat /sys/block/zram0/orig_data_size)" >> $AN
-    # printf "%30s | %20d\n" "Dados comprimidos" "$(cat /sys/block/zram0/compr_data_size)" >> $AN
-    # printf "%30s | %20d\n" "Memoria usada total" "$(cat /sys/block/zram0/mem_used_total)" >> $AN
-    # printf "%30s | %20d\n" "Tamanho original" "$(cat /sys/block/zram0/orig_data_size)" >> $AN
-    # printf "%30s | %20d\n" "Tamanho compactado" "$(cat /sys/block/zram0/compr_data_size)" >> $AN
-    # echo "--------------------------------------------------------- " >> $AN
 
 	echo "---------------- RESULTADOS ZRAM (bytes) ---------------- " >> $AN
 
@@ -73,17 +64,17 @@ function show_zram_stats() {
 	echo "DISKSIZE: " >> $AN
 	cat "${LOC}/disksize" >> $AN
 	echo "INITSTATE: " >> $AN
-    cat "${LOC}/disksize" >> $AN
+    cat "${LOC}/initstate" >> $AN
     echo "WRITEBACK_LIMIT_ENABLE: " >> $AN
-    cat "${LOC}/disksize" >> $AN
+    cat "${LOC}/writeback_limit_enable" >> $AN
     echo "MAX_COMP_STREAMS: " >> $AN
-    cat "${LOC}/disksize" >> $AN
+    cat "${LOC}/max_comp+streams" >> $AN
     echo "COMP_ALGORITHM: " >> $AN
-    cat "${LOC}/disksize" >> $AN
+    cat "${LOC}/comp_algorithm" >> $AN
     echo "DEBUG_STAT: " >> $AN
-    cat "${LOC}/disksize" >> $AN
+    cat "${LOC}/debug_stat" >> $AN
     echo "BACKING_DEV: " >> $AN
-    cat "${LOC}/disksize" >> $AN
+    cat "${LOC}/backing_dev" >> $AN
 
 	# Precisa melhorar essas saidas
     echo "STATS: " >> $AN
@@ -138,11 +129,11 @@ function change_zram_porc() {
     else
     	# Desabilitar zram
     	if [ $PORC -eq 0 ]; then
-        	sudo systemctl disable --now zramswap.service 
+        	sudo swapoff /dev/zram0 # Desabilitar
+
     	# Habilitar zram
     	else
-        	sudo systemctl enable --now zramswap.service
-        	sudo swapoff /dev/zram0
+        	sudo swapoff /dev/zram0 # Desabiliar para trocar
 
         	# Se precisar, habilita
         	if ! lsmod | grep -q zram; then
@@ -151,7 +142,7 @@ function change_zram_porc() {
 
         	# TODO: TROCAR PARA O ESPECIFICADO NO FUTURO
        		echo 1 > /sys/block/zram0/reset
-        	echo 8G > /sys/block/zram0/disksize
+        	echo ${ZRAM_DISKSIZE}KB > /sys/block/zram0/disksize
         	sudo mkswap /dev/zram0
         	sudo swapon /dev/zram0
     	fi
