@@ -1,7 +1,0 @@
-# Remover arquivos de compilacao
-**.o
-
-**.mod
-**/blk_par.h
-**npbparams.h
-**.x
