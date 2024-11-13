@@ -20,5 +20,5 @@ CSV_RESULT="${RESULT_SOURCE}/$(date +"%d%m%Y_%H%M%S")_RESULT.csv"
 # Por enquanto desabilitar isto, apenas gera a nao habilitacao do zram
 # O teste continuara igual
 # Entao ele fara o teste para 50% de zram, mas se habilitar de fato
-NO_ZRAM_DEBUGGER=1 # 1 PARA DESABILITAR ZRAM
+NO_ZRAM_DEBUGGER=0 # 1 PARA DESABILITAR ZRAM
 NO_BENCHMARKS_RESULTS=1 # 1 PARA SEM DIRETORIO DE RESULTADOS PARA CADA BENCHMARK

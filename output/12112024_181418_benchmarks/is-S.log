@@ -1,0 +1,788 @@
+-~~-~~-~~-~~-~~-~~- Benchmark is - classe S -~~-~~-~~-~~-~~-~~-
+[TIME] Benchmark totalmente iniciado: 12/11/2024 as 18:14:37
+
+-~~-~~-~~-~~-~~-~~- 0% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Teste 1
+[INFO] Iniciado benchmark com 0% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 12/11/2024 18:14:47
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - IS Benchmark
+
+ Size:  65536  (class S)
+ Iterations:  10
+ Number of available threads:  4
+
+
+
+ IS Benchmark Completed
+ Class           =                        S
+ Size            =                    65536
+ Iterations      =                       10
+ Time in seconds =                     0.00
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                   331.26
+ Mop/s/thread    =                    82.81
+ Operation type  =              keys ranked
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              11 Nov 2024
+
+ Compile options:
+    CC           = gcc
+    CLINK        = $(CC)
+    C_LIB        = -lm
+    C_INC        = (none)
+    CFLAGS       = -O3 -fopenmp
+    CLINKFLAGS   = $(CFLAGS)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 0:00.02
+Segundos de CPU: 0.00
+Media de Memoria total (KB): 0
+Major page fault: 1
+Minor page faults: 231
+Swaps totais: 0
+Trocas de contexto: 4
+Esperas com troca de contexto voluntarias: 3
+Uso da CPU para este JOB: 157%
+[TIME] Benchmark finalizado: 12/11/2024 18:14:47
+[INFO] Teste 2
+[INFO] Iniciado benchmark com 0% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 12/11/2024 18:14:47
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - IS Benchmark
+
+ Size:  65536  (class S)
+ Iterations:  10
+ Number of available threads:  4
+
+
+
+ IS Benchmark Completed
+ Class           =                        S
+ Size            =                    65536
+ Iterations      =                       10
+ Time in seconds =                     0.00
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                   327.85
+ Mop/s/thread    =                    81.96
+ Operation type  =              keys ranked
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              11 Nov 2024
+
+ Compile options:
+    CC           = gcc
+    CLINK        = $(CC)
+    C_LIB        = -lm
+    C_INC        = (none)
+    CFLAGS       = -O3 -fopenmp
+    CLINKFLAGS   = $(CFLAGS)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 0:00.00
+Segundos de CPU: 0.00
+Media de Memoria total (KB): 0
+Major page fault: 0
+Minor page faults: 230
+Swaps totais: 0
+Trocas de contexto: 5
+Esperas com troca de contexto voluntarias: 1
+Uso da CPU para este JOB: 340%
+[TIME] Benchmark finalizado: 12/11/2024 18:14:47
+[INFO] Teste 3
+[INFO] Iniciado benchmark com 0% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 12/11/2024 18:14:47
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - IS Benchmark
+
+ Size:  65536  (class S)
+ Iterations:  10
+ Number of available threads:  4
+
+
+
+ IS Benchmark Completed
+ Class           =                        S
+ Size            =                    65536
+ Iterations      =                       10
+ Time in seconds =                     0.00
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                   335.91
+ Mop/s/thread    =                    83.98
+ Operation type  =              keys ranked
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              11 Nov 2024
+
+ Compile options:
+    CC           = gcc
+    CLINK        = $(CC)
+    C_LIB        = -lm
+    C_INC        = (none)
+    CFLAGS       = -O3 -fopenmp
+    CLINKFLAGS   = $(CFLAGS)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 0:00.00
+Segundos de CPU: 0.00
+Media de Memoria total (KB): 0
+Major page fault: 0
+Minor page faults: 231
+Swaps totais: 0
+Trocas de contexto: 5
+Esperas com troca de contexto voluntarias: 1
+Uso da CPU para este JOB: 340%
+[TIME] Benchmark finalizado: 12/11/2024 18:14:47
+[INFO] Teste 4
+[INFO] Iniciado benchmark com 0% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 12/11/2024 18:14:47
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - IS Benchmark
+
+ Size:  65536  (class S)
+ Iterations:  10
+ Number of available threads:  4
+
+
+
+ IS Benchmark Completed
+ Class           =                        S
+ Size            =                    65536
+ Iterations      =                       10
+ Time in seconds =                     0.00
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                   326.25
+ Mop/s/thread    =                    81.56
+ Operation type  =              keys ranked
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              11 Nov 2024
+
+ Compile options:
+    CC           = gcc
+    CLINK        = $(CC)
+    C_LIB        = -lm
+    C_INC        = (none)
+    CFLAGS       = -O3 -fopenmp
+    CLINKFLAGS   = $(CFLAGS)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 0:00.00
+Segundos de CPU: 0.00
+Media de Memoria total (KB): 0
+Major page fault: 0
+Minor page faults: 232
+Swaps totais: 0
+Trocas de contexto: 4
+Esperas com troca de contexto voluntarias: 1
+Uso da CPU para este JOB: 360%
+[TIME] Benchmark finalizado: 12/11/2024 18:14:47
+[INFO] Teste 5
+[INFO] Iniciado benchmark com 0% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 12/11/2024 18:14:47
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - IS Benchmark
+
+ Size:  65536  (class S)
+ Iterations:  10
+ Number of available threads:  4
+
+
+
+ IS Benchmark Completed
+ Class           =                        S
+ Size            =                    65536
+ Iterations      =                       10
+ Time in seconds =                     0.00
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                   323.08
+ Mop/s/thread    =                    80.77
+ Operation type  =              keys ranked
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              11 Nov 2024
+
+ Compile options:
+    CC           = gcc
+    CLINK        = $(CC)
+    C_LIB        = -lm
+    C_INC        = (none)
+    CFLAGS       = -O3 -fopenmp
+    CLINKFLAGS   = $(CFLAGS)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 0:00.00
+Segundos de CPU: 0.00
+Media de Memoria total (KB): 0
+Major page fault: 0
+Minor page faults: 231
+Swaps totais: 0
+Trocas de contexto: 2
+Esperas com troca de contexto voluntarias: 1
+Uso da CPU para este JOB: 360%
+[TIME] Benchmark finalizado: 12/11/2024 18:14:47
+
+-~~-~~-~~-~~-~~-~~- 50% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Teste 1
+[INFO] Iniciado benchmark com 50% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 12/11/2024 18:14:57
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+8589934592
+INITSTATE: 
+8589934592
+WRITEBACK_LIMIT_ENABLE: 
+8589934592
+MAX_COMP_STREAMS: 
+8589934592
+COMP_ALGORITHM: 
+8589934592
+DEBUG_STAT: 
+8589934592
+BACKING_DEV: 
+8589934592
+STATS: 
+     104        0     4440        1        1        0        8        0        0        1        1        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - IS Benchmark
+
+ Size:  65536  (class S)
+ Iterations:  10
+ Number of available threads:  4
+
+
+
+ IS Benchmark Completed
+ Class           =                        S
+ Size            =                    65536
+ Iterations      =                       10
+ Time in seconds =                     0.00
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                   292.67
+ Mop/s/thread    =                    73.17
+ Operation type  =              keys ranked
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              11 Nov 2024
+
+ Compile options:
+    CC           = gcc
+    CLINK        = $(CC)
+    C_LIB        = -lm
+    C_INC        = (none)
+    CFLAGS       = -O3 -fopenmp
+    CLINKFLAGS   = $(CFLAGS)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 0:00.00
+Segundos de CPU: 0.00
+Media de Memoria total (KB): 0
+Major page fault: 0
+Minor page faults: 228
+Swaps totais: 0
+Trocas de contexto: 3
+Esperas com troca de contexto voluntarias: 1
+Uso da CPU para este JOB: 316%
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+8589934592
+INITSTATE: 
+8589934592
+WRITEBACK_LIMIT_ENABLE: 
+8589934592
+MAX_COMP_STREAMS: 
+8589934592
+COMP_ALGORITHM: 
+8589934592
+DEBUG_STAT: 
+8589934592
+BACKING_DEV: 
+8589934592
+STATS: 
+     104        0     4440        1        1        0        8        0        0        1        1        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+[TIME] Benchmark finalizado: 12/11/2024 18:14:57
+[INFO] Teste 2
+[INFO] Iniciado benchmark com 50% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 12/11/2024 18:14:57
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+8589934592
+INITSTATE: 
+8589934592
+WRITEBACK_LIMIT_ENABLE: 
+8589934592
+MAX_COMP_STREAMS: 
+8589934592
+COMP_ALGORITHM: 
+8589934592
+DEBUG_STAT: 
+8589934592
+BACKING_DEV: 
+8589934592
+STATS: 
+     104        0     4440        1        1        0        8        0        0        1        1        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - IS Benchmark
+
+ Size:  65536  (class S)
+ Iterations:  10
+ Number of available threads:  4
+
+
+
+ IS Benchmark Completed
+ Class           =                        S
+ Size            =                    65536
+ Iterations      =                       10
+ Time in seconds =                     0.00
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                   333.61
+ Mop/s/thread    =                    83.40
+ Operation type  =              keys ranked
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              11 Nov 2024
+
+ Compile options:
+    CC           = gcc
+    CLINK        = $(CC)
+    C_LIB        = -lm
+    C_INC        = (none)
+    CFLAGS       = -O3 -fopenmp
+    CLINKFLAGS   = $(CFLAGS)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 0:00.00
+Segundos de CPU: 0.00
+Media de Memoria total (KB): 0
+Major page fault: 0
+Minor page faults: 231
+Swaps totais: 0
+Trocas de contexto: 5
+Esperas com troca de contexto voluntarias: 1
+Uso da CPU para este JOB: 360%
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+8589934592
+INITSTATE: 
+8589934592
+WRITEBACK_LIMIT_ENABLE: 
+8589934592
+MAX_COMP_STREAMS: 
+8589934592
+COMP_ALGORITHM: 
+8589934592
+DEBUG_STAT: 
+8589934592
+BACKING_DEV: 
+8589934592
+STATS: 
+     104        0     4440        1        1        0        8        0        0        1        1        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+[TIME] Benchmark finalizado: 12/11/2024 18:14:57
+[INFO] Teste 3
+[INFO] Iniciado benchmark com 50% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 12/11/2024 18:14:57
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+8589934592
+INITSTATE: 
+8589934592
+WRITEBACK_LIMIT_ENABLE: 
+8589934592
+MAX_COMP_STREAMS: 
+8589934592
+COMP_ALGORITHM: 
+8589934592
+DEBUG_STAT: 
+8589934592
+BACKING_DEV: 
+8589934592
+STATS: 
+     104        0     4440        1        1        0        8        0        0        1        1        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - IS Benchmark
+
+ Size:  65536  (class S)
+ Iterations:  10
+ Number of available threads:  4
+
+
+
+ IS Benchmark Completed
+ Class           =                        S
+ Size            =                    65536
+ Iterations      =                       10
+ Time in seconds =                     0.00
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                   328.64
+ Mop/s/thread    =                    82.16
+ Operation type  =              keys ranked
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              11 Nov 2024
+
+ Compile options:
+    CC           = gcc
+    CLINK        = $(CC)
+    C_LIB        = -lm
+    C_INC        = (none)
+    CFLAGS       = -O3 -fopenmp
+    CLINKFLAGS   = $(CFLAGS)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 0:00.00
+Segundos de CPU: 0.00
+Media de Memoria total (KB): 0
+Major page fault: 0
+Minor page faults: 232
+Swaps totais: 0
+Trocas de contexto: 5
+Esperas com troca de contexto voluntarias: 1
+Uso da CPU para este JOB: 320%
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+8589934592
+INITSTATE: 
+8589934592
+WRITEBACK_LIMIT_ENABLE: 
+8589934592
+MAX_COMP_STREAMS: 
+8589934592
+COMP_ALGORITHM: 
+8589934592
+DEBUG_STAT: 
+8589934592
+BACKING_DEV: 
+8589934592
+STATS: 
+     104        0     4440        1        1        0        8        0        0        1        1        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+[TIME] Benchmark finalizado: 12/11/2024 18:14:57
+[INFO] Teste 4
+[INFO] Iniciado benchmark com 50% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 12/11/2024 18:14:57
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+8589934592
+INITSTATE: 
+8589934592
+WRITEBACK_LIMIT_ENABLE: 
+8589934592
+MAX_COMP_STREAMS: 
+8589934592
+COMP_ALGORITHM: 
+8589934592
+DEBUG_STAT: 
+8589934592
+BACKING_DEV: 
+8589934592
+STATS: 
+     104        0     4440        1        1        0        8        0        0        1        1        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - IS Benchmark
+
+ Size:  65536  (class S)
+ Iterations:  10
+ Number of available threads:  4
+
+
+
+ IS Benchmark Completed
+ Class           =                        S
+ Size            =                    65536
+ Iterations      =                       10
+ Time in seconds =                     0.00
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                   326.50
+ Mop/s/thread    =                    81.63
+ Operation type  =              keys ranked
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              11 Nov 2024
+
+ Compile options:
+    CC           = gcc
+    CLINK        = $(CC)
+    C_LIB        = -lm
+    C_INC        = (none)
+    CFLAGS       = -O3 -fopenmp
+    CLINKFLAGS   = $(CFLAGS)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 0:00.00
+Segundos de CPU: 0.00
+Media de Memoria total (KB): 0
+Major page fault: 0
+Minor page faults: 231
+Swaps totais: 0
+Trocas de contexto: 3
+Esperas com troca de contexto voluntarias: 1
+Uso da CPU para este JOB: 360%
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+8589934592
+INITSTATE: 
+8589934592
+WRITEBACK_LIMIT_ENABLE: 
+8589934592
+MAX_COMP_STREAMS: 
+8589934592
+COMP_ALGORITHM: 
+8589934592
+DEBUG_STAT: 
+8589934592
+BACKING_DEV: 
+8589934592
+STATS: 
+     104        0     4440        1        1        0        8        0        0        1        1        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+[TIME] Benchmark finalizado: 12/11/2024 18:14:57
+[INFO] Teste 5
+[INFO] Iniciado benchmark com 50% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 12/11/2024 18:14:57
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+8589934592
+INITSTATE: 
+8589934592
+WRITEBACK_LIMIT_ENABLE: 
+8589934592
+MAX_COMP_STREAMS: 
+8589934592
+COMP_ALGORITHM: 
+8589934592
+DEBUG_STAT: 
+8589934592
+BACKING_DEV: 
+8589934592
+STATS: 
+     104        0     4440        1        1        0        8        0        0        1        1        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - IS Benchmark
+
+ Size:  65536  (class S)
+ Iterations:  10
+ Number of available threads:  4
+
+
+
+ IS Benchmark Completed
+ Class           =                        S
+ Size            =                    65536
+ Iterations      =                       10
+ Time in seconds =                     0.00
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                   327.01
+ Mop/s/thread    =                    81.75
+ Operation type  =              keys ranked
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              11 Nov 2024
+
+ Compile options:
+    CC           = gcc
+    CLINK        = $(CC)
+    C_LIB        = -lm
+    C_INC        = (none)
+    CFLAGS       = -O3 -fopenmp
+    CLINKFLAGS   = $(CFLAGS)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 0:00.00
+Segundos de CPU: 0.00
+Media de Memoria total (KB): 0
+Major page fault: 0
+Minor page faults: 231
+Swaps totais: 0
+Trocas de contexto: 3
+Esperas com troca de contexto voluntarias: 1
+Uso da CPU para este JOB: 320%
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+8589934592
+INITSTATE: 
+8589934592
+WRITEBACK_LIMIT_ENABLE: 
+8589934592
+MAX_COMP_STREAMS: 
+8589934592
+COMP_ALGORITHM: 
+8589934592
+DEBUG_STAT: 
+8589934592
+BACKING_DEV: 
+8589934592
+STATS: 
+     104        0     4440        1        1        0        8        0        0        1        1        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+[TIME] Benchmark finalizado: 12/11/2024 18:14:58
+
+[TIME] Benchmark totalmente finalizado: 12/11/2024 as 18:14:58

@@ -1,0 +1,524 @@
+-~~-~~-~~-~~-~~-~~- Benchmark lu - classe S -~~-~~-~~-~~-~~-~~-
+[TIME] Benchmark totalmente iniciado: 11/11/2024 as 19:07:19
+
+-~~-~~-~~-~~-~~-~~- 0% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Teste 1
+[INFO] Iniciado benchmark com 0% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 11/11/2024 19:07:29
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+8589934592
+INITSTATE: 
+8589934592
+WRITEBACK_LIMIT_ENABLE: 
+8589934592
+MAX_COMP_STREAMS: 
+8589934592
+COMP_ALGORITHM: 
+8589934592
+DEBUG_STAT: 
+8589934592
+BACKING_DEV: 
+8589934592
+STATS: 
+      53        0     2352        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - LU Benchmark
+
+ Size:   12x  12x  12
+ Iterations:                     50
+ Number of available threads:     8
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   50
+
+ Verification being performed for class S
+ Accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1   0.1619634321098E-01 0.1619634321098E-01 0.8889787443408E-13
+           2   0.2197674516482E-02 0.2197674516482E-02 0.1296499225851E-12
+           3   0.1517992765339E-02 0.1517992765340E-02 0.3001211621561E-12
+           4   0.1502958443601E-02 0.1502958443599E-02 0.1237020154014E-11
+           5   0.3426407315590E-01 0.3426407315590E-01 0.1417585618217E-13
+ Comparison of RMS-norms of solution error
+           1   0.6422331995796E-03 0.6422331995796E-03 0.8997973918400E-13
+           2   0.8414434204735E-04 0.8414434204735E-04 0.3768870582808E-13
+           3   0.5858826961650E-04 0.5858826961649E-04 0.3226887482165E-12
+           4   0.5847422259515E-04 0.5847422259516E-04 0.2085923317854E-12
+           5   0.1310334791411E-02 0.1310334791411E-02 0.5543739358267E-13
+ Comparison of surface integral
+               0.7841892886594E+01 0.7841892886594E+01 0.1132607181129E-15
+ Verification Successful
+
+
+ LU Benchmark Completed.
+ Class           =                        S
+ Size            =             12x  12x  12
+ Iterations      =                       50
+ Time in seconds =                     0.01
+ Total threads   =                        8
+ Avail threads   =                        8
+ Mop/s total     =                  8091.98
+ Mop/s/thread    =                  1011.50
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              11 Nov 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 0:00.01
+Segundos de CPU: 0.00
+Media de Memoria total (KB): 0
+Major page fault: 0
+Minor page faults: 261
+Swaps totais: 0
+Trocas de contexto: 62
+Esperas com troca de contexto voluntarias: 1
+Uso da CPU para este JOB: 655%
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+8589934592
+INITSTATE: 
+8589934592
+WRITEBACK_LIMIT_ENABLE: 
+8589934592
+MAX_COMP_STREAMS: 
+8589934592
+COMP_ALGORITHM: 
+8589934592
+DEBUG_STAT: 
+8589934592
+BACKING_DEV: 
+8589934592
+STATS: 
+      53        0     2352        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+[TIME] Benchmark finalizado: 11/11/2024 19:07:29
+
+-~~-~~-~~-~~-~~-~~- 50% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Teste 1
+[INFO] Iniciado benchmark com 50% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 11/11/2024 19:07:39
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+8589934592
+INITSTATE: 
+8589934592
+WRITEBACK_LIMIT_ENABLE: 
+8589934592
+MAX_COMP_STREAMS: 
+8589934592
+COMP_ALGORITHM: 
+8589934592
+DEBUG_STAT: 
+8589934592
+BACKING_DEV: 
+8589934592
+STATS: 
+      53        0     2352        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - LU Benchmark
+
+ Size:   12x  12x  12
+ Iterations:                     50
+ Number of available threads:     8
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   50
+
+ Verification being performed for class S
+ Accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1   0.1619634321098E-01 0.1619634321098E-01 0.8889787443408E-13
+           2   0.2197674516482E-02 0.2197674516482E-02 0.1294525863255E-12
+           3   0.1517992765339E-02 0.1517992765340E-02 0.3001211621561E-12
+           4   0.1502958443601E-02 0.1502958443599E-02 0.1237020154014E-11
+           5   0.3426407315590E-01 0.3426407315590E-01 0.1417585618217E-13
+ Comparison of RMS-norms of solution error
+           1   0.6422331995796E-03 0.6422331995796E-03 0.8981092166208E-13
+           2   0.8414434204735E-04 0.8414434204735E-04 0.3768870582808E-13
+           3   0.5858826961650E-04 0.5858826961649E-04 0.3225730891670E-12
+           4   0.5847422259515E-04 0.5847422259516E-04 0.2085923317854E-12
+           5   0.1310334791411E-02 0.1310334791411E-02 0.5543739358267E-13
+ Comparison of surface integral
+               0.7841892886594E+01 0.7841892886594E+01 0.1132607181129E-15
+ Verification Successful
+
+
+ LU Benchmark Completed.
+ Class           =                        S
+ Size            =             12x  12x  12
+ Iterations      =                       50
+ Time in seconds =                     0.01
+ Total threads   =                        8
+ Avail threads   =                        8
+ Mop/s total     =                  7100.79
+ Mop/s/thread    =                   887.60
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              11 Nov 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 0:00.01
+Segundos de CPU: 0.00
+Media de Memoria total (KB): 0
+Major page fault: 0
+Minor page faults: 267
+Swaps totais: 0
+Trocas de contexto: 59
+Esperas com troca de contexto voluntarias: 1
+Uso da CPU para este JOB: 663%
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+8589934592
+INITSTATE: 
+8589934592
+WRITEBACK_LIMIT_ENABLE: 
+8589934592
+MAX_COMP_STREAMS: 
+8589934592
+COMP_ALGORITHM: 
+8589934592
+DEBUG_STAT: 
+8589934592
+BACKING_DEV: 
+8589934592
+STATS: 
+      53        0     2352        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+[TIME] Benchmark finalizado: 11/11/2024 19:07:39
+
+[TIME] Benchmark totalmente finalizado: 11/11/2024 as 19:07:39
+-~~-~~-~~-~~-~~-~~- Benchmark lu - classe S -~~-~~-~~-~~-~~-~~-
+[TIME] Benchmark totalmente iniciado: 11/11/2024 as 19:07:39
+
+-~~-~~-~~-~~-~~-~~- 0% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Teste 1
+[INFO] Iniciado benchmark com 0% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 11/11/2024 19:07:49
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+8589934592
+INITSTATE: 
+8589934592
+WRITEBACK_LIMIT_ENABLE: 
+8589934592
+MAX_COMP_STREAMS: 
+8589934592
+COMP_ALGORITHM: 
+8589934592
+DEBUG_STAT: 
+8589934592
+BACKING_DEV: 
+8589934592
+STATS: 
+      53        0     2352        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - LU Benchmark
+
+ Size:   12x  12x  12
+ Iterations:                     50
+ Number of available threads:     8
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   50
+
+ Verification being performed for class S
+ Accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1   0.1619634321098E-01 0.1619634321098E-01 0.8889787443408E-13
+           2   0.2197674516482E-02 0.2197674516482E-02 0.1296499225851E-12
+           3   0.1517992765339E-02 0.1517992765340E-02 0.3002640089730E-12
+           4   0.1502958443601E-02 0.1502958443599E-02 0.1237020154014E-11
+           5   0.3426407315590E-01 0.3426407315590E-01 0.1437836841335E-13
+ Comparison of RMS-norms of solution error
+           1   0.6422331995796E-03 0.6422331995796E-03 0.8981092166208E-13
+           2   0.8414434204735E-04 0.8414434204735E-04 0.3768870582808E-13
+           3   0.5858826961650E-04 0.5858826961649E-04 0.3225730891670E-12
+           4   0.5847422259515E-04 0.5847422259516E-04 0.2085923317854E-12
+           5   0.1310334791411E-02 0.1310334791411E-02 0.5543739358267E-13
+ Comparison of surface integral
+               0.7841892886594E+01 0.7841892886594E+01 0.1132607181129E-15
+ Verification Successful
+
+
+ LU Benchmark Completed.
+ Class           =                        S
+ Size            =             12x  12x  12
+ Iterations      =                       50
+ Time in seconds =                     0.01
+ Total threads   =                        8
+ Avail threads   =                        8
+ Mop/s total     =                  7245.97
+ Mop/s/thread    =                   905.75
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              11 Nov 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 0:00.01
+Segundos de CPU: 0.00
+Media de Memoria total (KB): 0
+Major page fault: 0
+Minor page faults: 265
+Swaps totais: 0
+Trocas de contexto: 59
+Esperas com troca de contexto voluntarias: 1
+Uso da CPU para este JOB: 678%
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+8589934592
+INITSTATE: 
+8589934592
+WRITEBACK_LIMIT_ENABLE: 
+8589934592
+MAX_COMP_STREAMS: 
+8589934592
+COMP_ALGORITHM: 
+8589934592
+DEBUG_STAT: 
+8589934592
+BACKING_DEV: 
+8589934592
+STATS: 
+      53        0     2352        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+[TIME] Benchmark finalizado: 11/11/2024 19:07:50
+
+-~~-~~-~~-~~-~~-~~- 50% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Teste 1
+[INFO] Iniciado benchmark com 50% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 11/11/2024 19:08:00
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+8589934592
+INITSTATE: 
+8589934592
+WRITEBACK_LIMIT_ENABLE: 
+8589934592
+MAX_COMP_STREAMS: 
+8589934592
+COMP_ALGORITHM: 
+8589934592
+DEBUG_STAT: 
+8589934592
+BACKING_DEV: 
+8589934592
+STATS: 
+      53        0     2352        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - LU Benchmark
+
+ Size:   12x  12x  12
+ Iterations:                     50
+ Number of available threads:     8
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   50
+
+ Verification being performed for class S
+ Accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1   0.1619634321098E-01 0.1619634321098E-01 0.8889787443408E-13
+           2   0.2197674516482E-02 0.2197674516482E-02 0.1296499225851E-12
+           3   0.1517992765339E-02 0.1517992765340E-02 0.3001211621561E-12
+           4   0.1502958443601E-02 0.1502958443599E-02 0.1237020154014E-11
+           5   0.3426407315590E-01 0.3426407315590E-01 0.1437836841335E-13
+ Comparison of RMS-norms of solution error
+           1   0.6422331995796E-03 0.6422331995796E-03 0.8981092166208E-13
+           2   0.8414434204735E-04 0.8414434204735E-04 0.3768870582808E-13
+           3   0.5858826961650E-04 0.5858826961649E-04 0.3225730891670E-12
+           4   0.5847422259515E-04 0.5847422259516E-04 0.2085923317854E-12
+           5   0.1310334791411E-02 0.1310334791411E-02 0.5543739358267E-13
+ Comparison of surface integral
+               0.7841892886594E+01 0.7841892886594E+01 0.1132607181129E-15
+ Verification Successful
+
+
+ LU Benchmark Completed.
+ Class           =                        S
+ Size            =             12x  12x  12
+ Iterations      =                       50
+ Time in seconds =                     0.01
+ Total threads   =                        8
+ Avail threads   =                        8
+ Mop/s total     =                  7196.90
+ Mop/s/thread    =                   899.61
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              11 Nov 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 0:00.01
+Segundos de CPU: 0.00
+Media de Memoria total (KB): 0
+Major page fault: 0
+Minor page faults: 265
+Swaps totais: 0
+Trocas de contexto: 61
+Esperas com troca de contexto voluntarias: 2
+Uso da CPU para este JOB: 678%
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+8589934592
+INITSTATE: 
+8589934592
+WRITEBACK_LIMIT_ENABLE: 
+8589934592
+MAX_COMP_STREAMS: 
+8589934592
+COMP_ALGORITHM: 
+8589934592
+DEBUG_STAT: 
+8589934592
+BACKING_DEV: 
+8589934592
+STATS: 
+      53        0     2352        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+[TIME] Benchmark finalizado: 11/11/2024 19:08:00
+
+[TIME] Benchmark totalmente finalizado: 11/11/2024 as 19:08:00
