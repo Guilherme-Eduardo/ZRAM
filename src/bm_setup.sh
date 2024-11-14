@@ -148,6 +148,7 @@ do
                 fi
 
                 # Executando benchmark
+                echo "aqui!: $BENCHMARK_DIR/bin/$bm.$cl.x"
                 EXECUTABLE="$BENCHMARK_DIR/bin/$bm.$cl.x"
                 OUTPUT_TIME=$(/usr/bin/time -f "Tempo real: %E\nSegundos de CPU: %S\nMedia de Memoria total (KB): %K\nMajor page fault: %F\nMinor page faults: %R\nSwaps totais: %W\nTrocas de contexto: %c\nEsperas com troca de contexto voluntarias: %w\nUso da CPU para este JOB: %P\n" $EXECUTABLE 2>&1)
                 if [ $NO_BENCHMARKS_RESULTS -eq 0 ]; then
