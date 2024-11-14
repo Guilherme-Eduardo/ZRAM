@@ -7,7 +7,7 @@
    It is not used in DC benchmark.   */
    
 long long int input_tuples=1000, attrnum=5;
-#define COMPILETIME "13 Nov 2024"
+#define COMPILETIME "14 Nov 2024"
 #define NPBVERSION "3.4.3"
 #define CC "gcc"
 #define CFLAGS "-O3 -fopenmp"
