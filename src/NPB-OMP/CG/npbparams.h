@@ -5,10 +5,14 @@
 !  It sets the number of processors and the class of the NPB
 !  in this directory. Do not modify it by hand.
 !  
-        character class
-        parameter (class ='C')
-        integer m
-        parameter (m=32)
+        integer            na, nonzer, niter
+        double precision   shift, rcond
+        parameter(  na=150000, &
+     &              nonzer=15, &
+     &              niter=75, &
+     &              shift=110., &
+     &              rcond=1.0d-1 )
+        integer, parameter :: kz=4
         logical  convertdouble
         parameter (convertdouble = .false.)
         character compiletime*11
