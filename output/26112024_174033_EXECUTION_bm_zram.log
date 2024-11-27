@@ -1,0 +1,849 @@
+-~~-~~-~~-~~-~~-~~- Informacoes de execucao -~~-~~-~~-~~-~~-~~-
+[INFO] Tempo estimado: 05h 02m 15s
+[INFO] Benchmarks a serem executados: bt cg ep ft is lu mg sp ua
+[INFO] Classes a serem executadas: D
+[INFO] Porcentagem de ZRAM analisadas: 0 25 50 75 100
+
+-~~-~~-~~-~~-~~-~~- Maquina dos testes -~~-~~-~~-~~-~~-~~-
+[INFO] lsb_release -a:
+Distributor ID:	Ubuntu
+Description:	Ubuntu 24.04.1 LTS
+Release:	24.04
+Codename:	noble
+[INFO] Uname -a:
+Linux zram-ibm 6.8.0-48-generic #48-Ubuntu SMP PREEMPT_DYNAMIC Fri Sep 27 14:04:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+[INFO] cat /proc/meminfo:
+MemTotal:        8037808 kB
+MemFree:         6263692 kB
+MemAvailable:    7386044 kB
+Buffers:          122984 kB
+Cached:          1163544 kB
+SwapCached:            0 kB
+Active:           331068 kB
+Inactive:        1003776 kB
+Active(anon):      58884 kB
+Inactive(anon):        0 kB
+Active(file):     272184 kB
+Inactive(file):  1003776 kB
+Unevictable:       27696 kB
+Mlocked:           27572 kB
+SwapTotal:       8037804 kB
+SwapFree:        8037804 kB
+Zswap:                 0 kB
+Zswapped:              0 kB
+Dirty:               296 kB
+Writeback:             0 kB
+AnonPages:         76056 kB
+Mapped:            90976 kB
+Shmem:              1816 kB
+KReclaimable:     140464 kB
+Slab:             231088 kB
+SReclaimable:     140464 kB
+SUnreclaim:        90624 kB
+KernelStack:        2940 kB
+PageTables:         3272 kB
+SecPageTables:         0 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    12056708 kB
+Committed_AS:     509316 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       88616 kB
+VmallocChunk:          0 kB
+Percpu:             8736 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+Unaccepted:            0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      248364 kB
+DirectMap2M:     6998016 kB
+DirectMap1G:     1048576 kB
+[INFO] cat /proc/cpuinfo | more:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 158
+model name	: Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz
+stepping	: 9
+microcode	: 0xf8
+cpu MHz		: 3000.015
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb pti ssbd ibrs ibpb stibp tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm arat pln pts hwp hwp_notify hwp_act_window hwp_epp vnmi md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer invvpid ept_x_only ept_ad ept_1gb flexpriority tsc_offset vtpr mtf vapic ept vpid unrestricted_guest ple shadow_vmcs pml ept_mode_based_exec
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds mmio_stale_data retbleed gds
+bogomips	: 6000.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 158
+model name	: Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz
+stepping	: 9
+microcode	: 0xf8
+cpu MHz		: 3000.010
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 4
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb pti ssbd ibrs ibpb stibp tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm arat pln pts hwp hwp_notify hwp_act_window hwp_epp vnmi md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer invvpid ept_x_only ept_ad ept_1gb flexpriority tsc_offset vtpr mtf vapic ept vpid unrestricted_guest ple shadow_vmcs pml ept_mode_based_exec
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds mmio_stale_data retbleed gds
+bogomips	: 6000.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 158
+model name	: Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz
+stepping	: 9
+microcode	: 0xf8
+cpu MHz		: 3000.010
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 4
+core id		: 2
+cpu cores	: 4
+apicid		: 4
+initial apicid	: 4
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb pti ssbd ibrs ibpb stibp tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm arat pln pts hwp hwp_notify hwp_act_window hwp_epp vnmi md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer invvpid ept_x_only ept_ad ept_1gb flexpriority tsc_offset vtpr mtf vapic ept vpid unrestricted_guest ple shadow_vmcs pml ept_mode_based_exec
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds mmio_stale_data retbleed gds
+bogomips	: 6000.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 158
+model name	: Intel(R) Core(TM) i5-7400 CPU @ 3.00GHz
+stepping	: 9
+microcode	: 0xf8
+cpu MHz		: 3000.026
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 4
+core id		: 3
+cpu cores	: 4
+apicid		: 6
+initial apicid	: 6
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb pti ssbd ibrs ibpb stibp tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm arat pln pts hwp hwp_notify hwp_act_window hwp_epp vnmi md_clear flush_l1d arch_capabilities
+vmx flags	: vnmi preemption_timer invvpid ept_x_only ept_ad ept_1gb flexpriority tsc_offset vtpr mtf vapic ept vpid unrestricted_guest ple shadow_vmcs pml ept_mode_based_exec
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds mmio_stale_data retbleed gds
+bogomips	: 6000.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+[INFO] df -ha:
+Filesystem                         Size  Used Avail Use% Mounted on
+sysfs                                 0     0     0    - /sys
+proc                                  0     0     0    - /proc
+udev                               3,8G     0  3,8G   0% /dev
+devpts                                0     0     0    - /dev/pts
+tmpfs                              785M  1,6M  784M   1% /run
+efivarfs                           256K   68K  184K  27% /sys/firmware/efi/efivars
+/dev/mapper/ubuntu--vg-ubuntu--lv  9,8G  3,2G  6,1G  34% /
+securityfs                            0     0     0    - /sys/kernel/security
+tmpfs                              3,9G     0  3,9G   0% /dev/shm
+tmpfs                              5,0M     0  5,0M   0% /run/lock
+cgroup2                               0     0     0    - /sys/fs/cgroup
+pstore                                0     0     0    - /sys/fs/pstore
+bpf                                   0     0     0    - /sys/fs/bpf
+systemd-1                             -     -     -    - /proc/sys/fs/binfmt_misc
+hugetlbfs                             0     0     0    - /dev/hugepages
+mqueue                                0     0     0    - /dev/mqueue
+debugfs                               0     0     0    - /sys/kernel/debug
+tracefs                               0     0     0    - /sys/kernel/tracing
+fusectl                               0     0     0    - /sys/fs/fuse/connections
+configfs                              0     0     0    - /sys/kernel/config
+/dev/sdc2                          1,7G  183M  1,5G  12% /boot
+/dev/sdc1                          682M  6,2M  676M   1% /boot/efi
+binfmt_misc                           0     0     0    - /proc/sys/fs/binfmt_misc
+tmpfs                              785M   12K  785M   1% /run/user/1000
+[INFO] fdisk -l:
+Disk /dev/sda: 931,51 GiB, 1000204886016 bytes, 1953525168 sectors
+Disk model: ST1000DM010-2EP1
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+Disklabel type: gpt
+Disk identifier: A1960133-F44F-4461-B04F-15B25B5A3151
+
+
+Disk /dev/sdb: 447,13 GiB, 480103981056 bytes, 937703088 sectors
+Disk model: KINGSTON SA400S3
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: 4F11850D-32D5-43A9-BF78-5256704729B6
+
+Device       Start       End   Sectors   Size Type
+/dev/sdb1     2048   1953791   1951744   953M EFI System
+/dev/sdb2  1953792 937701375 935747584 446,2G Linux filesystem
+
+
+Disk /dev/sdc: 14,32 GiB, 15376318464 bytes, 30031872 sectors
+Disk model: Cruzer Blade    
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: 8BC200C2-9237-4302-B4A4-CE6DAE0A1A70
+
+Device       Start      End  Sectors  Size Type
+/dev/sdc1     2048  1400831  1398784  683M EFI System
+/dev/sdc2  1400832  5070847  3670016  1,8G Linux filesystem
+/dev/sdc3  5070848 30029823 24958976 11,9G Linux filesystem
+
+
+Disk /dev/mapper/ubuntu--vg-ubuntu--lv: 10 GiB, 10737418240 bytes, 20971520 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/zram0: 7,67 GiB, 8230715392 bytes, 2009452 sectors
+Units: sectors of 1 * 4096 = 4096 bytes
+Sector size (logical/physical): 4096 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+
+-~~-~~-~~-~~-~~-~~- Preparacao do sistema -~~-~~-~~-~~-~~-~~-
+[LOG] Desabilitando DVFS (CPU frequency scaling) usando cpufrequtils
+[LOG] Desabilitando Turbo boost (echo 1 > /sys/devices/system/cpu/intel_pstate/no_turbo)
+
+-~~-~~-~~-~~-~~-~~- Iniciando benchmarks -~~-~~-~~-~~-~~-~~-
+[LOG] Iniciando testes: 26/11/2024 as 17:40:33
+
+-~~-~~-~~-~~-~~-~~- Benchmark bt/D -~~-~~-~~-~~-~~-~~-
+[LOG] Compilando benchmark bt/D
+make: Entering directory '/home/ibm23/zram/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd BT; make CLASS=D VERSION=
+make[1]: Entering directory '/home/ibm23/zram/src/NPB-OMP/BT'
+make[2]: Entering directory '/home/ibm23/zram/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/ibm23/zram/src/NPB-OMP/sys'
+../sys/setparams bt D
+make[2]: Entering directory '/home/ibm23/zram/src/NPB-OMP/BT'
+gfortran -c  -O3 -fopenmp bt_data.f90
+sed -e 's/= 0/= 0/' blk_par0.h > blk_par.h_wk
+gfortran -c  -O3 -fopenmp bt.f90
+gfortran -c  -O3 -fopenmp initialize.f90
+gfortran -c  -O3 -fopenmp exact_solution.f90
+gfortran -c  -O3 -fopenmp exact_rhs.f90
+gfortran -c  -O3 -fopenmp set_constants.f90
+gfortran -c  -O3 -fopenmp adi.f90
+gfortran -c  -O3 -fopenmp rhs.f90
+gfortran -c  -O3 -fopenmp work_lhs.f90
+gfortran -c  -O3 -fopenmp x_solve.f90
+gfortran -c  -O3 -fopenmp y_solve.f90
+gfortran -c  -O3 -fopenmp solve_subs.f90
+gfortran -c  -O3 -fopenmp z_solve.f90
+gfortran -c  -O3 -fopenmp add.f90
+gfortran -c  -O3 -fopenmp error.f90
+gfortran -c  -O3 -fopenmp verify.f90
+gfortran -O3 -fopenmp -o ../bin/bt.D.x bt.o bt_data.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o  rhs.o x_solve.o y_solve.o solve_subs.o z_solve.o add.o error.o verify.o work_lhs.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory '/home/ibm23/zram/src/NPB-OMP/BT'
+make[1]: Leaving directory '/home/ibm23/zram/src/NPB-OMP/BT'
+make: Leaving directory '/home/ibm23/zram/src/NPB-OMP'
+
+[LOG] Benchmark bt/D iniciado: 26/11/2024 as 17:40:39
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       7,7G   4K   74B   12K       4 
+[LOG] Benchmark bt/D (0% ZRAM) iniciado: 26/11/2024 17:40:49
+[LOG] Teste 1 iniciado: 26/11/2024 17:40:49
+[LOG] Benchmark bt/D (0% ZRAM) finalizado: 26/11/2024 17:40:56
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       1,9G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark bt/D (25% ZRAM) iniciado: 26/11/2024 17:41:07
+[LOG] Teste 1 iniciado: 26/11/2024 17:41:07
+[LOG] Benchmark bt/D (25% ZRAM) finalizado: 26/11/2024 17:41:16
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       3,8G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark bt/D (50% ZRAM) iniciado: 26/11/2024 17:41:27
+[LOG] Teste 1 iniciado: 26/11/2024 17:41:27
+[LOG] Benchmark bt/D (50% ZRAM) finalizado: 26/11/2024 17:41:39
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       5,7G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark bt/D (75% ZRAM) iniciado: 26/11/2024 17:41:50
+[LOG] Teste 1 iniciado: 26/11/2024 17:41:50
+[LOG] Benchmark bt/D (75% ZRAM) finalizado: 26/11/2024 17:42:05
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       7,7G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark bt/D (100% ZRAM) iniciado: 26/11/2024 17:42:16
+[LOG] Teste 1 iniciado: 26/11/2024 17:42:16
+[LOG] Benchmark bt/D (100% ZRAM) finalizado: 26/11/2024 17:42:34
+[INFO] Escrevendo resultados no csv...
+[LOG] Benchmark bt/D finalizado: 26/11/2024 as 17:42:34
+
+-~~-~~-~~-~~-~~-~~- Benchmark cg/D -~~-~~-~~-~~-~~-~~-
+[LOG] Compilando benchmark cg/D
+make: Entering directory '/home/ibm23/zram/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd CG; make CLASS=D
+make[1]: Entering directory '/home/ibm23/zram/src/NPB-OMP/CG'
+make[2]: Entering directory '/home/ibm23/zram/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/ibm23/zram/src/NPB-OMP/sys'
+../sys/setparams cg D
+gfortran -c  -O3 -fopenmp cg_data.f90
+gfortran -c  -O3 -fopenmp cg.f90
+gfortran -O3 -fopenmp -o ../bin/cg.D.x cg.o cg_data.o ../common/print_results.o ../common/randi8.o ../common/timers.o ../common/wtime.o 
+make[1]: Leaving directory '/home/ibm23/zram/src/NPB-OMP/CG'
+make: Leaving directory '/home/ibm23/zram/src/NPB-OMP'
+
+[LOG] Benchmark cg/D iniciado: 26/11/2024 as 17:42:37
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       7,7G   4K   74B   12K       4 
+[LOG] Benchmark cg/D (0% ZRAM) iniciado: 26/11/2024 17:42:47
+[LOG] Teste 1 iniciado: 26/11/2024 17:42:47
+[LOG] Benchmark cg/D (0% ZRAM) finalizado: 26/11/2024 17:42:51
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       1,9G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark cg/D (25% ZRAM) iniciado: 26/11/2024 17:43:02
+[LOG] Teste 1 iniciado: 26/11/2024 17:43:02
+[LOG] Benchmark cg/D (25% ZRAM) finalizado: 26/11/2024 17:43:46
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       3,8G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark cg/D (50% ZRAM) iniciado: 26/11/2024 17:43:58
+[LOG] Teste 1 iniciado: 26/11/2024 17:43:58
+[LOG] Benchmark cg/D (50% ZRAM) finalizado: 26/11/2024 17:45:58
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       5,7G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark cg/D (75% ZRAM) iniciado: 26/11/2024 17:46:09
+[LOG] Teste 1 iniciado: 26/11/2024 17:46:09
+[LOG] Benchmark cg/D (75% ZRAM) finalizado: 26/11/2024 17:48:54
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       7,7G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark cg/D (100% ZRAM) iniciado: 26/11/2024 17:49:05
+[LOG] Teste 1 iniciado: 26/11/2024 17:49:05
+[LOG] Benchmark cg/D (100% ZRAM) finalizado: 26/11/2024 17:52:18
+[INFO] Escrevendo resultados no csv...
+[LOG] Benchmark cg/D finalizado: 26/11/2024 as 17:52:18
+
+-~~-~~-~~-~~-~~-~~- Benchmark ep/D -~~-~~-~~-~~-~~-~~-
+[LOG] Compilando benchmark ep/D
+make: Entering directory '/home/ibm23/zram/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd EP; make CLASS=D
+make[1]: Entering directory '/home/ibm23/zram/src/NPB-OMP/EP'
+make[2]: Entering directory '/home/ibm23/zram/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/ibm23/zram/src/NPB-OMP/sys'
+../sys/setparams ep D
+gfortran -c  -O3 -fopenmp ep_data.f90
+gfortran -c  -O3 -fopenmp ep.f90
+gfortran -O3 -fopenmp -o ../bin/ep.D.x ep.o ep_data.o verify.o ../common/print_results.o ../common/randi8.o ../common/timers.o ../common/wtime.o 
+make[1]: Leaving directory '/home/ibm23/zram/src/NPB-OMP/EP'
+make: Leaving directory '/home/ibm23/zram/src/NPB-OMP'
+
+[LOG] Benchmark ep/D iniciado: 26/11/2024 as 17:52:20
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       7,7G   4K   74B   12K       4 
+[LOG] Benchmark ep/D (0% ZRAM) iniciado: 26/11/2024 17:52:32
+[LOG] Teste 1 iniciado: 26/11/2024 17:52:32
+[LOG] Benchmark ep/D (0% ZRAM) finalizado: 26/11/2024 17:57:54
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       1,9G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark ep/D (25% ZRAM) iniciado: 26/11/2024 17:58:04
+[LOG] Teste 1 iniciado: 26/11/2024 17:58:04
+[LOG] Benchmark ep/D (25% ZRAM) finalizado: 26/11/2024 18:05:28
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       3,8G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark ep/D (50% ZRAM) iniciado: 26/11/2024 18:05:38
+[LOG] Teste 1 iniciado: 26/11/2024 18:05:38
+[LOG] Benchmark ep/D (50% ZRAM) finalizado: 26/11/2024 18:10:59
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       5,7G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark ep/D (75% ZRAM) iniciado: 26/11/2024 18:11:09
+[LOG] Teste 1 iniciado: 26/11/2024 18:11:09
+[LOG] Benchmark ep/D (75% ZRAM) finalizado: 26/11/2024 18:16:31
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       7,7G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark ep/D (100% ZRAM) iniciado: 26/11/2024 18:16:41
+[LOG] Teste 1 iniciado: 26/11/2024 18:16:41
+[LOG] Benchmark ep/D (100% ZRAM) finalizado: 26/11/2024 18:24:05
+[INFO] Escrevendo resultados no csv...
+[LOG] Benchmark ep/D finalizado: 26/11/2024 as 18:24:05
+
+-~~-~~-~~-~~-~~-~~- Benchmark ft/D -~~-~~-~~-~~-~~-~~-
+[LOG] Compilando benchmark ft/D
+make: Entering directory '/home/ibm23/zram/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd FT; make CLASS=D
+make[1]: Entering directory '/home/ibm23/zram/src/NPB-OMP/FT'
+make[2]: Entering directory '/home/ibm23/zram/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/ibm23/zram/src/NPB-OMP/sys'
+../sys/setparams ft D
+make[2]: Entering directory '/home/ibm23/zram/src/NPB-OMP/FT'
+sed -e 's/=0/=32/' blk_par0.h > blk_par.h_wk
+gfortran -c  -O3 -fopenmp ft_data.f90
+gfortran -c  -O3 -fopenmp ft.f90
+gfortran -O3 -fopenmp -o ../bin/ft.D.x ft.o ft_data.o ../common/randi8.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory '/home/ibm23/zram/src/NPB-OMP/FT'
+make[1]: Leaving directory '/home/ibm23/zram/src/NPB-OMP/FT'
+make: Leaving directory '/home/ibm23/zram/src/NPB-OMP'
+
+[LOG] Benchmark ft/D iniciado: 26/11/2024 as 18:24:06
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       7,7G   4K   74B   12K       4 
+[LOG] Benchmark ft/D (0% ZRAM) iniciado: 26/11/2024 18:24:16
+[LOG] Teste 1 iniciado: 26/11/2024 18:24:16
+[LOG] Benchmark ft/D (0% ZRAM) finalizado: 26/11/2024 18:24:16
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       1,9G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark ft/D (25% ZRAM) iniciado: 26/11/2024 18:24:26
+[LOG] Teste 1 iniciado: 26/11/2024 18:24:26
+[LOG] Benchmark ft/D (25% ZRAM) finalizado: 26/11/2024 18:24:26
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       3,8G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark ft/D (50% ZRAM) iniciado: 26/11/2024 18:24:36
+[LOG] Teste 1 iniciado: 26/11/2024 18:24:36
+[LOG] Benchmark ft/D (50% ZRAM) finalizado: 26/11/2024 18:24:36
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       5,7G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark ft/D (75% ZRAM) iniciado: 26/11/2024 18:24:46
+[LOG] Teste 1 iniciado: 26/11/2024 18:24:46
+[LOG] Benchmark ft/D (75% ZRAM) finalizado: 26/11/2024 18:24:46
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       7,7G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark ft/D (100% ZRAM) iniciado: 26/11/2024 18:24:56
+[LOG] Teste 1 iniciado: 26/11/2024 18:24:56
+[LOG] Benchmark ft/D (100% ZRAM) finalizado: 26/11/2024 18:24:56
+[INFO] Escrevendo resultados no csv...
+[LOG] Benchmark ft/D finalizado: 26/11/2024 as 18:24:56
+
+-~~-~~-~~-~~-~~-~~- Benchmark is/D -~~-~~-~~-~~-~~-~~-
+[LOG] Compilando benchmark is/D
+make: Entering directory '/home/ibm23/zram/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd IS; make CLASS=D
+make[1]: Entering directory '/home/ibm23/zram/src/NPB-OMP/IS'
+make[2]: Entering directory '/home/ibm23/zram/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/ibm23/zram/src/NPB-OMP/sys'
+../sys/setparams is D
+gcc -c  -O3 -fopenmp is.c
+gcc -O3 -fopenmp -o ../bin/is.D.x is.o ../common/c_print_results.o ../common/c_timers.o ../common/c_wtime.o -lm
+is.o: in function `full_verify._omp_fn.1':
+is.c:(.text+0xa1): relocation truncated to fit: R_X86_64_PC32 against symbol `key_array' defined in .bss section in is.o
+is.o: in function `full_verify._omp_fn.0':
+is.c:(.text+0x140): relocation truncated to fit: R_X86_64_PC32 against symbol `key_array' defined in .bss section in is.o
+is.c:(.text+0x15d): relocation truncated to fit: R_X86_64_PC32 against symbol `key_buff_ptr_global' defined in .bss section in is.o
+is.o: in function `rank._omp_fn.0':
+is.c:(.text+0x31a): relocation truncated to fit: R_X86_64_PC32 against symbol `key_array' defined in .bss section in is.o
+is.c:(.text+0x46b): relocation truncated to fit: R_X86_64_PC32 against symbol `key_array' defined in .bss section in is.o
+is.o: in function `create_seq._omp_fn.0':
+is.c:(.text+0x9ef): relocation truncated to fit: R_X86_64_PC32 against symbol `key_array' defined in .bss section in is.o
+is.o: in function `full_verify':
+is.c:(.text+0xce6): relocation truncated to fit: R_X86_64_PC32 against symbol `passed_verification' defined in .bss section in is.o
+is.o: in function `rank':
+is.c:(.text+0xd3e): relocation truncated to fit: R_X86_64_PC32 against symbol `key_buff1' defined in .bss section in is.o
+is.c:(.text+0xd6f): relocation truncated to fit: R_X86_64_PC32 against symbol `key_array' defined in .bss section in is.o
+is.c:(.text+0xe2e): relocation truncated to fit: R_X86_64_PC32 against symbol `passed_verification' defined in .bss section in is.o
+is.c:(.text+0xe51): additional relocation overflows omitted from the output
+collect2: error: ld returned 1 exit status
+make[1]: *** [Makefile:16: ../bin/is.D.x] Error 1
+make[1]: Leaving directory '/home/ibm23/zram/src/NPB-OMP/IS'
+make: *** [Makefile:31: is] Error 2
+make: Leaving directory '/home/ibm23/zram/src/NPB-OMP'
+[ERROR] Não foi possivel compilar
+[LOG] Abortando compilacao...
+
+-~~-~~-~~-~~-~~-~~- Benchmark lu/D -~~-~~-~~-~~-~~-~~-
+[LOG] Compilando benchmark lu/D
+make: Entering directory '/home/ibm23/zram/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd LU; make CLASS=D VERSION=
+make[1]: Entering directory '/home/ibm23/zram/src/NPB-OMP/LU'
+make[2]: Entering directory '/home/ibm23/zram/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/ibm23/zram/src/NPB-OMP/sys'
+../sys/setparams lu D
+make[2]: Entering directory '/home/ibm23/zram/src/NPB-OMP/LU'
+gfortran -c  -O3 -fopenmp lu_data.f90
+gfortran -c  -O3 -fopenmp lu.f90
+gfortran -c  -O3 -fopenmp read_input.f90
+gfortran -c  -O3 -fopenmp domain.f90
+gfortran -c  -O3 -fopenmp setcoeff.f90
+gfortran -c  -O3 -fopenmp setbv.f90
+gfortran -c  -O3 -fopenmp exact.f90
+gfortran -c  -O3 -fopenmp setiv.f90
+gfortran -c  -O3 -fopenmp erhs.f90
+gfortran -c  -O3 -fopenmp ssor.f90
+gfortran -c  -O3 -fopenmp rhs.f90
+gfortran -c  -O3 -fopenmp jacld.f90
+gfortran -c  -O3 -fopenmp jacu.f90
+gfortran -c  -O3 -fopenmp error.f90
+gfortran -c  -O3 -fopenmp pintgr.f90
+gfortran -c  -O3 -fopenmp verify.f90
+gfortran -c  -O3 -fopenmp syncs.f90
+gfortran -O3 -fopenmp -o ../bin/lu.D.x lu.o lu_data.o read_input.o domain.o setcoeff.o setbv.o exact.o setiv.o erhs.o ssor.o rhs.o l2norm.o jacld.o blts.o jacu.o buts.o error.o pintgr.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o syncs.o 
+make[2]: Leaving directory '/home/ibm23/zram/src/NPB-OMP/LU'
+make[1]: Leaving directory '/home/ibm23/zram/src/NPB-OMP/LU'
+make: Leaving directory '/home/ibm23/zram/src/NPB-OMP'
+
+[LOG] Benchmark lu/D iniciado: 26/11/2024 as 18:25:03
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       7,7G   4K   74B   12K       4 
+[LOG] Benchmark lu/D (0% ZRAM) iniciado: 26/11/2024 18:25:13
+[LOG] Teste 1 iniciado: 26/11/2024 18:25:13
+[LOG] Benchmark lu/D (0% ZRAM) finalizado: 26/11/2024 18:25:19
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       1,9G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark lu/D (25% ZRAM) iniciado: 26/11/2024 18:25:29
+[LOG] Teste 1 iniciado: 26/11/2024 18:25:29
+[LOG] Benchmark lu/D (25% ZRAM) finalizado: 26/11/2024 18:25:38
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       3,8G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark lu/D (50% ZRAM) iniciado: 26/11/2024 18:25:49
+[LOG] Teste 1 iniciado: 26/11/2024 18:25:49
+[LOG] Benchmark lu/D (50% ZRAM) finalizado: 26/11/2024 18:26:02
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       5,7G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark lu/D (75% ZRAM) iniciado: 26/11/2024 18:26:13
+[LOG] Teste 1 iniciado: 26/11/2024 18:26:13
+[LOG] Benchmark lu/D (75% ZRAM) finalizado: 26/11/2024 18:26:28
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       7,7G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark lu/D (100% ZRAM) iniciado: 26/11/2024 18:26:40
+[LOG] Teste 1 iniciado: 26/11/2024 18:26:40
+[LOG] Benchmark lu/D (100% ZRAM) finalizado: 26/11/2024 18:26:57
+[INFO] Escrevendo resultados no csv...
+[LOG] Benchmark lu/D finalizado: 26/11/2024 as 18:26:57
+
+-~~-~~-~~-~~-~~-~~- Benchmark mg/D -~~-~~-~~-~~-~~-~~-
+[LOG] Compilando benchmark mg/D
+make: Entering directory '/home/ibm23/zram/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd MG; make CLASS=D
+make[1]: Entering directory '/home/ibm23/zram/src/NPB-OMP/MG'
+make[2]: Entering directory '/home/ibm23/zram/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/ibm23/zram/src/NPB-OMP/sys'
+../sys/setparams mg D
+gfortran -c  -O3 -fopenmp mg_data.f90
+gfortran -c  -O3 -fopenmp mg.f90
+gfortran -O3 -fopenmp -o ../bin/mg.D.x mg.o mg_data.o ../common/print_results.o ../common/randi8.o ../common/timers.o ../common/wtime.o 
+make[1]: Leaving directory '/home/ibm23/zram/src/NPB-OMP/MG'
+make: Leaving directory '/home/ibm23/zram/src/NPB-OMP'
+
+[LOG] Benchmark mg/D iniciado: 26/11/2024 as 18:27:00
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       7,7G   4K   74B   12K       4 
+[LOG] Benchmark mg/D (0% ZRAM) iniciado: 26/11/2024 18:27:11
+[LOG] Teste 1 iniciado: 26/11/2024 18:27:11
+[LOG] Benchmark mg/D (0% ZRAM) finalizado: 26/11/2024 18:27:11
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       1,9G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark mg/D (25% ZRAM) iniciado: 26/11/2024 18:27:21
+[LOG] Teste 1 iniciado: 26/11/2024 18:27:21
+[LOG] Benchmark mg/D (25% ZRAM) finalizado: 26/11/2024 18:27:26
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       3,8G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark mg/D (50% ZRAM) iniciado: 26/11/2024 18:27:37
+[LOG] Teste 1 iniciado: 26/11/2024 18:27:37
+[LOG] Benchmark mg/D (50% ZRAM) finalizado: 26/11/2024 18:27:42
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       5,7G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark mg/D (75% ZRAM) iniciado: 26/11/2024 18:27:53
+[LOG] Teste 1 iniciado: 26/11/2024 18:27:53
+[LOG] Benchmark mg/D (75% ZRAM) finalizado: 26/11/2024 18:28:00
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       7,7G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark mg/D (100% ZRAM) iniciado: 26/11/2024 18:28:11
+[LOG] Teste 1 iniciado: 26/11/2024 18:28:11
+[LOG] Benchmark mg/D (100% ZRAM) finalizado: 26/11/2024 18:28:19
+[INFO] Escrevendo resultados no csv...
+[LOG] Benchmark mg/D finalizado: 26/11/2024 as 18:28:19
+
+-~~-~~-~~-~~-~~-~~- Benchmark sp/D -~~-~~-~~-~~-~~-~~-
+[LOG] Compilando benchmark sp/D
+make: Entering directory '/home/ibm23/zram/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd SP; make CLASS=D
+make[1]: Entering directory '/home/ibm23/zram/src/NPB-OMP/SP'
+make[2]: Entering directory '/home/ibm23/zram/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/ibm23/zram/src/NPB-OMP/sys'
+../sys/setparams sp D
+make[2]: Entering directory '/home/ibm23/zram/src/NPB-OMP/SP'
+gfortran -c  -O3 -fopenmp sp_data.f90
+sed -e 's/= 0/= 0/' blk_par0.h > blk_par.h_wk
+gfortran -c  -O3 -fopenmp sp.f90
+gfortran -c  -O3 -fopenmp initialize.f90
+gfortran -c  -O3 -fopenmp exact_solution.f90
+gfortran -c  -O3 -fopenmp exact_rhs.f90
+gfortran -c  -O3 -fopenmp set_constants.f90
+gfortran -c  -O3 -fopenmp adi.f90
+gfortran -c  -O3 -fopenmp rhs.f90
+gfortran -c  -O3 -fopenmp work_lhs.f90
+gfortran -c  -O3 -fopenmp x_solve.f90
+gfortran -c  -O3 -fopenmp ninvr.f90
+gfortran -c  -O3 -fopenmp y_solve.f90
+gfortran -c  -O3 -fopenmp pinvr.f90
+gfortran -c  -O3 -fopenmp z_solve.f90
+gfortran -c  -O3 -fopenmp tzetar.f90
+gfortran -c  -O3 -fopenmp add.f90
+gfortran -c  -O3 -fopenmp txinvr.f90
+gfortran -c  -O3 -fopenmp error.f90
+gfortran -c  -O3 -fopenmp verify.f90
+gfortran -O3 -fopenmp -o ../bin/sp.D.x sp.o sp_data.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o rhs.o work_lhs.o x_solve.o ninvr.o y_solve.o pinvr.o z_solve.o tzetar.o add.o txinvr.o error.o verify.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory '/home/ibm23/zram/src/NPB-OMP/SP'
+make[1]: Leaving directory '/home/ibm23/zram/src/NPB-OMP/SP'
+make: Leaving directory '/home/ibm23/zram/src/NPB-OMP'
+
+[LOG] Benchmark sp/D iniciado: 26/11/2024 as 18:28:26
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       7,7G   4K   74B   12K       4 
+[LOG] Benchmark sp/D (0% ZRAM) iniciado: 26/11/2024 18:28:37
+[LOG] Teste 1 iniciado: 26/11/2024 18:28:37
+[LOG] Benchmark sp/D (0% ZRAM) finalizado: 26/11/2024 18:28:43
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       1,9G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark sp/D (25% ZRAM) iniciado: 26/11/2024 18:28:54
+[LOG] Teste 1 iniciado: 26/11/2024 18:28:54
+[LOG] Benchmark sp/D (25% ZRAM) finalizado: 26/11/2024 18:29:03
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       3,8G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark sp/D (50% ZRAM) iniciado: 26/11/2024 18:29:14
+[LOG] Teste 1 iniciado: 26/11/2024 18:29:14
+[LOG] Benchmark sp/D (50% ZRAM) finalizado: 26/11/2024 18:29:26
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       5,7G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark sp/D (75% ZRAM) iniciado: 26/11/2024 18:29:37
+[LOG] Teste 1 iniciado: 26/11/2024 18:29:37
+[LOG] Benchmark sp/D (75% ZRAM) finalizado: 26/11/2024 18:29:52
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       7,7G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark sp/D (100% ZRAM) iniciado: 26/11/2024 18:30:03
+[LOG] Teste 1 iniciado: 26/11/2024 18:30:03
+[LOG] Benchmark sp/D (100% ZRAM) finalizado: 26/11/2024 18:30:18
+[INFO] Escrevendo resultados no csv...
+[LOG] Benchmark sp/D finalizado: 26/11/2024 as 18:30:18
+
+-~~-~~-~~-~~-~~-~~- Benchmark ua/D -~~-~~-~~-~~-~~-~~-
+[LOG] Compilando benchmark ua/D
+make: Entering directory '/home/ibm23/zram/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd UA; make CLASS=D
+make[1]: Entering directory '/home/ibm23/zram/src/NPB-OMP/UA'
+make[2]: Entering directory '/home/ibm23/zram/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/ibm23/zram/src/NPB-OMP/sys'
+../sys/setparams ua D
+gfortran -c  -O3 -fopenmp ua_data.f90
+gfortran -c  -O3 -fopenmp ua.f90
+gfortran -c  -O3 -fopenmp convect.f90
+gfortran -c  -O3 -fopenmp diffuse.f90
+gfortran -c  -O3 -fopenmp adapt.f90
+gfortran -c  -O3 -fopenmp move.f90
+gfortran -c  -O3 -fopenmp mason.f90
+gfortran -c  -O3 -fopenmp precond.f90
+gfortran -c  -O3 -fopenmp utils.f90
+gfortran -c  -O3 -fopenmp verify.f90
+gfortran -c  -O3 -fopenmp setup.f90
+gfortran -c  -O3 -fopenmp transfer.f90
+make[2]: Entering directory '/home/ibm23/zram/src/NPB-OMP/UA'
+gfortran -O3 -fopenmp -o ../bin/ua.D.x ua.o ua_data.o convect.o diffuse.o adapt.o move.o mason.o precond.o utils.o verify.o setup.o transfer.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory '/home/ibm23/zram/src/NPB-OMP/UA'
+make[1]: Leaving directory '/home/ibm23/zram/src/NPB-OMP/UA'
+make: Leaving directory '/home/ibm23/zram/src/NPB-OMP'
+
+[LOG] Benchmark ua/D iniciado: 26/11/2024 as 18:30:29
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       7,7G   4K   74B   12K       4 
+[LOG] Benchmark ua/D (0% ZRAM) iniciado: 26/11/2024 18:30:40
+[LOG] Teste 1 iniciado: 26/11/2024 18:30:40
+[LOG] Benchmark ua/D (0% ZRAM) finalizado: 26/11/2024 18:30:47
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       1,9G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark ua/D (25% ZRAM) iniciado: 26/11/2024 18:30:58
+[LOG] Teste 1 iniciado: 26/11/2024 18:30:58
+[LOG] Benchmark ua/D (25% ZRAM) finalizado: 26/11/2024 19:51:31
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       3,8G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark ua/D (50% ZRAM) iniciado: 26/11/2024 19:51:42
+[LOG] Teste 1 iniciado: 26/11/2024 19:51:42
+[LOG] Benchmark ua/D (50% ZRAM) finalizado: 26/11/2024 21:12:28
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       5,7G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark ua/D (75% ZRAM) iniciado: 26/11/2024 21:12:39
+[LOG] Teste 1 iniciado: 26/11/2024 21:12:39
+[LOG] Benchmark ua/D (75% ZRAM) finalizado: 26/11/2024 22:33:45
+[INFO] Escrevendo resultados no csv...
+[INFO] zramctl:
+NAME       ALGORITHM DISKSIZE DATA COMPR TOTAL STREAMS MOUNTPOINT
+/dev/zram0 lzo-rle       7,7G   4K   74B   12K       4 [SWAP]
+[LOG] Benchmark ua/D (100% ZRAM) iniciado: 26/11/2024 22:33:57
+[LOG] Teste 1 iniciado: 26/11/2024 22:33:57
+[LOG] Benchmark ua/D (100% ZRAM) finalizado: 26/11/2024 23:55:21
+[INFO] Escrevendo resultados no csv...
+[LOG] Benchmark ua/D finalizado: 26/11/2024 as 23:55:21
+
+-~~-~~-~~-~~-~~-~~- Finalizando benchmarks -~~-~~-~~-~~-~~-~~-
+[LOG] Finalizando testes: 26/11/2024 as 23:55:21

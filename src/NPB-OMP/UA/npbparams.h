@@ -1,4 +1,4 @@
-! CLASS = C
+! CLASS = D
 !  
 !  
 !  This file is generated automatically by the setparams utility.
@@ -9,18 +9,18 @@
         integer          niter_default, nmxh_default
         character        class_default
         double precision alpha_default
-        parameter(  lelt=33500, &
-     &             lmor=1262100, &
-     &              refine_max=8, &
+        parameter(  lelt=514400, &
+     &             lmor=19134400, &
+     &              refine_max=10, &
      &              fre_default=5, &
-     &              niter_default=200, &
+     &              niter_default=250, &
      &              nmxh_default=10, &
-     &              class_default="C", &
-     &              alpha_default=0.067d0 )
+     &              class_default="D", &
+     &              alpha_default=0.046d0 )
         logical  convertdouble
         parameter (convertdouble = .false.)
         character compiletime*11
-        parameter (compiletime='24 Nov 2024')
+        parameter (compiletime='26 Nov 2024')
         character npbversion*5
         parameter (npbversion='3.4.3')
         character cs1*8
