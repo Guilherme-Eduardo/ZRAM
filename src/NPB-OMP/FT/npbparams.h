@@ -1,4 +1,4 @@
-! CLASS = D
+! CLASS = C
 !  
 !  
 !  This file is generated automatically by the setparams utility.
@@ -6,14 +6,14 @@
 !  in this directory. Do not modify it by hand.
 !  
         integer nx, ny, nz, maxdim, niter_default
-        parameter (nx=2048, ny=1024, nz=1024, maxdim=2048)
-        parameter (niter_default=25)
+        parameter (nx=512, ny=512, nz=512, maxdim=512)
+        parameter (niter_default=20)
         integer kind2
-        parameter (kind2=8)
+        parameter (kind2=4)
         logical  convertdouble
         parameter (convertdouble = .false.)
         character compiletime*11
-        parameter (compiletime='26 Nov 2024')
+        parameter (compiletime='29 Nov 2024')
         character npbversion*5
         parameter (npbversion='3.4.3')
         character cs1*8

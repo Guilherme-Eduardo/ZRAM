@@ -5,7 +5,7 @@
 # Removido DC
 # Algoritmo padrao de comprensaos: lzo-rle
 BENCHMARKS=('bt' 'cg' 'ep' 'ft' 'is' 'lu' 'mg' 'sp' 'ua') # Definir os benchmarks que serão executados
-BENCH_CLASSES=('D') # Classes a serem testadas (S (fast to test), A, B, C (medium 4x), D, E, F (large 16x))
+BENCH_CLASSES=('C') # Classes a serem testadas (S (fast to test), A, B, C (medium 4x), D, E, F (large 16x))
 ZRAM_PORC=(0 25 50 75 100) # Porcentagem de ZRAM a serem testadas
 NUM_OF_REPETITIONS=1
 
@@ -22,4 +22,4 @@ CSV_RESULT="${RESULT_SOURCE}/$(date +"%d%m%Y_%H%M%S")_RESULT.csv"
 # O teste continuara igual
 # Entao ele fara o teste para 50% de zram, mas se habilitar de fato
 NO_ZRAM_DEBUGGER=0 # 1 PARA DESABILITAR ZRAM
-NO_BENCHMARKS_RESULTS=1 # 1 PARA SEM DIRETORIO DE RESULTADOS PARA CADA BENCHMARK
+NO_BENCHMARKS_RESULTS=0 # 1 PARA SEM DIRETORIO DE RESULTADOS PARA CADA BENCHMARK

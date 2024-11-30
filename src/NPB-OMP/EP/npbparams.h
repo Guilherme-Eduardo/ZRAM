@@ -1,4 +1,4 @@
-! CLASS = D
+! CLASS = C
 !  
 !  
 !  This file is generated automatically by the setparams utility.
@@ -6,13 +6,13 @@
 !  in this directory. Do not modify it by hand.
 !  
         character class
-        parameter (class ='D')
+        parameter (class ='C')
         integer m
-        parameter (m=36)
+        parameter (m=32)
         logical  convertdouble
         parameter (convertdouble = .false.)
         character compiletime*11
-        parameter (compiletime='26 Nov 2024')
+        parameter (compiletime='29 Nov 2024')
         character npbversion*5
         parameter (npbversion='3.4.3')
         character cs1*8

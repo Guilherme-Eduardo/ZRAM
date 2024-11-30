@@ -1,0 +1,302 @@
+-~~-~~-~~-~~-~~-~~- Informacoes de execucao -~~-~~-~~-~~-~~-~~-
+[INFO] Tempo estimado: 05h 02m 15s
+[INFO] Benchmarks a serem executados: bt cg ep ft is lu mg sp ua
+[INFO] Classes a serem executadas: C
+[INFO] Porcentagem de ZRAM analisadas: 0 25 50 75 100
+
+-~~-~~-~~-~~-~~-~~- Maquina dos testes -~~-~~-~~-~~-~~-~~-
+[INFO] lsb_release -a:
+Distributor ID:	Ubuntu
+Description:	Ubuntu 24.04.1 LTS
+Release:	24.04
+Codename:	noble
+[INFO] Uname -a:
+Linux zram-ibm 6.8.0-49-generic #49-Ubuntu SMP PREEMPT_DYNAMIC Mon Nov 4 02:06:24 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+[INFO] cat /proc/meminfo:
+MemTotal:        3831948 kB
+MemFree:         3362384 kB
+MemAvailable:    3405244 kB
+Buffers:           20416 kB
+Cached:           226480 kB
+SwapCached:            0 kB
+Active:           236988 kB
+Inactive:          55144 kB
+Active(anon):      55280 kB
+Inactive(anon):        0 kB
+Active(file):     181708 kB
+Inactive(file):    55144 kB
+Unevictable:       27584 kB
+Mlocked:           27576 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Zswap:                 0 kB
+Zswapped:              0 kB
+Dirty:                36 kB
+Writeback:             0 kB
+AnonPages:         72756 kB
+Mapped:            81488 kB
+Shmem:              1292 kB
+KReclaimable:      20608 kB
+Slab:              76636 kB
+SReclaimable:      20608 kB
+SUnreclaim:        56028 kB
+KernelStack:        2848 kB
+PageTables:         3044 kB
+SecPageTables:         0 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     1915972 kB
+Committed_AS:     383776 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       19912 kB
+VmallocChunk:          0 kB
+Percpu:             2016 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+Unaccepted:            0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      115476 kB
+DirectMap2M:     3899392 kB
+[INFO] cat /proc/cpuinfo | more:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz
+stepping	: 7
+microcode	: 0x2f
+cpu MHz		: 2056.043
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx lahf_lm epb pti ssbd ibrs ibpb stibp xsaveopt dtherm ida arat pln pts md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit mmio_unknown
+bogomips	: 6187.95
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz
+stepping	: 7
+microcode	: 0x2f
+cpu MHz		: 2249.651
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 4
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx lahf_lm epb pti ssbd ibrs ibpb stibp xsaveopt dtherm ida arat pln pts md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit mmio_unknown
+bogomips	: 6187.95
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz
+stepping	: 7
+microcode	: 0x2f
+cpu MHz		: 2032.175
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 4
+core id		: 2
+cpu cores	: 4
+apicid		: 4
+initial apicid	: 4
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx lahf_lm epb pti ssbd ibrs ibpb stibp xsaveopt dtherm ida arat pln pts md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit mmio_unknown
+bogomips	: 6187.95
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz
+stepping	: 7
+microcode	: 0x2f
+cpu MHz		: 2311.488
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 4
+core id		: 3
+cpu cores	: 4
+apicid		: 6
+initial apicid	: 6
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx lahf_lm epb pti ssbd ibrs ibpb stibp xsaveopt dtherm ida arat pln pts md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit mmio_unknown
+bogomips	: 6187.95
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+[INFO] df -ha:
+Filesystem                         Size  Used Avail Use% Mounted on
+sysfs                                 0     0     0    - /sys
+proc                                  0     0     0    - /proc
+udev                               1,8G     0  1,8G   0% /dev
+devpts                                0     0     0    - /dev/pts
+tmpfs                              375M  1,3M  373M   1% /run
+efivarfs                            64K   16K   44K  26% /sys/firmware/efi/efivars
+/dev/mapper/ubuntu--vg-ubuntu--lv  9,8G  3,2G  6,1G  35% /
+securityfs                            0     0     0    - /sys/kernel/security
+tmpfs                              1,9G     0  1,9G   0% /dev/shm
+tmpfs                              5,0M     0  5,0M   0% /run/lock
+cgroup2                               0     0     0    - /sys/fs/cgroup
+pstore                                0     0     0    - /sys/fs/pstore
+bpf                                   0     0     0    - /sys/fs/bpf
+systemd-1                             -     -     -    - /proc/sys/fs/binfmt_misc
+hugetlbfs                             0     0     0    - /dev/hugepages
+mqueue                                0     0     0    - /dev/mqueue
+debugfs                               0     0     0    - /sys/kernel/debug
+tracefs                               0     0     0    - /sys/kernel/tracing
+fusectl                               0     0     0    - /sys/fs/fuse/connections
+configfs                              0     0     0    - /sys/kernel/config
+/dev/sdc2                          1,7G  183M  1,5G  12% /boot
+/dev/sdc1                          682M  6,2M  676M   1% /boot/efi
+binfmt_misc                           0     0     0    - /proc/sys/fs/binfmt_misc
+tmpfs                              375M   12K  375M   1% /run/user/1000
+[INFO] fdisk -l:
+Disk /dev/sda: 111,8 GiB, 120040980480 bytes, 234455040 sectors
+Disk model: SanDisk SSD PLUS
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: C23C6962-0189-4B1E-B133-6C695CBEC234
+
+Device       Start       End   Sectors   Size Type
+/dev/sda1     2048      4095      2048     1M BIOS boot
+/dev/sda2     4096   1054719   1050624   513M EFI System
+/dev/sda3  1054720 234452991 233398272 111,3G Linux filesystem
+
+
+Disk /dev/sdb: 465,76 GiB, 500107862016 bytes, 976773168 sectors
+Disk model: ST3500413AS     
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: 84763412-CC71-42FE-B546-7941645C88F8
+
+Device       Start       End   Sectors   Size Type
+/dev/sdb1     2048   1050623   1048576   512M EFI System
+/dev/sdb2  1050624   1052671      2048     1M Linux filesystem
+/dev/sdb3  1052672 976771071 975718400 465,3G Linux filesystem
+
+
+Disk /dev/sdc: 14,32 GiB, 15376318464 bytes, 30031872 sectors
+Disk model: Cruzer Blade    
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: 8BC200C2-9237-4302-B4A4-CE6DAE0A1A70
+
+Device       Start      End  Sectors  Size Type
+/dev/sdc1     2048  1400831  1398784  683M EFI System
+/dev/sdc2  1400832  5070847  3670016  1,8G Linux filesystem
+/dev/sdc3  5070848 30029823 24958976 11,9G Linux filesystem
+
+
+Disk /dev/mapper/ubuntu--vg-ubuntu--lv: 10 GiB, 10737418240 bytes, 20971520 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+-~~-~~-~~-~~-~~-~~- Preparacao do sistema -~~-~~-~~-~~-~~-~~-
+[LOG] Desabilitando DVFS (CPU frequency scaling) usando cpufrequtils
+[LOG] Desabilitando Turbo boost (echo 1 > /sys/devices/system/cpu/intel_pstate/no_turbo)
+
+-~~-~~-~~-~~-~~-~~- Iniciando benchmarks -~~-~~-~~-~~-~~-~~-
+[LOG] Iniciando testes: 29/11/2024 as 21:11:09
+
+-~~-~~-~~-~~-~~-~~- Benchmark bt/C -~~-~~-~~-~~-~~-~~-
+[LOG] Compilando benchmark bt/C
+make: Entering directory '/home/ibm23/zram/src/NPB-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd BT; make CLASS=C VERSION=
+make[1]: Entering directory '/home/ibm23/zram/src/NPB-OMP/BT'
+make[2]: Entering directory '/home/ibm23/zram/src/NPB-OMP/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/ibm23/zram/src/NPB-OMP/sys'
+../sys/setparams bt C
+make[2]: Entering directory '/home/ibm23/zram/src/NPB-OMP/BT'
+gfortran -c  -O3 -fopenmp bt_data.f90
+sed -e 's/= 0/= 0/' blk_par0.h > blk_par.h_wk
+gfortran -c  -O3 -fopenmp bt.f90
+gfortran -c  -O3 -fopenmp initialize.f90
+gfortran -c  -O3 -fopenmp exact_solution.f90
+gfortran -c  -O3 -fopenmp exact_rhs.f90
+gfortran -c  -O3 -fopenmp set_constants.f90
+gfortran -c  -O3 -fopenmp adi.f90
+gfortran -c  -O3 -fopenmp rhs.f90
+gfortran -c  -O3 -fopenmp work_lhs.f90
+gfortran -c  -O3 -fopenmp x_solve.f90
+gfortran -c  -O3 -fopenmp y_solve.f90
+gfortran -c  -O3 -fopenmp solve_subs.f90
+gfortran -c  -O3 -fopenmp z_solve.f90
+gfortran -c  -O3 -fopenmp add.f90
+gfortran -c  -O3 -fopenmp error.f90
+gfortran -c  -O3 -fopenmp verify.f90
+gfortran -O3 -fopenmp -o ../bin/bt.C.x bt.o bt_data.o initialize.o exact_solution.o exact_rhs.o set_constants.o adi.o  rhs.o x_solve.o y_solve.o solve_subs.o z_solve.o add.o error.o verify.o work_lhs.o ../common/print_results.o ../common/timers.o ../common/wtime.o 
+make[2]: Leaving directory '/home/ibm23/zram/src/NPB-OMP/BT'
+make[1]: Leaving directory '/home/ibm23/zram/src/NPB-OMP/BT'
+make: Leaving directory '/home/ibm23/zram/src/NPB-OMP'
+
+[LOG] Benchmark bt/C iniciado: 29/11/2024 as 21:11:16
+[FILE] Arquivo criado: ../output/29112024_211109_benchmarks/bt-C.log
+[INFO] zramctl:
+[LOG] Benchmark bt/C (0% ZRAM) iniciado: 29/11/2024 21:11:26
+[LOG] Teste 1 iniciado: 29/11/2024 21:11:26

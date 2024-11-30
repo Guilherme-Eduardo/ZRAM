@@ -1,4 +1,4 @@
-! CLASS = D
+! CLASS = C
 !  
 !  
 !  This file is generated automatically by the setparams utility.
@@ -8,17 +8,17 @@
 
 ! full problem size
         integer isiz1, isiz2, isiz3
-        parameter (isiz1=408, isiz2=408, isiz3=408)
+        parameter (isiz1=162, isiz2=162, isiz3=162)
 
 ! number of iterations and how often to print the norm
         integer itmax_default, inorm_default
-        parameter (itmax_default=300, inorm_default=300)
+        parameter (itmax_default=250, inorm_default=250)
         double precision dt_default
-        parameter (dt_default = 1.0d0)
+        parameter (dt_default = 2.0d0)
         logical  convertdouble
         parameter (convertdouble = .false.)
         character compiletime*11
-        parameter (compiletime='26 Nov 2024')
+        parameter (compiletime='29 Nov 2024')
         character npbversion*5
         parameter (npbversion='3.4.3')
         character cs1*8

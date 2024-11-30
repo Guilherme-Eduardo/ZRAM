@@ -1,4 +1,4 @@
-! CLASS = D
+! CLASS = C
 !  
 !  
 !  This file is generated automatically by the setparams utility.
@@ -6,19 +6,19 @@
 !  in this directory. Do not modify it by hand.
 !  
         integer nx_default, ny_default, nz_default
-        parameter (nx_default=1024, ny_default=1024, nz_default=1024)
+        parameter (nx_default=512, ny_default=512, nz_default=512)
         integer nit_default, lm, lt_default
-        parameter (nit_default=50, lm = 10, lt_default=10)
+        parameter (nit_default=20, lm = 9, lt_default=9)
         integer debug_default
         parameter (debug_default=0)
         integer ndim1, ndim2, ndim3
-        parameter (ndim1 = 10, ndim2 = 10, ndim3 = 10)
+        parameter (ndim1 = 9, ndim2 = 9, ndim3 = 9)
         integer kind2
         parameter (kind2=4)
         logical  convertdouble
         parameter (convertdouble = .false.)
         character compiletime*11
-        parameter (compiletime='26 Nov 2024')
+        parameter (compiletime='30 Nov 2024')
         character npbversion*5
         parameter (npbversion='3.4.3')
         character cs1*8
