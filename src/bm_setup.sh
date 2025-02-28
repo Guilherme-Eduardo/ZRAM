@@ -148,17 +148,21 @@ do
                 fi
 
                 # Executando benchmark
-                echo "aqui!: $BENCHMARK_DIR/bin/$bm.$cl.x"
+                echo "$BENCHMARK_DIR/bin/$bm.$cl.x"
                 EXECUTABLE="$BENCHMARK_DIR/bin/$bm.$cl.x"
-                OUTPUT_TIME=$(/usr/bin/time -f "Tempo real: %E\nSegundos de CPU: %S\nMedia de Memoria total (KB): %K\nMajor page fault: %F\nMinor page faults: %R\nSwaps totais: %W\nTrocas de contexto: %c\nEsperas com troca de contexto voluntarias: %w\nUso da CPU para este JOB: %P\n" $EXECUTABLE 2>&1)
-                if [ $NO_BENCHMARKS_RESULTS -eq 0 ]; then
+		OUTPUT_TIME=$(/usr/bin/time -f "Tempo real: %E\nSegundos de CPU: %S\nMedia de Memoria total (KB): %K\nMajor page fault: %F\nMinor page faults: %R\nSwaps totais: %W\nTrocas de contexto: %c\nEsperas com troca de contexto voluntarias: %w\nUso da CPU para este JOB: %P\n" $EXECUTABLE 2>&1)
+		if [ $NO_BENCHMARKS_RESULTS -eq 0 ]; then
                     echo "$OUTPUT_TIME" >> $RESULT_ARCHIVE
-                fi
-                if [ $? -nt 0 ]; then
-                    write_logs $LOG_ARCHIVE "[ERROR] Erro na execucao do benchmark"
-                    csv_writer $CSV_RESULT $i "$START_BM_DATE" "ERRO NA EXECUCAO" "0" "$bm" "$cl" "$zr" 0 0 0 0 0 0 0 0 0
-                    continue;
-                fi
+		    echo "OUTPUT COMPLETO" >> $RESULT_ARCHIVE
+		    { /usr/bin/time -v $EXECUTABLE; signal_code=$(echo "$?"); } >> $RESULT_ARCHIVE 2>&1
+		fi
+
+                	if [ $signal_code -ne 0 ]; then
+                    		write_logs $LOG_ARCHIVE "[ERROR] Erro na execucao do benchmark"
+				write_logs $LOG_ARCHIVE "STATUS: $signal_code"
+                    		csv_writer $CSV_RESULT $i "$START_BM_DATE" "ERRO NA EXECUCAO" "0" "$bm" "$cl" "$zr" 0 0 0 0 0 0 0 0 0
+                    		continue
+                	fi
 
                 real_time=$(echo "$OUTPUT_TIME" | grep "Tempo real" | awk '{print $3}')
                 cpu_seconds=$(echo "$OUTPUT_TIME" | grep "Segundos de CPU" | awk '{print $4}')

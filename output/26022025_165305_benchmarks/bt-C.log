@@ -1,0 +1,173 @@
+-~~-~~-~~-~~-~~-~~- Benchmark bt - classe C -~~-~~-~~-~~-~~-~~-
+[TIME] Benchmark totalmente iniciado: 26/02/2025 as 16:53:06
+
+-~~-~~-~~-~~-~~-~~- 0% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Teste 1
+[INFO] Iniciado benchmark com 0% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 26/02/2025 16:53:16
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     4
+
+Command terminated by signal 9
+Tempo real: 0:00.46
+Segundos de CPU: 0.22
+Media de Memoria total (KB): 0
+Major page fault: 17
+Minor page faults: 91820
+Swaps totais: 0
+Trocas de contexto: 188
+Esperas com troca de contexto voluntarias: 82
+Uso da CPU para este JOB: 289%
+OUTPUT COMPLETO
+Command terminated by signal 9
+	Command being timed: "./NPB-OMP/bin/bt.C.x"
+	User time (seconds): 1.08
+	System time (seconds): 0.20
+	Percent of CPU this job got: 173%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.73
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 368768
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 42
+	Minor (reclaiming a frame) page faults: 91845
+	Voluntary context switches: 260
+	Involuntary context switches: 196
+	Swaps: 0
+	File system inputs: 8200
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+[INFO] Teste 2
+[INFO] Iniciado benchmark com 0% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 26/02/2025 16:53:18
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     4
+
+Command terminated by signal 9
+Tempo real: 0:00.53
+Segundos de CPU: 0.24
+Media de Memoria total (KB): 0
+Major page fault: 15
+Minor page faults: 91311
+Swaps totais: 0
+Trocas de contexto: 53
+Esperas com troca de contexto voluntarias: 80
+Uso da CPU para este JOB: 239%
+OUTPUT COMPLETO
+Command terminated by signal 9
+	Command being timed: "./NPB-OMP/bin/bt.C.x"
+	User time (seconds): 1.04
+	System time (seconds): 0.20
+	Percent of CPU this job got: 188%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.66
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 360960
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 22
+	Minor (reclaiming a frame) page faults: 89862
+	Voluntary context switches: 146
+	Involuntary context switches: 176
+	Swaps: 0
+	File system inputs: 5896
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+-~~-~~-~~-~~-~~-~~- 25% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Teste 1
+[INFO] Iniciado benchmark com 25% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 26/02/2025 16:53:32
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+145424384
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      79        0     2624        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       73    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     4
+
+Command terminated by signal 9
+Tempo real: 0:00.61
+Segundos de CPU: 0.50
+Media de Memoria total (KB): 0
+Major page fault: 5787
+Minor page faults: 93172
+Swaps totais: 0
+Trocas de contexto: 228
+Esperas com troca de contexto voluntarias: 47
+Uso da CPU para este JOB: 272%
+OUTPUT COMPLETO
+Command terminated by signal 9
+	Command being timed: "./NPB-OMP/bin/bt.C.x"
+	User time (seconds): 1.06
+	System time (seconds): 0.55
+	Percent of CPU this job got: 196%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.82
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 365312
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2299
+	Minor (reclaiming a frame) page faults: 93871
+	Voluntary context switches: 84
+	Involuntary context switches: 48
+	Swaps: 0
+	File system inputs: 23912
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

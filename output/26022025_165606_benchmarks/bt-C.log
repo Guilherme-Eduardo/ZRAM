@@ -1,0 +1,2016 @@
+-~~-~~-~~-~~-~~-~~- Benchmark bt - classe C -~~-~~-~~-~~-~~-~~-
+[TIME] Benchmark totalmente iniciado: 26/02/2025 as 16:56:07
+
+-~~-~~-~~-~~-~~-~~- 0% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Teste 1
+[INFO] Iniciado benchmark com 0% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 26/02/2025 16:56:17
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     4
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.1457567554973E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.6714683264956E-15
+           3 0.1542353009301E+04 0.1542353009301E+04 0.8402939808271E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.1247766821685E-13
+           5 0.1160408742844E+05 0.1160408742844E+05 0.1410787770505E-14
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.7769264209400E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6798205391080E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.2586459976855E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7854973645884E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.7534948241943E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   209.64
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                 13672.20
+ Mop/s/thread    =                  3418.05
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              26 Feb 2025
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 3:31.50
+Segundos de CPU: 0.39
+Media de Memoria total (KB): 0
+Major page fault: 123
+Minor page faults: 176824
+Swaps totais: 0
+Trocas de contexto: 4701
+Esperas com troca de contexto voluntarias: 401
+Uso da CPU para este JOB: 399%
+OUTPUT COMPLETO
+Command terminated by signal 9
+	Command being timed: "./NPB-OMP/bin/bt.C.x"
+	User time (seconds): 135.51
+	System time (seconds): 1.06
+	Percent of CPU this job got: 85%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:38.99
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 708480
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 9035
+	Minor (reclaiming a frame) page faults: 184846
+	Voluntary context switches: 28646
+	Involuntary context switches: 24212
+	Swaps: 0
+	File system inputs: 1022872
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+[INFO] Teste 2
+[INFO] Iniciado benchmark com 0% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 26/02/2025 17:02:28
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     4
+
+Command terminated by signal 9
+Tempo real: 0:36.68
+Segundos de CPU: 0.49
+Media de Memoria total (KB): 0
+Major page fault: 2592
+Minor page faults: 178361
+Swaps totais: 0
+Trocas de contexto: 878
+Esperas com troca de contexto voluntarias: 8002
+Uso da CPU para este JOB: 5%
+OUTPUT COMPLETO
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     4
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.1457567554973E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.6714683264956E-15
+           3 0.1542353009301E+04 0.1542353009301E+04 0.8402939808271E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.1247766821685E-13
+           5 0.1160408742844E+05 0.1160408742844E+05 0.1410787770505E-14
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.7769264209400E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6798205391080E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.2586459976855E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7854973645884E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.7534948241943E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   215.88
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                 13277.18
+ Mop/s/thread    =                  3319.30
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              26 Feb 2025
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+	Command being timed: "./NPB-OMP/bin/bt.C.x"
+	User time (seconds): 857.27
+	System time (seconds): 0.43
+	Percent of CPU this job got: 391%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:38.99
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 708480
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 622
+	Minor (reclaiming a frame) page faults: 177417
+	Voluntary context switches: 2170
+	Involuntary context switches: 9574
+	Swaps: 0
+	File system inputs: 65800
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+[TIME] Benchmark finalizado: 26/02/2025 17:06:45
+
+-~~-~~-~~-~~-~~-~~- 25% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Teste 1
+[INFO] Iniciado benchmark com 25% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 26/02/2025 17:06:57
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+251854848
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      79        0     2624        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       73    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     4
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.1457567554973E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.6714683264956E-15
+           3 0.1542353009301E+04 0.1542353009301E+04 0.8402939808271E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.1247766821685E-13
+           5 0.1160408742844E+05 0.1160408742844E+05 0.1410787770505E-14
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.7769264209400E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6798205391080E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.2586459976855E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7854973645884E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.7377970153569E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   211.15
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                 13574.61
+ Mop/s/thread    =                  3393.65
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              26 Feb 2025
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 3:33.32
+Segundos de CPU: 0.72
+Media de Memoria total (KB): 0
+Major page fault: 71136
+Minor page faults: 210377
+Swaps totais: 0
+Trocas de contexto: 6963
+Esperas com troca de contexto voluntarias: 56
+Uso da CPU para este JOB: 399%
+OUTPUT COMPLETO
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     4
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.1457567554973E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.6714683264956E-15
+           3 0.1542353009301E+04 0.1542353009301E+04 0.8402939808271E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.1247766821685E-13
+           5 0.1160408742844E+05 0.1160408742844E+05 0.1410787770505E-14
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.7769264209400E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6798205391080E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.2586459976855E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7854973645884E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.7534948241943E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   210.38
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                 13624.39
+ Mop/s/thread    =                  3406.10
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              26 Feb 2025
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+	Command being timed: "./NPB-OMP/bin/bt.C.x"
+	User time (seconds): 848.14
+	System time (seconds): 0.39
+	Percent of CPU this job got: 399%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:32.26
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 708992
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 4
+	Minor (reclaiming a frame) page faults: 176579
+	Voluntary context switches: 26
+	Involuntary context switches: 4315
+	Swaps: 0
+	File system inputs: 1464
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+251854848
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+   71744        0   575944       50    82220        0   657760      293        0      357      343        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0    71552
+STATS mm: 
+43696128 11759454 13246464        0 194207744      373        6        5    69028
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+[TIME] Benchmark finalizado: 26/02/2025 17:14:03
+[INFO] Teste 2
+[INFO] Iniciado benchmark com 25% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 26/02/2025 17:14:03
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+251854848
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+   71756        0   576040       50    82220        0   657760      293        0      357      343        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0    71616
+STATS mm: 
+43433984 11672365 13225984        0 194207744      372        6        1    69028
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     4
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.1457567554973E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.6714683264956E-15
+           3 0.1542353009301E+04 0.1542353009301E+04 0.8402939808271E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.1247766821685E-13
+           5 0.1160408742844E+05 0.1160408742844E+05 0.1410787770505E-14
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.7769264209400E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6798205391080E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.2586459976855E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7854973645884E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.7534948241943E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   210.35
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                 13626.01
+ Mop/s/thread    =                  3406.50
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              26 Feb 2025
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 3:32.15
+Segundos de CPU: 0.41
+Media de Memoria total (KB): 0
+Major page fault: 1085
+Minor page faults: 176603
+Swaps totais: 0
+Trocas de contexto: 5837
+Esperas com troca de contexto voluntarias: 49
+Uso da CPU para este JOB: 399%
+OUTPUT COMPLETO
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     4
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.1457567554973E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.6714683264956E-15
+           3 0.1542353009301E+04 0.1542353009301E+04 0.8402939808271E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.1247766821685E-13
+           5 0.1160408742844E+05 0.1160408742844E+05 0.1410787770505E-14
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.7769264209400E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6798205391080E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.2586459976855E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7854973645884E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.7534948241943E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   210.32
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                 13627.97
+ Mop/s/thread    =                  3406.99
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              26 Feb 2025
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+	Command being timed: "./NPB-OMP/bin/bt.C.x"
+	User time (seconds): 847.88
+	System time (seconds): 0.49
+	Percent of CPU this job got: 399%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:32.32
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 708608
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 15402
+	Minor (reclaiming a frame) page faults: 191756
+	Voluntary context switches: 68
+	Involuntary context switches: 5578
+	Swaps: 0
+	File system inputs: 127384
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+251854848
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+   89550        0   718392       73    99459        0   795672      338        0      445      411        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0    89280
+STATS mm: 
+41693184 11271169 13242368        0 194207744      379      166       46    84793
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+[TIME] Benchmark finalizado: 26/02/2025 17:21:07
+
+-~~-~~-~~-~~-~~-~~- 50% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Teste 1
+[INFO] Iniciado benchmark com 50% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 26/02/2025 17:21:18
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+503709696
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      51        0     2392        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       73    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     4
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.1457567554973E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.6714683264956E-15
+           3 0.1542353009301E+04 0.1542353009301E+04 0.8402939808271E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.1247766821685E-13
+           5 0.1160408742844E+05 0.1160408742844E+05 0.1410787770505E-14
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.7769264209400E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6798205391080E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.2586459976855E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7854973645884E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.7377970153569E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   211.88
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                 13527.89
+ Mop/s/thread    =                  3381.97
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              26 Feb 2025
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 3:33.73
+Segundos de CPU: 1.02
+Media de Memoria total (KB): 0
+Major page fault: 137979
+Minor page faults: 187749
+Swaps totais: 0
+Trocas de contexto: 18634
+Esperas com troca de contexto voluntarias: 144
+Uso da CPU para este JOB: 398%
+OUTPUT COMPLETO
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     4
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.1457567554973E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.6714683264956E-15
+           3 0.1542353009301E+04 0.1542353009301E+04 0.8402939808271E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.1247766821685E-13
+           5 0.1160408742844E+05 0.1160408742844E+05 0.1410787770505E-14
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.7769264209400E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6798205391080E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.2586459976855E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7854973645884E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.7534948241943E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   210.70
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                 13603.78
+ Mop/s/thread    =                  3400.95
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              26 Feb 2025
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+	Command being timed: "./NPB-OMP/bin/bt.C.x"
+	User time (seconds): 849.25
+	System time (seconds): 0.50
+	Percent of CPU this job got: 399%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:32.70
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 708992
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 15899
+	Minor (reclaiming a frame) page faults: 192290
+	Voluntary context switches: 58
+	Involuntary context switches: 5958
+	Swaps: 0
+	File system inputs: 131400
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+503709696
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+  158459        0  1269656      129   170473        0  1363784      561        0    48657      690        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0   158464
+STATS mm: 
+49188864 13269377 15265792        0 279932928      369      962       17   148923
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+[TIME] Benchmark finalizado: 26/02/2025 17:28:25
+[INFO] Teste 2
+[INFO] Iniciado benchmark com 50% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 26/02/2025 17:28:25
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+503709696
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+  158471        0  1269752      129   170473        0  1363784      561        0    48657      690        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0   158464
+STATS mm: 
+49188864 13269377 15265792        0 279932928      369      962       17   148923
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     4
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.1457567554973E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.6714683264956E-15
+           3 0.1542353009301E+04 0.1542353009301E+04 0.8402939808271E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.1247766821685E-13
+           5 0.1160408742844E+05 0.1160408742844E+05 0.1410787770505E-14
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.7769264209400E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6798205391080E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.2586459976855E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7854973645884E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.7377970153569E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   210.63
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                 13608.14
+ Mop/s/thread    =                  3402.04
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              26 Feb 2025
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 3:32.47
+Segundos de CPU: 0.42
+Media de Memoria total (KB): 0
+Major page fault: 22
+Minor page faults: 176592
+Swaps totais: 0
+Trocas de contexto: 6131
+Esperas com troca de contexto voluntarias: 39
+Uso da CPU para este JOB: 399%
+OUTPUT COMPLETO
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     4
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.1457567554973E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.6714683264956E-15
+           3 0.1542353009301E+04 0.1542353009301E+04 0.8402939808271E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.1247766821685E-13
+           5 0.1160408742844E+05 0.1160408742844E+05 0.1410787770505E-14
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.7769264209400E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6798205391080E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.2586459976855E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7854973645884E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.7534948241943E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   209.82
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                 13660.89
+ Mop/s/thread    =                  3415.22
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              26 Feb 2025
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+	Command being timed: "./NPB-OMP/bin/bt.C.x"
+	User time (seconds): 845.63
+	System time (seconds): 0.49
+	Percent of CPU this job got: 399%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:31.76
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 708864
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 16211
+	Minor (reclaiming a frame) page faults: 186403
+	Voluntary context switches: 54
+	Involuntary context switches: 5868
+	Swaps: 0
+	File system inputs: 133008
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+503709696
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+  175730        0  1407824      147   188078        0  1504624      630        0    48742      777        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0   175616
+STATS mm: 
+51044352 14119417 15863808        0 279932928      371     1145       64   164305
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+[TIME] Benchmark finalizado: 26/02/2025 17:35:29
+
+-~~-~~-~~-~~-~~-~~- 75% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Teste 1
+[INFO] Iniciado benchmark com 75% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 26/02/2025 17:35:40
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+755564544
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      52        0     2384        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     4
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.1457567554973E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.6714683264956E-15
+           3 0.1542353009301E+04 0.1542353009301E+04 0.8402939808271E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.1247766821685E-13
+           5 0.1160408742844E+05 0.1160408742844E+05 0.1410787770505E-14
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.7769264209400E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6798205391080E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.2586459976855E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7854973645884E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.7534948241943E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   211.17
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                 13573.20
+ Mop/s/thread    =                  3393.30
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              26 Feb 2025
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 3:33.79
+Segundos de CPU: 1.79
+Media de Memoria total (KB): 0
+Major page fault: 173783
+Minor page faults: 308267
+Swaps totais: 0
+Trocas de contexto: 4543
+Esperas com troca de contexto voluntarias: 32
+Uso da CPU para este JOB: 398%
+OUTPUT COMPLETO
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     4
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.1457567554973E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.6714683264956E-15
+           3 0.1542353009301E+04 0.1542353009301E+04 0.8402939808271E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.1247766821685E-13
+           5 0.1160408742844E+05 0.1160408742844E+05 0.1410787770505E-14
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.7769264209400E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6798205391080E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.2586459976855E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7854973645884E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.7534948241943E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   209.81
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                 13661.06
+ Mop/s/thread    =                  3415.27
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              26 Feb 2025
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+	Command being timed: "./NPB-OMP/bin/bt.C.x"
+	User time (seconds): 845.86
+	System time (seconds): 0.42
+	Percent of CPU this job got: 399%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:31.74
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 709120
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 10
+	Minor (reclaiming a frame) page faults: 176588
+	Voluntary context switches: 47
+	Involuntary context switches: 6437
+	Swaps: 0
+	File system inputs: 2560
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+755564544
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+  174375        0  1396968      135   186040        0  1488320      704        0      736      839        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0   174208
+STATS mm: 
+48513024 13316977 15163392        0 680714240      366      360        5   169956
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+[TIME] Benchmark finalizado: 26/02/2025 17:42:46
+[INFO] Teste 2
+[INFO] Iniciado benchmark com 75% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 26/02/2025 17:42:46
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+755564544
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+  174385        0  1397048      135   186040        0  1488320      704        0      736      839        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0   174208
+STATS mm: 
+48513024 13316977 15163392        0 680714240      366      360        5   169956
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     4
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.1457567554973E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.6714683264956E-15
+           3 0.1542353009301E+04 0.1542353009301E+04 0.8402939808271E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.1247766821685E-13
+           5 0.1160408742844E+05 0.1160408742844E+05 0.1410787770505E-14
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.7769264209400E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6798205391080E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.2586459976855E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7854973645884E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.7534948241943E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   209.67
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                 13670.68
+ Mop/s/thread    =                  3417.67
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              26 Feb 2025
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 3:31.48
+Segundos de CPU: 0.40
+Media de Memoria total (KB): 0
+Major page fault: 2
+Minor page faults: 176577
+Swaps totais: 0
+Trocas de contexto: 5363
+Esperas com troca de contexto voluntarias: 11
+Uso da CPU para este JOB: 399%
+OUTPUT COMPLETO
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     4
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.1457567554973E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.6714683264956E-15
+           3 0.1542353009301E+04 0.1542353009301E+04 0.8402939808271E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.1247766821685E-13
+           5 0.1160408742844E+05 0.1160408742844E+05 0.1410787770505E-14
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.7769264209400E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6798205391080E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.2586459976855E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7854973645884E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.7534948241943E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   210.10
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                 13642.47
+ Mop/s/thread    =                  3410.62
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              26 Feb 2025
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+	Command being timed: "./NPB-OMP/bin/bt.C.x"
+	User time (seconds): 846.20
+	System time (seconds): 0.44
+	Percent of CPU this job got: 399%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:31.85
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 708992
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 16677
+	Minor (reclaiming a frame) page faults: 192659
+	Voluntary context switches: 28
+	Involuntary context switches: 4930
+	Swaps: 0
+	File system inputs: 135520
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+755564544
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+  191588        0  1534672      151   204690        0  1637520      772        0    31319      923        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0   191424
+STATS mm: 
+54386688 14928258 16859136        0 680714240      390      527       18   186181
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+[TIME] Benchmark finalizado: 26/02/2025 17:49:50
+
+-~~-~~-~~-~~-~~-~~- 100% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Teste 1
+[INFO] Iniciado benchmark com 100% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 26/02/2025 17:50:01
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+1007415296
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      50        0     2408        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     4
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.1457567554973E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.6714683264956E-15
+           3 0.1542353009301E+04 0.1542353009301E+04 0.8402939808271E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.1247766821685E-13
+           5 0.1160408742844E+05 0.1160408742844E+05 0.1410787770505E-14
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.7769264209400E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6798205391080E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.2586459976855E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7854973645884E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.7534948241943E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   210.30
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                 13629.61
+ Mop/s/thread    =                  3407.40
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              26 Feb 2025
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 3:32.72
+Segundos de CPU: 2.46
+Media de Memoria total (KB): 0
+Major page fault: 171854
+Minor page faults: 308275
+Swaps totais: 0
+Trocas de contexto: 6636
+Esperas com troca de contexto voluntarias: 39
+Uso da CPU para este JOB: 399%
+OUTPUT COMPLETO
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     4
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.1457567554973E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.6714683264956E-15
+           3 0.1542353009301E+04 0.1542353009301E+04 0.8402939808271E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.1247766821685E-13
+           5 0.1160408742844E+05 0.1160408742844E+05 0.1410787770505E-14
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.7769264209400E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6798205391080E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.2586459976855E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7854973645884E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.7377970153569E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   210.94
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                 13587.85
+ Mop/s/thread    =                  3396.96
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              26 Feb 2025
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+	Command being timed: "./NPB-OMP/bin/bt.C.x"
+	User time (seconds): 849.47
+	System time (seconds): 0.55
+	Percent of CPU this job got: 399%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:32.85
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 708864
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 22100
+	Minor (reclaiming a frame) page faults: 198096
+	Voluntary context switches: 55
+	Involuntary context switches: 6975
+	Swaps: 0
+	File system inputs: 180560
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+1007415296
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+  195179        0  1563440      146   207835        0  1662680      946        0      778     1092        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0   195072
+STATS mm: 
+52498432 14326037 15982592        0 668508160      372      398        7   189678
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+[TIME] Benchmark finalizado: 26/02/2025 17:57:07
+[INFO] Teste 2
+[INFO] Iniciado benchmark com 100% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 26/02/2025 17:57:07
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+1007415296
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+  195192        0  1563544      146   207835        0  1662680      946        0      778     1092        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0   195072
+STATS mm: 
+52498432 14326037 15982592        0 668508160      372      398        7   189678
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     4
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.1457567554973E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.6714683264956E-15
+           3 0.1542353009301E+04 0.1542353009301E+04 0.8402939808271E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.1247766821685E-13
+           5 0.1160408742844E+05 0.1160408742844E+05 0.1410787770505E-14
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.7769264209400E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6798205391080E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.2586459976855E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7854973645884E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.7534948241943E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   222.89
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                 12859.61
+ Mop/s/thread    =                  3214.90
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              26 Feb 2025
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 3:44.91
+Segundos de CPU: 7.70
+Media de Memoria total (KB): 0
+Major page fault: 1389402
+Minor page faults: 298765
+Swaps totais: 0
+Trocas de contexto: 139653
+Esperas com troca de contexto voluntarias: 1589
+Uso da CPU para este JOB: 386%
+OUTPUT COMPLETO
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - BT Benchmark
+
+ No input file inputbt.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  200       dt:   0.0001000
+ Number of available threads:     4
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.6239811655176E+04 0.6239811655176E+04 0.1457567554973E-14
+           2 0.5079323919042E+03 0.5079323919042E+03 0.6714683264956E-15
+           3 0.1542353009301E+04 0.1542353009301E+04 0.8402939808271E-14
+           4 0.1330238792929E+04 0.1330238792929E+04 0.1247766821685E-13
+           5 0.1160408742844E+05 0.1160408742844E+05 0.1410787770505E-14
+ Comparison of RMS-norms of solution error
+           1 0.1646200836909E+03 0.1646200836909E+03 0.7769264209400E-14
+           2 0.1149710790382E+02 0.1149710790382E+02 0.6798205391080E-14
+           3 0.4120744620746E+02 0.4120744620746E+02 0.2586459976855E-14
+           4 0.3708765105969E+02 0.3708765105969E+02 0.7854973645884E-14
+           5 0.3621105305184E+03 0.3621105305184E+03 0.7534948241943E-14
+ Verification Successful
+
+
+ BT Benchmark Completed.
+ Class           =                        C
+ Size            =            162x 162x 162
+ Iterations      =                      200
+ Time in seconds =                   255.84
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                 11203.35
+ Mop/s/thread    =                  2800.84
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              26 Feb 2025
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+	Command being timed: "./NPB-OMP/bin/bt.C.x"
+	User time (seconds): 893.08
+	System time (seconds): 28.93
+	Percent of CPU this job got: 356%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:18.80
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 708864
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 5500799
+	Minor (reclaiming a frame) page faults: 840664
+	Voluntary context switches: 5189
+	Involuntary context switches: 408802
+	Swaps: 0
+	File system inputs: 44098552
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+1007415296
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+ 7234148        0 57875192     6635  7249570        0 57996560    21579        0    27990    28214        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0  7234176
+STATS mm: 
+63225856 16089847 18173952        0 668508160      506    20121       25  6822860
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+[TIME] Benchmark finalizado: 26/02/2025 18:05:12
+
+[TIME] Benchmark totalmente finalizado: 26/02/2025 as 18:05:12

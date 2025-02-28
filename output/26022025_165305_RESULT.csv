@@ -1,0 +1,4 @@
+Repetition,"Start date","End date",Duration,Benchmark,"Class","Zram % (gb)","Tempo de CPU","Memoria media (KB)","Falhas maiores","Falhas menores",Swaps,"Troca de contextos","Troca de contextos voluntarias","Uso de cpu"
+1,"26/02/2025 16:53:16","ERRO NA EXECUCAO","0","bt","C","  0% ( 0 gb)","0","0","0","0","0","0","0","0"
+2,"26/02/2025 16:53:18","ERRO NA EXECUCAO","0","bt","C","  0% ( 0 gb)","0","0","0","0","0","0","0","0"
+1,"26/02/2025 16:53:32","ERRO NA EXECUCAO","0","bt","C"," 25% ( 0 gb)","0","0","0","0","0","0","0","0"

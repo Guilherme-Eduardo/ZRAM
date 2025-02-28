@@ -4,10 +4,10 @@
 
 # Removido DC
 # Algoritmo padrao de comprensaos: lzo-rle
-BENCHMARKS=('bt' 'cg' 'ep' 'ft' 'is' 'lu' 'mg' 'sp' 'ua') # Definir os benchmarks que serão executados
+BENCHMARKS=('bt' 'cg' 'ep' 'dc' 'ft' 'is' 'lu' 'mg' 'sp' 'ua') # Definir os benchmarks que serão executados
 BENCH_CLASSES=('C') # Classes a serem testadas (S (fast to test), A, B, C (medium 4x), D, E, F (large 16x))
 ZRAM_PORC=(0 25 50 75 100) # Porcentagem de ZRAM a serem testadas
-NUM_OF_REPETITIONS=1
+NUM_OF_REPETITIONS=2
 
 RESULT_SOURCE="../output" # Onde sera guardado os resultados (*.log)
 BENCHMARK_DIR="./NPB-OMP" # Onde esta localizado os benchmarks
