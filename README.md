@@ -4,7 +4,7 @@
 
 ## Disposição de pastas
 
-* Na pasta docs
+* Na pasta docs:
   * Documentações do projeto e pdfs antigos
 * Na pasta output
   * Saidas do script
