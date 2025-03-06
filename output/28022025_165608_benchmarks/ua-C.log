@@ -1,0 +1,2704 @@
+-~~-~~-~~-~~-~~-~~- Benchmark ua - classe C -~~-~~-~~-~~-~~-~~-
+[TIME] Benchmark totalmente iniciado: 28/02/2025 as 20:25:43
+
+-~~-~~-~~-~~-~~-~~- 0% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Teste 1
+[INFO] Iniciado benchmark com 0% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 28/02/2025 20:25:53
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+4091002880
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      48        0     2408        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - UA Benchmark
+
+ No input file inputua.data. Using compiled defaults
+ Levels of refinement:               8
+ Adaptation frequency:               5
+ Time steps:                       200    dt:    0.156250E-03
+ CG iterations:                     10
+ Heat source radius:            0.0670
+ Number of available threads:        4
+
+Step    0: elements refined, merged, total:    4563       0   31942
+Step    5: elements refined, merged, total:     168    1160   32103
+Step   10: elements refined, merged, total:     173    1464   32033
+Step   15: elements refined, merged, total:     182    1728   31795
+Step   20: elements refined, merged, total:     156    1288   31760
+Step   25: elements refined, merged, total:     169    1520   31613
+Step   30: elements refined, merged, total:     210    1256   31984
+Step   35: elements refined, merged, total:     213    1480   32180
+Step   40: elements refined, merged, total:     161    1248   32215
+Step   45: elements refined, merged, total:     166    1672   31914
+Step   50: elements refined, merged, total:     188    1712   31732
+Step   55: elements refined, merged, total:     141    1528   31382
+Step   60: elements refined, merged, total:     173    1248   31501
+Step   65: elements refined, merged, total:     235    1400   31921
+Step   70: elements refined, merged, total:     193    1288   32145
+Step   75: elements refined, merged, total:     166    1560   31942
+Step   80: elements refined, merged, total:     188    1440   31998
+Step   85: elements refined, merged, total:     176    1496   31921
+Step   90: elements refined, merged, total:     159    1264   31928
+Step   95: elements refined, merged, total:     182    1376   31998
+Step  100: elements refined, merged, total:     201    1544   32054
+Step  105: elements refined, merged, total:     162    1200   32138
+Step  110: elements refined, merged, total:     180    1384   32187
+Step  115: elements refined, merged, total:     186    1664   32033
+Step  120: elements refined, merged, total:     152    1384   31886
+Step  125: elements refined, merged, total:     165    1488   31739
+Step  130: elements refined, merged, total:     174    1224   31886
+Step  135: elements refined, merged, total:     228    1464   32201
+Step  140: elements refined, merged, total:     162    1208   32278
+Step  145: elements refined, merged, total:     168    1664   31998
+Step  150: elements refined, merged, total:     189    1656   31872
+Step  155: elements refined, merged, total:     139    1272   31732
+Step  160: elements refined, merged, total:     196    1336   31935
+Step  165: elements refined, merged, total:     195    1424   32054
+Step  170: elements refined, merged, total:     182    1312   32180
+Step  175: elements refined, merged, total:     168    1504   32040
+Step  180: elements refined, merged, total:     183    1504   32005
+Step  185: elements refined, merged, total:     175    1776   31676
+Step  190: elements refined, merged, total:     151    1216   31669
+Step  195: elements refined, merged, total:     165    1352   31641
+
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of temperature integrals
+           0.1544736587100E-04 0.1544736587100E-04 0.5527215565181E-13
+ Verification Successful
+
+
+ UA Benchmark Completed.
+ Class           =                        C
+ Size            =                        8
+ Iterations      =                      200
+ Time in seconds =                   183.00
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                    47.98
+ Mop/s/thread    =                    11.99
+ Operation type  =     coll. point advanced
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              30 Nov 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 3:04.08
+Segundos de CPU: 0.29
+Media de Memoria total (KB): 0
+Major page fault: 0
+Minor page faults: 123366
+Swaps totais: 0
+Trocas de contexto: 4301
+Esperas com troca de contexto voluntarias: 202
+Uso da CPU para este JOB: 399%
+OUTPUT COMPLETO
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - UA Benchmark
+
+ No input file inputua.data. Using compiled defaults
+ Levels of refinement:               8
+ Adaptation frequency:               5
+ Time steps:                       200    dt:    0.156250E-03
+ CG iterations:                     10
+ Heat source radius:            0.0670
+ Number of available threads:        4
+
+Step    0: elements refined, merged, total:    4563       0   31942
+Step    5: elements refined, merged, total:     168    1160   32103
+Step   10: elements refined, merged, total:     173    1464   32033
+Step   15: elements refined, merged, total:     182    1728   31795
+Step   20: elements refined, merged, total:     156    1288   31760
+Step   25: elements refined, merged, total:     169    1520   31613
+Step   30: elements refined, merged, total:     210    1256   31984
+Step   35: elements refined, merged, total:     213    1480   32180
+Step   40: elements refined, merged, total:     161    1248   32215
+Step   45: elements refined, merged, total:     166    1672   31914
+Step   50: elements refined, merged, total:     188    1712   31732
+Step   55: elements refined, merged, total:     141    1528   31382
+Step   60: elements refined, merged, total:     173    1248   31501
+Step   65: elements refined, merged, total:     235    1400   31921
+Step   70: elements refined, merged, total:     193    1288   32145
+Step   75: elements refined, merged, total:     166    1560   31942
+Step   80: elements refined, merged, total:     188    1440   31998
+Step   85: elements refined, merged, total:     176    1496   31921
+Step   90: elements refined, merged, total:     159    1264   31928
+Step   95: elements refined, merged, total:     182    1376   31998
+Step  100: elements refined, merged, total:     201    1544   32054
+Step  105: elements refined, merged, total:     162    1200   32138
+Step  110: elements refined, merged, total:     180    1384   32187
+Step  115: elements refined, merged, total:     186    1664   32033
+Step  120: elements refined, merged, total:     152    1384   31886
+Step  125: elements refined, merged, total:     165    1488   31739
+Step  130: elements refined, merged, total:     174    1224   31886
+Step  135: elements refined, merged, total:     228    1464   32201
+Step  140: elements refined, merged, total:     162    1208   32278
+Step  145: elements refined, merged, total:     168    1664   31998
+Step  150: elements refined, merged, total:     189    1656   31872
+Step  155: elements refined, merged, total:     139    1272   31732
+Step  160: elements refined, merged, total:     196    1336   31935
+Step  165: elements refined, merged, total:     195    1424   32054
+Step  170: elements refined, merged, total:     182    1312   32180
+Step  175: elements refined, merged, total:     168    1504   32040
+Step  180: elements refined, merged, total:     183    1504   32005
+Step  185: elements refined, merged, total:     175    1776   31676
+Step  190: elements refined, merged, total:     151    1216   31669
+Step  195: elements refined, merged, total:     165    1352   31641
+
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of temperature integrals
+           0.1544736587100E-04 0.1544736587100E-04 0.5527215565181E-13
+ Verification Successful
+
+
+ UA Benchmark Completed.
+ Class           =                        C
+ Size            =                        8
+ Iterations      =                      200
+ Time in seconds =                   182.99
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                    47.98
+ Mop/s/thread    =                    12.00
+ Operation type  =     coll. point advanced
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              30 Nov 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+	Command being timed: "./NPB-OMP/bin/ua.C.x"
+	User time (seconds): 734.36
+	System time (seconds): 0.31
+	Percent of CPU this job got: 399%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:04.06
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 496256
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 123364
+	Voluntary context switches: 203
+	Involuntary context switches: 4219
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+4091002880
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      48        0     2408        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+[TIME] Benchmark finalizado: 28/02/2025 20:32:01
+[INFO] Teste 2
+[INFO] Iniciado benchmark com 0% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 28/02/2025 20:32:01
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+4091002880
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      48        0     2408        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - UA Benchmark
+
+ No input file inputua.data. Using compiled defaults
+ Levels of refinement:               8
+ Adaptation frequency:               5
+ Time steps:                       200    dt:    0.156250E-03
+ CG iterations:                     10
+ Heat source radius:            0.0670
+ Number of available threads:        4
+
+Step    0: elements refined, merged, total:    4563       0   31942
+Step    5: elements refined, merged, total:     168    1160   32103
+Step   10: elements refined, merged, total:     173    1464   32033
+Step   15: elements refined, merged, total:     182    1728   31795
+Step   20: elements refined, merged, total:     156    1288   31760
+Step   25: elements refined, merged, total:     169    1520   31613
+Step   30: elements refined, merged, total:     210    1256   31984
+Step   35: elements refined, merged, total:     213    1480   32180
+Step   40: elements refined, merged, total:     161    1248   32215
+Step   45: elements refined, merged, total:     166    1672   31914
+Step   50: elements refined, merged, total:     188    1712   31732
+Step   55: elements refined, merged, total:     141    1528   31382
+Step   60: elements refined, merged, total:     173    1248   31501
+Step   65: elements refined, merged, total:     235    1400   31921
+Step   70: elements refined, merged, total:     193    1288   32145
+Step   75: elements refined, merged, total:     166    1560   31942
+Step   80: elements refined, merged, total:     188    1440   31998
+Step   85: elements refined, merged, total:     176    1496   31921
+Step   90: elements refined, merged, total:     159    1264   31928
+Step   95: elements refined, merged, total:     182    1376   31998
+Step  100: elements refined, merged, total:     201    1544   32054
+Step  105: elements refined, merged, total:     162    1200   32138
+Step  110: elements refined, merged, total:     180    1384   32187
+Step  115: elements refined, merged, total:     186    1664   32033
+Step  120: elements refined, merged, total:     152    1384   31886
+Step  125: elements refined, merged, total:     165    1488   31739
+Step  130: elements refined, merged, total:     174    1224   31886
+Step  135: elements refined, merged, total:     228    1464   32201
+Step  140: elements refined, merged, total:     162    1208   32278
+Step  145: elements refined, merged, total:     168    1664   31998
+Step  150: elements refined, merged, total:     189    1656   31872
+Step  155: elements refined, merged, total:     139    1272   31732
+Step  160: elements refined, merged, total:     196    1336   31935
+Step  165: elements refined, merged, total:     195    1424   32054
+Step  170: elements refined, merged, total:     182    1312   32180
+Step  175: elements refined, merged, total:     168    1504   32040
+Step  180: elements refined, merged, total:     183    1504   32005
+Step  185: elements refined, merged, total:     175    1776   31676
+Step  190: elements refined, merged, total:     151    1216   31669
+Step  195: elements refined, merged, total:     165    1352   31641
+
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of temperature integrals
+           0.1544736587100E-04 0.1544736587100E-04 0.5527215565181E-13
+ Verification Successful
+
+
+ UA Benchmark Completed.
+ Class           =                        C
+ Size            =                        8
+ Iterations      =                      200
+ Time in seconds =                   183.11
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                    47.95
+ Mop/s/thread    =                    11.99
+ Operation type  =     coll. point advanced
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              30 Nov 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 3:04.18
+Segundos de CPU: 0.28
+Media de Memoria total (KB): 0
+Major page fault: 0
+Minor page faults: 123355
+Swaps totais: 0
+Trocas de contexto: 4119
+Esperas com troca de contexto voluntarias: 208
+Uso da CPU para este JOB: 399%
+OUTPUT COMPLETO
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - UA Benchmark
+
+ No input file inputua.data. Using compiled defaults
+ Levels of refinement:               8
+ Adaptation frequency:               5
+ Time steps:                       200    dt:    0.156250E-03
+ CG iterations:                     10
+ Heat source radius:            0.0670
+ Number of available threads:        4
+
+Step    0: elements refined, merged, total:    4563       0   31942
+Step    5: elements refined, merged, total:     168    1160   32103
+Step   10: elements refined, merged, total:     173    1464   32033
+Step   15: elements refined, merged, total:     182    1728   31795
+Step   20: elements refined, merged, total:     156    1288   31760
+Step   25: elements refined, merged, total:     169    1520   31613
+Step   30: elements refined, merged, total:     210    1256   31984
+Step   35: elements refined, merged, total:     213    1480   32180
+Step   40: elements refined, merged, total:     161    1248   32215
+Step   45: elements refined, merged, total:     166    1672   31914
+Step   50: elements refined, merged, total:     188    1712   31732
+Step   55: elements refined, merged, total:     141    1528   31382
+Step   60: elements refined, merged, total:     173    1248   31501
+Step   65: elements refined, merged, total:     235    1400   31921
+Step   70: elements refined, merged, total:     193    1288   32145
+Step   75: elements refined, merged, total:     166    1560   31942
+Step   80: elements refined, merged, total:     188    1440   31998
+Step   85: elements refined, merged, total:     176    1496   31921
+Step   90: elements refined, merged, total:     159    1264   31928
+Step   95: elements refined, merged, total:     182    1376   31998
+Step  100: elements refined, merged, total:     201    1544   32054
+Step  105: elements refined, merged, total:     162    1200   32138
+Step  110: elements refined, merged, total:     180    1384   32187
+Step  115: elements refined, merged, total:     186    1664   32033
+Step  120: elements refined, merged, total:     152    1384   31886
+Step  125: elements refined, merged, total:     165    1488   31739
+Step  130: elements refined, merged, total:     174    1224   31886
+Step  135: elements refined, merged, total:     228    1464   32201
+Step  140: elements refined, merged, total:     162    1208   32278
+Step  145: elements refined, merged, total:     168    1664   31998
+Step  150: elements refined, merged, total:     189    1656   31872
+Step  155: elements refined, merged, total:     139    1272   31732
+Step  160: elements refined, merged, total:     196    1336   31935
+Step  165: elements refined, merged, total:     195    1424   32054
+Step  170: elements refined, merged, total:     182    1312   32180
+Step  175: elements refined, merged, total:     168    1504   32040
+Step  180: elements refined, merged, total:     183    1504   32005
+Step  185: elements refined, merged, total:     175    1776   31676
+Step  190: elements refined, merged, total:     151    1216   31669
+Step  195: elements refined, merged, total:     165    1352   31641
+
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of temperature integrals
+           0.1544736587100E-04 0.1544736587100E-04 0.5527215565181E-13
+ Verification Successful
+
+
+ UA Benchmark Completed.
+ Class           =                        C
+ Size            =                        8
+ Iterations      =                      200
+ Time in seconds =                   182.95
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                    47.99
+ Mop/s/thread    =                    12.00
+ Operation type  =     coll. point advanced
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              30 Nov 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+	Command being timed: "./NPB-OMP/bin/ua.C.x"
+	User time (seconds): 734.28
+	System time (seconds): 0.29
+	Percent of CPU this job got: 399%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:04.02
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 496128
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 123372
+	Voluntary context switches: 200
+	Involuntary context switches: 4196
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 24
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+4091002880
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      48        0     2408        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+[TIME] Benchmark finalizado: 28/02/2025 20:38:09
+
+-~~-~~-~~-~~-~~-~~- 25% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Teste 1
+[INFO] Iniciado benchmark com 25% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 28/02/2025 20:38:19
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+1022750720
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      51        0     2384        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - UA Benchmark
+
+ No input file inputua.data. Using compiled defaults
+ Levels of refinement:               8
+ Adaptation frequency:               5
+ Time steps:                       200    dt:    0.156250E-03
+ CG iterations:                     10
+ Heat source radius:            0.0670
+ Number of available threads:        4
+
+Step    0: elements refined, merged, total:    4563       0   31942
+Step    5: elements refined, merged, total:     168    1160   32103
+Step   10: elements refined, merged, total:     173    1464   32033
+Step   15: elements refined, merged, total:     182    1728   31795
+Step   20: elements refined, merged, total:     156    1288   31760
+Step   25: elements refined, merged, total:     169    1520   31613
+Step   30: elements refined, merged, total:     210    1256   31984
+Step   35: elements refined, merged, total:     213    1480   32180
+Step   40: elements refined, merged, total:     161    1248   32215
+Step   45: elements refined, merged, total:     166    1672   31914
+Step   50: elements refined, merged, total:     188    1712   31732
+Step   55: elements refined, merged, total:     141    1528   31382
+Step   60: elements refined, merged, total:     173    1248   31501
+Step   65: elements refined, merged, total:     235    1400   31921
+Step   70: elements refined, merged, total:     193    1288   32145
+Step   75: elements refined, merged, total:     166    1560   31942
+Step   80: elements refined, merged, total:     188    1440   31998
+Step   85: elements refined, merged, total:     176    1496   31921
+Step   90: elements refined, merged, total:     159    1264   31928
+Step   95: elements refined, merged, total:     182    1376   31998
+Step  100: elements refined, merged, total:     201    1544   32054
+Step  105: elements refined, merged, total:     162    1200   32138
+Step  110: elements refined, merged, total:     180    1384   32187
+Step  115: elements refined, merged, total:     186    1664   32033
+Step  120: elements refined, merged, total:     152    1384   31886
+Step  125: elements refined, merged, total:     165    1488   31739
+Step  130: elements refined, merged, total:     174    1224   31886
+Step  135: elements refined, merged, total:     228    1464   32201
+Step  140: elements refined, merged, total:     162    1208   32278
+Step  145: elements refined, merged, total:     168    1664   31998
+Step  150: elements refined, merged, total:     189    1656   31872
+Step  155: elements refined, merged, total:     139    1272   31732
+Step  160: elements refined, merged, total:     196    1336   31935
+Step  165: elements refined, merged, total:     195    1424   32054
+Step  170: elements refined, merged, total:     182    1312   32180
+Step  175: elements refined, merged, total:     168    1504   32040
+Step  180: elements refined, merged, total:     183    1504   32005
+Step  185: elements refined, merged, total:     175    1776   31676
+Step  190: elements refined, merged, total:     151    1216   31669
+Step  195: elements refined, merged, total:     165    1352   31641
+
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of temperature integrals
+           0.1544736587100E-04 0.1544736587100E-04 0.5527215565181E-13
+ Verification Successful
+
+
+ UA Benchmark Completed.
+ Class           =                        C
+ Size            =                        8
+ Iterations      =                      200
+ Time in seconds =                   183.05
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                    47.97
+ Mop/s/thread    =                    11.99
+ Operation type  =     coll. point advanced
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              30 Nov 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 3:04.12
+Segundos de CPU: 0.31
+Media de Memoria total (KB): 0
+Major page fault: 0
+Minor page faults: 123369
+Swaps totais: 0
+Trocas de contexto: 4206
+Esperas com troca de contexto voluntarias: 199
+Uso da CPU para este JOB: 399%
+OUTPUT COMPLETO
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - UA Benchmark
+
+ No input file inputua.data. Using compiled defaults
+ Levels of refinement:               8
+ Adaptation frequency:               5
+ Time steps:                       200    dt:    0.156250E-03
+ CG iterations:                     10
+ Heat source radius:            0.0670
+ Number of available threads:        4
+
+Step    0: elements refined, merged, total:    4563       0   31942
+Step    5: elements refined, merged, total:     168    1160   32103
+Step   10: elements refined, merged, total:     173    1464   32033
+Step   15: elements refined, merged, total:     182    1728   31795
+Step   20: elements refined, merged, total:     156    1288   31760
+Step   25: elements refined, merged, total:     169    1520   31613
+Step   30: elements refined, merged, total:     210    1256   31984
+Step   35: elements refined, merged, total:     213    1480   32180
+Step   40: elements refined, merged, total:     161    1248   32215
+Step   45: elements refined, merged, total:     166    1672   31914
+Step   50: elements refined, merged, total:     188    1712   31732
+Step   55: elements refined, merged, total:     141    1528   31382
+Step   60: elements refined, merged, total:     173    1248   31501
+Step   65: elements refined, merged, total:     235    1400   31921
+Step   70: elements refined, merged, total:     193    1288   32145
+Step   75: elements refined, merged, total:     166    1560   31942
+Step   80: elements refined, merged, total:     188    1440   31998
+Step   85: elements refined, merged, total:     176    1496   31921
+Step   90: elements refined, merged, total:     159    1264   31928
+Step   95: elements refined, merged, total:     182    1376   31998
+Step  100: elements refined, merged, total:     201    1544   32054
+Step  105: elements refined, merged, total:     162    1200   32138
+Step  110: elements refined, merged, total:     180    1384   32187
+Step  115: elements refined, merged, total:     186    1664   32033
+Step  120: elements refined, merged, total:     152    1384   31886
+Step  125: elements refined, merged, total:     165    1488   31739
+Step  130: elements refined, merged, total:     174    1224   31886
+Step  135: elements refined, merged, total:     228    1464   32201
+Step  140: elements refined, merged, total:     162    1208   32278
+Step  145: elements refined, merged, total:     168    1664   31998
+Step  150: elements refined, merged, total:     189    1656   31872
+Step  155: elements refined, merged, total:     139    1272   31732
+Step  160: elements refined, merged, total:     196    1336   31935
+Step  165: elements refined, merged, total:     195    1424   32054
+Step  170: elements refined, merged, total:     182    1312   32180
+Step  175: elements refined, merged, total:     168    1504   32040
+Step  180: elements refined, merged, total:     183    1504   32005
+Step  185: elements refined, merged, total:     175    1776   31676
+Step  190: elements refined, merged, total:     151    1216   31669
+Step  195: elements refined, merged, total:     165    1352   31641
+
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of temperature integrals
+           0.1544736587100E-04 0.1544736587100E-04 0.5527215565181E-13
+ Verification Successful
+
+
+ UA Benchmark Completed.
+ Class           =                        C
+ Size            =                        8
+ Iterations      =                      200
+ Time in seconds =                   182.89
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                    48.01
+ Mop/s/thread    =                    12.00
+ Operation type  =     coll. point advanced
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              30 Nov 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+	Command being timed: "./NPB-OMP/bin/ua.C.x"
+	User time (seconds): 733.92
+	System time (seconds): 0.30
+	Percent of CPU this job got: 399%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:03.96
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 496128
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 123363
+	Voluntary context switches: 205
+	Involuntary context switches: 3899
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+1022750720
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      51        0     2384        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+[TIME] Benchmark finalizado: 28/02/2025 20:44:27
+[INFO] Teste 2
+[INFO] Iniciado benchmark com 25% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 28/02/2025 20:44:27
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+1022750720
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      51        0     2384        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - UA Benchmark
+
+ No input file inputua.data. Using compiled defaults
+ Levels of refinement:               8
+ Adaptation frequency:               5
+ Time steps:                       200    dt:    0.156250E-03
+ CG iterations:                     10
+ Heat source radius:            0.0670
+ Number of available threads:        4
+
+Step    0: elements refined, merged, total:    4563       0   31942
+Step    5: elements refined, merged, total:     168    1160   32103
+Step   10: elements refined, merged, total:     173    1464   32033
+Step   15: elements refined, merged, total:     182    1728   31795
+Step   20: elements refined, merged, total:     156    1288   31760
+Step   25: elements refined, merged, total:     169    1520   31613
+Step   30: elements refined, merged, total:     210    1256   31984
+Step   35: elements refined, merged, total:     213    1480   32180
+Step   40: elements refined, merged, total:     161    1248   32215
+Step   45: elements refined, merged, total:     166    1672   31914
+Step   50: elements refined, merged, total:     188    1712   31732
+Step   55: elements refined, merged, total:     141    1528   31382
+Step   60: elements refined, merged, total:     173    1248   31501
+Step   65: elements refined, merged, total:     235    1400   31921
+Step   70: elements refined, merged, total:     193    1288   32145
+Step   75: elements refined, merged, total:     166    1560   31942
+Step   80: elements refined, merged, total:     188    1440   31998
+Step   85: elements refined, merged, total:     176    1496   31921
+Step   90: elements refined, merged, total:     159    1264   31928
+Step   95: elements refined, merged, total:     182    1376   31998
+Step  100: elements refined, merged, total:     201    1544   32054
+Step  105: elements refined, merged, total:     162    1200   32138
+Step  110: elements refined, merged, total:     180    1384   32187
+Step  115: elements refined, merged, total:     186    1664   32033
+Step  120: elements refined, merged, total:     152    1384   31886
+Step  125: elements refined, merged, total:     165    1488   31739
+Step  130: elements refined, merged, total:     174    1224   31886
+Step  135: elements refined, merged, total:     228    1464   32201
+Step  140: elements refined, merged, total:     162    1208   32278
+Step  145: elements refined, merged, total:     168    1664   31998
+Step  150: elements refined, merged, total:     189    1656   31872
+Step  155: elements refined, merged, total:     139    1272   31732
+Step  160: elements refined, merged, total:     196    1336   31935
+Step  165: elements refined, merged, total:     195    1424   32054
+Step  170: elements refined, merged, total:     182    1312   32180
+Step  175: elements refined, merged, total:     168    1504   32040
+Step  180: elements refined, merged, total:     183    1504   32005
+Step  185: elements refined, merged, total:     175    1776   31676
+Step  190: elements refined, merged, total:     151    1216   31669
+Step  195: elements refined, merged, total:     165    1352   31641
+
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of temperature integrals
+           0.1544736587100E-04 0.1544736587100E-04 0.5505282170081E-13
+ Verification Successful
+
+
+ UA Benchmark Completed.
+ Class           =                        C
+ Size            =                        8
+ Iterations      =                      200
+ Time in seconds =                   182.99
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                    47.98
+ Mop/s/thread    =                    12.00
+ Operation type  =     coll. point advanced
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              30 Nov 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 3:04.06
+Segundos de CPU: 0.32
+Media de Memoria total (KB): 0
+Major page fault: 0
+Minor page faults: 123362
+Swaps totais: 0
+Trocas de contexto: 4239
+Esperas com troca de contexto voluntarias: 199
+Uso da CPU para este JOB: 399%
+OUTPUT COMPLETO
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - UA Benchmark
+
+ No input file inputua.data. Using compiled defaults
+ Levels of refinement:               8
+ Adaptation frequency:               5
+ Time steps:                       200    dt:    0.156250E-03
+ CG iterations:                     10
+ Heat source radius:            0.0670
+ Number of available threads:        4
+
+Step    0: elements refined, merged, total:    4563       0   31942
+Step    5: elements refined, merged, total:     168    1160   32103
+Step   10: elements refined, merged, total:     173    1464   32033
+Step   15: elements refined, merged, total:     182    1728   31795
+Step   20: elements refined, merged, total:     156    1288   31760
+Step   25: elements refined, merged, total:     169    1520   31613
+Step   30: elements refined, merged, total:     210    1256   31984
+Step   35: elements refined, merged, total:     213    1480   32180
+Step   40: elements refined, merged, total:     161    1248   32215
+Step   45: elements refined, merged, total:     166    1672   31914
+Step   50: elements refined, merged, total:     188    1712   31732
+Step   55: elements refined, merged, total:     141    1528   31382
+Step   60: elements refined, merged, total:     173    1248   31501
+Step   65: elements refined, merged, total:     235    1400   31921
+Step   70: elements refined, merged, total:     193    1288   32145
+Step   75: elements refined, merged, total:     166    1560   31942
+Step   80: elements refined, merged, total:     188    1440   31998
+Step   85: elements refined, merged, total:     176    1496   31921
+Step   90: elements refined, merged, total:     159    1264   31928
+Step   95: elements refined, merged, total:     182    1376   31998
+Step  100: elements refined, merged, total:     201    1544   32054
+Step  105: elements refined, merged, total:     162    1200   32138
+Step  110: elements refined, merged, total:     180    1384   32187
+Step  115: elements refined, merged, total:     186    1664   32033
+Step  120: elements refined, merged, total:     152    1384   31886
+Step  125: elements refined, merged, total:     165    1488   31739
+Step  130: elements refined, merged, total:     174    1224   31886
+Step  135: elements refined, merged, total:     228    1464   32201
+Step  140: elements refined, merged, total:     162    1208   32278
+Step  145: elements refined, merged, total:     168    1664   31998
+Step  150: elements refined, merged, total:     189    1656   31872
+Step  155: elements refined, merged, total:     139    1272   31732
+Step  160: elements refined, merged, total:     196    1336   31935
+Step  165: elements refined, merged, total:     195    1424   32054
+Step  170: elements refined, merged, total:     182    1312   32180
+Step  175: elements refined, merged, total:     168    1504   32040
+Step  180: elements refined, merged, total:     183    1504   32005
+Step  185: elements refined, merged, total:     175    1776   31676
+Step  190: elements refined, merged, total:     151    1216   31669
+Step  195: elements refined, merged, total:     165    1352   31641
+
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of temperature integrals
+           0.1544736587100E-04 0.1544736587100E-04 0.5527215565181E-13
+ Verification Successful
+
+
+ UA Benchmark Completed.
+ Class           =                        C
+ Size            =                        8
+ Iterations      =                      200
+ Time in seconds =                   184.11
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                    47.69
+ Mop/s/thread    =                    11.92
+ Operation type  =     coll. point advanced
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              30 Nov 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+	Command being timed: "./NPB-OMP/bin/ua.C.x"
+	User time (seconds): 738.89
+	System time (seconds): 0.29
+	Percent of CPU this job got: 399%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:05.19
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 496128
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 123366
+	Voluntary context switches: 201
+	Involuntary context switches: 4101
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+1022750720
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      51        0     2384        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+[TIME] Benchmark finalizado: 28/02/2025 20:50:37
+
+-~~-~~-~~-~~-~~-~~- 50% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Teste 1
+[INFO] Iniciado benchmark com 50% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 28/02/2025 20:50:47
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+2045501440
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      50        0     2408        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - UA Benchmark
+
+ No input file inputua.data. Using compiled defaults
+ Levels of refinement:               8
+ Adaptation frequency:               5
+ Time steps:                       200    dt:    0.156250E-03
+ CG iterations:                     10
+ Heat source radius:            0.0670
+ Number of available threads:        4
+
+Step    0: elements refined, merged, total:    4563       0   31942
+Step    5: elements refined, merged, total:     168    1160   32103
+Step   10: elements refined, merged, total:     173    1464   32033
+Step   15: elements refined, merged, total:     182    1728   31795
+Step   20: elements refined, merged, total:     156    1288   31760
+Step   25: elements refined, merged, total:     169    1520   31613
+Step   30: elements refined, merged, total:     210    1256   31984
+Step   35: elements refined, merged, total:     213    1480   32180
+Step   40: elements refined, merged, total:     161    1248   32215
+Step   45: elements refined, merged, total:     166    1672   31914
+Step   50: elements refined, merged, total:     188    1712   31732
+Step   55: elements refined, merged, total:     141    1528   31382
+Step   60: elements refined, merged, total:     173    1248   31501
+Step   65: elements refined, merged, total:     235    1400   31921
+Step   70: elements refined, merged, total:     193    1288   32145
+Step   75: elements refined, merged, total:     166    1560   31942
+Step   80: elements refined, merged, total:     188    1440   31998
+Step   85: elements refined, merged, total:     176    1496   31921
+Step   90: elements refined, merged, total:     159    1264   31928
+Step   95: elements refined, merged, total:     182    1376   31998
+Step  100: elements refined, merged, total:     201    1544   32054
+Step  105: elements refined, merged, total:     162    1200   32138
+Step  110: elements refined, merged, total:     180    1384   32187
+Step  115: elements refined, merged, total:     186    1664   32033
+Step  120: elements refined, merged, total:     152    1384   31886
+Step  125: elements refined, merged, total:     165    1488   31739
+Step  130: elements refined, merged, total:     174    1224   31886
+Step  135: elements refined, merged, total:     228    1464   32201
+Step  140: elements refined, merged, total:     162    1208   32278
+Step  145: elements refined, merged, total:     168    1664   31998
+Step  150: elements refined, merged, total:     189    1656   31872
+Step  155: elements refined, merged, total:     139    1272   31732
+Step  160: elements refined, merged, total:     196    1336   31935
+Step  165: elements refined, merged, total:     195    1424   32054
+Step  170: elements refined, merged, total:     182    1312   32180
+Step  175: elements refined, merged, total:     168    1504   32040
+Step  180: elements refined, merged, total:     183    1504   32005
+Step  185: elements refined, merged, total:     175    1776   31676
+Step  190: elements refined, merged, total:     151    1216   31669
+Step  195: elements refined, merged, total:     165    1352   31641
+
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of temperature integrals
+           0.1544736587100E-04 0.1544736587100E-04 0.5505282170081E-13
+ Verification Successful
+
+
+ UA Benchmark Completed.
+ Class           =                        C
+ Size            =                        8
+ Iterations      =                      200
+ Time in seconds =                   182.91
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                    48.00
+ Mop/s/thread    =                    12.00
+ Operation type  =     coll. point advanced
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              30 Nov 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 3:03.98
+Segundos de CPU: 0.28
+Media de Memoria total (KB): 0
+Major page fault: 0
+Minor page faults: 123359
+Swaps totais: 0
+Trocas de contexto: 4035
+Esperas com troca de contexto voluntarias: 202
+Uso da CPU para este JOB: 399%
+OUTPUT COMPLETO
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - UA Benchmark
+
+ No input file inputua.data. Using compiled defaults
+ Levels of refinement:               8
+ Adaptation frequency:               5
+ Time steps:                       200    dt:    0.156250E-03
+ CG iterations:                     10
+ Heat source radius:            0.0670
+ Number of available threads:        4
+
+Step    0: elements refined, merged, total:    4563       0   31942
+Step    5: elements refined, merged, total:     168    1160   32103
+Step   10: elements refined, merged, total:     173    1464   32033
+Step   15: elements refined, merged, total:     182    1728   31795
+Step   20: elements refined, merged, total:     156    1288   31760
+Step   25: elements refined, merged, total:     169    1520   31613
+Step   30: elements refined, merged, total:     210    1256   31984
+Step   35: elements refined, merged, total:     213    1480   32180
+Step   40: elements refined, merged, total:     161    1248   32215
+Step   45: elements refined, merged, total:     166    1672   31914
+Step   50: elements refined, merged, total:     188    1712   31732
+Step   55: elements refined, merged, total:     141    1528   31382
+Step   60: elements refined, merged, total:     173    1248   31501
+Step   65: elements refined, merged, total:     235    1400   31921
+Step   70: elements refined, merged, total:     193    1288   32145
+Step   75: elements refined, merged, total:     166    1560   31942
+Step   80: elements refined, merged, total:     188    1440   31998
+Step   85: elements refined, merged, total:     176    1496   31921
+Step   90: elements refined, merged, total:     159    1264   31928
+Step   95: elements refined, merged, total:     182    1376   31998
+Step  100: elements refined, merged, total:     201    1544   32054
+Step  105: elements refined, merged, total:     162    1200   32138
+Step  110: elements refined, merged, total:     180    1384   32187
+Step  115: elements refined, merged, total:     186    1664   32033
+Step  120: elements refined, merged, total:     152    1384   31886
+Step  125: elements refined, merged, total:     165    1488   31739
+Step  130: elements refined, merged, total:     174    1224   31886
+Step  135: elements refined, merged, total:     228    1464   32201
+Step  140: elements refined, merged, total:     162    1208   32278
+Step  145: elements refined, merged, total:     168    1664   31998
+Step  150: elements refined, merged, total:     189    1656   31872
+Step  155: elements refined, merged, total:     139    1272   31732
+Step  160: elements refined, merged, total:     196    1336   31935
+Step  165: elements refined, merged, total:     195    1424   32054
+Step  170: elements refined, merged, total:     182    1312   32180
+Step  175: elements refined, merged, total:     168    1504   32040
+Step  180: elements refined, merged, total:     183    1504   32005
+Step  185: elements refined, merged, total:     175    1776   31676
+Step  190: elements refined, merged, total:     151    1216   31669
+Step  195: elements refined, merged, total:     165    1352   31641
+
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of temperature integrals
+           0.1544736587100E-04 0.1544736587100E-04 0.5505282170081E-13
+ Verification Successful
+
+
+ UA Benchmark Completed.
+ Class           =                        C
+ Size            =                        8
+ Iterations      =                      200
+ Time in seconds =                   182.95
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                    47.99
+ Mop/s/thread    =                    12.00
+ Operation type  =     coll. point advanced
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              30 Nov 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+	Command being timed: "./NPB-OMP/bin/ua.C.x"
+	User time (seconds): 734.13
+	System time (seconds): 0.29
+	Percent of CPU this job got: 399%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:04.02
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 496128
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 123362
+	Voluntary context switches: 208
+	Involuntary context switches: 4163
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+2045501440
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      50        0     2408        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+[TIME] Benchmark finalizado: 28/02/2025 20:56:55
+[INFO] Teste 2
+[INFO] Iniciado benchmark com 50% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 28/02/2025 20:56:55
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+2045501440
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      50        0     2408        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - UA Benchmark
+
+ No input file inputua.data. Using compiled defaults
+ Levels of refinement:               8
+ Adaptation frequency:               5
+ Time steps:                       200    dt:    0.156250E-03
+ CG iterations:                     10
+ Heat source radius:            0.0670
+ Number of available threads:        4
+
+Step    0: elements refined, merged, total:    4563       0   31942
+Step    5: elements refined, merged, total:     168    1160   32103
+Step   10: elements refined, merged, total:     173    1464   32033
+Step   15: elements refined, merged, total:     182    1728   31795
+Step   20: elements refined, merged, total:     156    1288   31760
+Step   25: elements refined, merged, total:     169    1520   31613
+Step   30: elements refined, merged, total:     210    1256   31984
+Step   35: elements refined, merged, total:     213    1480   32180
+Step   40: elements refined, merged, total:     161    1248   32215
+Step   45: elements refined, merged, total:     166    1672   31914
+Step   50: elements refined, merged, total:     188    1712   31732
+Step   55: elements refined, merged, total:     141    1528   31382
+Step   60: elements refined, merged, total:     173    1248   31501
+Step   65: elements refined, merged, total:     235    1400   31921
+Step   70: elements refined, merged, total:     193    1288   32145
+Step   75: elements refined, merged, total:     166    1560   31942
+Step   80: elements refined, merged, total:     188    1440   31998
+Step   85: elements refined, merged, total:     176    1496   31921
+Step   90: elements refined, merged, total:     159    1264   31928
+Step   95: elements refined, merged, total:     182    1376   31998
+Step  100: elements refined, merged, total:     201    1544   32054
+Step  105: elements refined, merged, total:     162    1200   32138
+Step  110: elements refined, merged, total:     180    1384   32187
+Step  115: elements refined, merged, total:     186    1664   32033
+Step  120: elements refined, merged, total:     152    1384   31886
+Step  125: elements refined, merged, total:     165    1488   31739
+Step  130: elements refined, merged, total:     174    1224   31886
+Step  135: elements refined, merged, total:     228    1464   32201
+Step  140: elements refined, merged, total:     162    1208   32278
+Step  145: elements refined, merged, total:     168    1664   31998
+Step  150: elements refined, merged, total:     189    1656   31872
+Step  155: elements refined, merged, total:     139    1272   31732
+Step  160: elements refined, merged, total:     196    1336   31935
+Step  165: elements refined, merged, total:     195    1424   32054
+Step  170: elements refined, merged, total:     182    1312   32180
+Step  175: elements refined, merged, total:     168    1504   32040
+Step  180: elements refined, merged, total:     183    1504   32005
+Step  185: elements refined, merged, total:     175    1776   31676
+Step  190: elements refined, merged, total:     151    1216   31669
+Step  195: elements refined, merged, total:     165    1352   31641
+
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of temperature integrals
+           0.1544736587100E-04 0.1544736587100E-04 0.5527215565181E-13
+ Verification Successful
+
+
+ UA Benchmark Completed.
+ Class           =                        C
+ Size            =                        8
+ Iterations      =                      200
+ Time in seconds =                   182.95
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                    47.99
+ Mop/s/thread    =                    12.00
+ Operation type  =     coll. point advanced
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              30 Nov 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 3:04.03
+Segundos de CPU: 0.28
+Media de Memoria total (KB): 0
+Major page fault: 0
+Minor page faults: 123358
+Swaps totais: 0
+Trocas de contexto: 4038
+Esperas com troca de contexto voluntarias: 202
+Uso da CPU para este JOB: 399%
+OUTPUT COMPLETO
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - UA Benchmark
+
+ No input file inputua.data. Using compiled defaults
+ Levels of refinement:               8
+ Adaptation frequency:               5
+ Time steps:                       200    dt:    0.156250E-03
+ CG iterations:                     10
+ Heat source radius:            0.0670
+ Number of available threads:        4
+
+Step    0: elements refined, merged, total:    4563       0   31942
+Step    5: elements refined, merged, total:     168    1160   32103
+Step   10: elements refined, merged, total:     173    1464   32033
+Step   15: elements refined, merged, total:     182    1728   31795
+Step   20: elements refined, merged, total:     156    1288   31760
+Step   25: elements refined, merged, total:     169    1520   31613
+Step   30: elements refined, merged, total:     210    1256   31984
+Step   35: elements refined, merged, total:     213    1480   32180
+Step   40: elements refined, merged, total:     161    1248   32215
+Step   45: elements refined, merged, total:     166    1672   31914
+Step   50: elements refined, merged, total:     188    1712   31732
+Step   55: elements refined, merged, total:     141    1528   31382
+Step   60: elements refined, merged, total:     173    1248   31501
+Step   65: elements refined, merged, total:     235    1400   31921
+Step   70: elements refined, merged, total:     193    1288   32145
+Step   75: elements refined, merged, total:     166    1560   31942
+Step   80: elements refined, merged, total:     188    1440   31998
+Step   85: elements refined, merged, total:     176    1496   31921
+Step   90: elements refined, merged, total:     159    1264   31928
+Step   95: elements refined, merged, total:     182    1376   31998
+Step  100: elements refined, merged, total:     201    1544   32054
+Step  105: elements refined, merged, total:     162    1200   32138
+Step  110: elements refined, merged, total:     180    1384   32187
+Step  115: elements refined, merged, total:     186    1664   32033
+Step  120: elements refined, merged, total:     152    1384   31886
+Step  125: elements refined, merged, total:     165    1488   31739
+Step  130: elements refined, merged, total:     174    1224   31886
+Step  135: elements refined, merged, total:     228    1464   32201
+Step  140: elements refined, merged, total:     162    1208   32278
+Step  145: elements refined, merged, total:     168    1664   31998
+Step  150: elements refined, merged, total:     189    1656   31872
+Step  155: elements refined, merged, total:     139    1272   31732
+Step  160: elements refined, merged, total:     196    1336   31935
+Step  165: elements refined, merged, total:     195    1424   32054
+Step  170: elements refined, merged, total:     182    1312   32180
+Step  175: elements refined, merged, total:     168    1504   32040
+Step  180: elements refined, merged, total:     183    1504   32005
+Step  185: elements refined, merged, total:     175    1776   31676
+Step  190: elements refined, merged, total:     151    1216   31669
+Step  195: elements refined, merged, total:     165    1352   31641
+
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of temperature integrals
+           0.1544736587100E-04 0.1544736587100E-04 0.5505282170081E-13
+ Verification Successful
+
+
+ UA Benchmark Completed.
+ Class           =                        C
+ Size            =                        8
+ Iterations      =                      200
+ Time in seconds =                   187.66
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                    46.79
+ Mop/s/thread    =                    11.70
+ Operation type  =     coll. point advanced
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              30 Nov 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+	Command being timed: "./NPB-OMP/bin/ua.C.x"
+	User time (seconds): 753.17
+	System time (seconds): 0.28
+	Percent of CPU this job got: 399%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:08.75
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 496128
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 123363
+	Voluntary context switches: 201
+	Involuntary context switches: 4215
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+2045501440
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      50        0     2408        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+[TIME] Benchmark finalizado: 28/02/2025 21:03:08
+
+-~~-~~-~~-~~-~~-~~- 75% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Teste 1
+[INFO] Iniciado benchmark com 75% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 28/02/2025 21:03:18
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+3068252160
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      52        0     2384        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - UA Benchmark
+
+ No input file inputua.data. Using compiled defaults
+ Levels of refinement:               8
+ Adaptation frequency:               5
+ Time steps:                       200    dt:    0.156250E-03
+ CG iterations:                     10
+ Heat source radius:            0.0670
+ Number of available threads:        4
+
+Step    0: elements refined, merged, total:    4563       0   31942
+Step    5: elements refined, merged, total:     168    1160   32103
+Step   10: elements refined, merged, total:     173    1464   32033
+Step   15: elements refined, merged, total:     182    1728   31795
+Step   20: elements refined, merged, total:     156    1288   31760
+Step   25: elements refined, merged, total:     169    1520   31613
+Step   30: elements refined, merged, total:     210    1256   31984
+Step   35: elements refined, merged, total:     213    1480   32180
+Step   40: elements refined, merged, total:     161    1248   32215
+Step   45: elements refined, merged, total:     166    1672   31914
+Step   50: elements refined, merged, total:     188    1712   31732
+Step   55: elements refined, merged, total:     141    1528   31382
+Step   60: elements refined, merged, total:     173    1248   31501
+Step   65: elements refined, merged, total:     235    1400   31921
+Step   70: elements refined, merged, total:     193    1288   32145
+Step   75: elements refined, merged, total:     166    1560   31942
+Step   80: elements refined, merged, total:     188    1440   31998
+Step   85: elements refined, merged, total:     176    1496   31921
+Step   90: elements refined, merged, total:     159    1264   31928
+Step   95: elements refined, merged, total:     182    1376   31998
+Step  100: elements refined, merged, total:     201    1544   32054
+Step  105: elements refined, merged, total:     162    1200   32138
+Step  110: elements refined, merged, total:     180    1384   32187
+Step  115: elements refined, merged, total:     186    1664   32033
+Step  120: elements refined, merged, total:     152    1384   31886
+Step  125: elements refined, merged, total:     165    1488   31739
+Step  130: elements refined, merged, total:     174    1224   31886
+Step  135: elements refined, merged, total:     228    1464   32201
+Step  140: elements refined, merged, total:     162    1208   32278
+Step  145: elements refined, merged, total:     168    1664   31998
+Step  150: elements refined, merged, total:     189    1656   31872
+Step  155: elements refined, merged, total:     139    1272   31732
+Step  160: elements refined, merged, total:     196    1336   31935
+Step  165: elements refined, merged, total:     195    1424   32054
+Step  170: elements refined, merged, total:     182    1312   32180
+Step  175: elements refined, merged, total:     168    1504   32040
+Step  180: elements refined, merged, total:     183    1504   32005
+Step  185: elements refined, merged, total:     175    1776   31676
+Step  190: elements refined, merged, total:     151    1216   31669
+Step  195: elements refined, merged, total:     165    1352   31641
+
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of temperature integrals
+           0.1544736587100E-04 0.1544736587100E-04 0.5527215565181E-13
+ Verification Successful
+
+
+ UA Benchmark Completed.
+ Class           =                        C
+ Size            =                        8
+ Iterations      =                      200
+ Time in seconds =                   182.90
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                    48.01
+ Mop/s/thread    =                    12.00
+ Operation type  =     coll. point advanced
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              30 Nov 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 3:03.98
+Segundos de CPU: 0.29
+Media de Memoria total (KB): 0
+Major page fault: 0
+Minor page faults: 123368
+Swaps totais: 0
+Trocas de contexto: 4116
+Esperas com troca de contexto voluntarias: 204
+Uso da CPU para este JOB: 399%
+OUTPUT COMPLETO
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - UA Benchmark
+
+ No input file inputua.data. Using compiled defaults
+ Levels of refinement:               8
+ Adaptation frequency:               5
+ Time steps:                       200    dt:    0.156250E-03
+ CG iterations:                     10
+ Heat source radius:            0.0670
+ Number of available threads:        4
+
+Step    0: elements refined, merged, total:    4563       0   31942
+Step    5: elements refined, merged, total:     168    1160   32103
+Step   10: elements refined, merged, total:     173    1464   32033
+Step   15: elements refined, merged, total:     182    1728   31795
+Step   20: elements refined, merged, total:     156    1288   31760
+Step   25: elements refined, merged, total:     169    1520   31613
+Step   30: elements refined, merged, total:     210    1256   31984
+Step   35: elements refined, merged, total:     213    1480   32180
+Step   40: elements refined, merged, total:     161    1248   32215
+Step   45: elements refined, merged, total:     166    1672   31914
+Step   50: elements refined, merged, total:     188    1712   31732
+Step   55: elements refined, merged, total:     141    1528   31382
+Step   60: elements refined, merged, total:     173    1248   31501
+Step   65: elements refined, merged, total:     235    1400   31921
+Step   70: elements refined, merged, total:     193    1288   32145
+Step   75: elements refined, merged, total:     166    1560   31942
+Step   80: elements refined, merged, total:     188    1440   31998
+Step   85: elements refined, merged, total:     176    1496   31921
+Step   90: elements refined, merged, total:     159    1264   31928
+Step   95: elements refined, merged, total:     182    1376   31998
+Step  100: elements refined, merged, total:     201    1544   32054
+Step  105: elements refined, merged, total:     162    1200   32138
+Step  110: elements refined, merged, total:     180    1384   32187
+Step  115: elements refined, merged, total:     186    1664   32033
+Step  120: elements refined, merged, total:     152    1384   31886
+Step  125: elements refined, merged, total:     165    1488   31739
+Step  130: elements refined, merged, total:     174    1224   31886
+Step  135: elements refined, merged, total:     228    1464   32201
+Step  140: elements refined, merged, total:     162    1208   32278
+Step  145: elements refined, merged, total:     168    1664   31998
+Step  150: elements refined, merged, total:     189    1656   31872
+Step  155: elements refined, merged, total:     139    1272   31732
+Step  160: elements refined, merged, total:     196    1336   31935
+Step  165: elements refined, merged, total:     195    1424   32054
+Step  170: elements refined, merged, total:     182    1312   32180
+Step  175: elements refined, merged, total:     168    1504   32040
+Step  180: elements refined, merged, total:     183    1504   32005
+Step  185: elements refined, merged, total:     175    1776   31676
+Step  190: elements refined, merged, total:     151    1216   31669
+Step  195: elements refined, merged, total:     165    1352   31641
+
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of temperature integrals
+           0.1544736587100E-04 0.1544736587100E-04 0.5527215565181E-13
+ Verification Successful
+
+
+ UA Benchmark Completed.
+ Class           =                        C
+ Size            =                        8
+ Iterations      =                      200
+ Time in seconds =                   182.84
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                    48.02
+ Mop/s/thread    =                    12.01
+ Operation type  =     coll. point advanced
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              30 Nov 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+	Command being timed: "./NPB-OMP/bin/ua.C.x"
+	User time (seconds): 733.83
+	System time (seconds): 0.28
+	Percent of CPU this job got: 399%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:03.92
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 496256
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 123370
+	Voluntary context switches: 203
+	Involuntary context switches: 3951
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+3068252160
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      52        0     2384        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+[TIME] Benchmark finalizado: 28/02/2025 21:09:26
+[INFO] Teste 2
+[INFO] Iniciado benchmark com 75% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 28/02/2025 21:09:26
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+3068252160
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      52        0     2384        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - UA Benchmark
+
+ No input file inputua.data. Using compiled defaults
+ Levels of refinement:               8
+ Adaptation frequency:               5
+ Time steps:                       200    dt:    0.156250E-03
+ CG iterations:                     10
+ Heat source radius:            0.0670
+ Number of available threads:        4
+
+Step    0: elements refined, merged, total:    4563       0   31942
+Step    5: elements refined, merged, total:     168    1160   32103
+Step   10: elements refined, merged, total:     173    1464   32033
+Step   15: elements refined, merged, total:     182    1728   31795
+Step   20: elements refined, merged, total:     156    1288   31760
+Step   25: elements refined, merged, total:     169    1520   31613
+Step   30: elements refined, merged, total:     210    1256   31984
+Step   35: elements refined, merged, total:     213    1480   32180
+Step   40: elements refined, merged, total:     161    1248   32215
+Step   45: elements refined, merged, total:     166    1672   31914
+Step   50: elements refined, merged, total:     188    1712   31732
+Step   55: elements refined, merged, total:     141    1528   31382
+Step   60: elements refined, merged, total:     173    1248   31501
+Step   65: elements refined, merged, total:     235    1400   31921
+Step   70: elements refined, merged, total:     193    1288   32145
+Step   75: elements refined, merged, total:     166    1560   31942
+Step   80: elements refined, merged, total:     188    1440   31998
+Step   85: elements refined, merged, total:     176    1496   31921
+Step   90: elements refined, merged, total:     159    1264   31928
+Step   95: elements refined, merged, total:     182    1376   31998
+Step  100: elements refined, merged, total:     201    1544   32054
+Step  105: elements refined, merged, total:     162    1200   32138
+Step  110: elements refined, merged, total:     180    1384   32187
+Step  115: elements refined, merged, total:     186    1664   32033
+Step  120: elements refined, merged, total:     152    1384   31886
+Step  125: elements refined, merged, total:     165    1488   31739
+Step  130: elements refined, merged, total:     174    1224   31886
+Step  135: elements refined, merged, total:     228    1464   32201
+Step  140: elements refined, merged, total:     162    1208   32278
+Step  145: elements refined, merged, total:     168    1664   31998
+Step  150: elements refined, merged, total:     189    1656   31872
+Step  155: elements refined, merged, total:     139    1272   31732
+Step  160: elements refined, merged, total:     196    1336   31935
+Step  165: elements refined, merged, total:     195    1424   32054
+Step  170: elements refined, merged, total:     182    1312   32180
+Step  175: elements refined, merged, total:     168    1504   32040
+Step  180: elements refined, merged, total:     183    1504   32005
+Step  185: elements refined, merged, total:     175    1776   31676
+Step  190: elements refined, merged, total:     151    1216   31669
+Step  195: elements refined, merged, total:     165    1352   31641
+
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of temperature integrals
+           0.1544736587100E-04 0.1544736587100E-04 0.5527215565181E-13
+ Verification Successful
+
+
+ UA Benchmark Completed.
+ Class           =                        C
+ Size            =                        8
+ Iterations      =                      200
+ Time in seconds =                   182.91
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                    48.01
+ Mop/s/thread    =                    12.00
+ Operation type  =     coll. point advanced
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              30 Nov 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 3:03.98
+Segundos de CPU: 0.28
+Media de Memoria total (KB): 0
+Major page fault: 0
+Minor page faults: 123366
+Swaps totais: 0
+Trocas de contexto: 4212
+Esperas com troca de contexto voluntarias: 203
+Uso da CPU para este JOB: 399%
+OUTPUT COMPLETO
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - UA Benchmark
+
+ No input file inputua.data. Using compiled defaults
+ Levels of refinement:               8
+ Adaptation frequency:               5
+ Time steps:                       200    dt:    0.156250E-03
+ CG iterations:                     10
+ Heat source radius:            0.0670
+ Number of available threads:        4
+
+Step    0: elements refined, merged, total:    4563       0   31942
+Step    5: elements refined, merged, total:     168    1160   32103
+Step   10: elements refined, merged, total:     173    1464   32033
+Step   15: elements refined, merged, total:     182    1728   31795
+Step   20: elements refined, merged, total:     156    1288   31760
+Step   25: elements refined, merged, total:     169    1520   31613
+Step   30: elements refined, merged, total:     210    1256   31984
+Step   35: elements refined, merged, total:     213    1480   32180
+Step   40: elements refined, merged, total:     161    1248   32215
+Step   45: elements refined, merged, total:     166    1672   31914
+Step   50: elements refined, merged, total:     188    1712   31732
+Step   55: elements refined, merged, total:     141    1528   31382
+Step   60: elements refined, merged, total:     173    1248   31501
+Step   65: elements refined, merged, total:     235    1400   31921
+Step   70: elements refined, merged, total:     193    1288   32145
+Step   75: elements refined, merged, total:     166    1560   31942
+Step   80: elements refined, merged, total:     188    1440   31998
+Step   85: elements refined, merged, total:     176    1496   31921
+Step   90: elements refined, merged, total:     159    1264   31928
+Step   95: elements refined, merged, total:     182    1376   31998
+Step  100: elements refined, merged, total:     201    1544   32054
+Step  105: elements refined, merged, total:     162    1200   32138
+Step  110: elements refined, merged, total:     180    1384   32187
+Step  115: elements refined, merged, total:     186    1664   32033
+Step  120: elements refined, merged, total:     152    1384   31886
+Step  125: elements refined, merged, total:     165    1488   31739
+Step  130: elements refined, merged, total:     174    1224   31886
+Step  135: elements refined, merged, total:     228    1464   32201
+Step  140: elements refined, merged, total:     162    1208   32278
+Step  145: elements refined, merged, total:     168    1664   31998
+Step  150: elements refined, merged, total:     189    1656   31872
+Step  155: elements refined, merged, total:     139    1272   31732
+Step  160: elements refined, merged, total:     196    1336   31935
+Step  165: elements refined, merged, total:     195    1424   32054
+Step  170: elements refined, merged, total:     182    1312   32180
+Step  175: elements refined, merged, total:     168    1504   32040
+Step  180: elements refined, merged, total:     183    1504   32005
+Step  185: elements refined, merged, total:     175    1776   31676
+Step  190: elements refined, merged, total:     151    1216   31669
+Step  195: elements refined, merged, total:     165    1352   31641
+
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of temperature integrals
+           0.1544736587100E-04 0.1544736587100E-04 0.5527215565181E-13
+ Verification Successful
+
+
+ UA Benchmark Completed.
+ Class           =                        C
+ Size            =                        8
+ Iterations      =                      200
+ Time in seconds =                   183.01
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                    47.98
+ Mop/s/thread    =                    11.99
+ Operation type  =     coll. point advanced
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              30 Nov 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+	Command being timed: "./NPB-OMP/bin/ua.C.x"
+	User time (seconds): 734.36
+	System time (seconds): 0.29
+	Percent of CPU this job got: 399%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:04.08
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 496256
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 123366
+	Voluntary context switches: 204
+	Involuntary context switches: 4128
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+3068252160
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      52        0     2384        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+[TIME] Benchmark finalizado: 28/02/2025 21:15:34
+
+-~~-~~-~~-~~-~~-~~- 100% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Teste 1
+[INFO] Iniciado benchmark com 100% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 28/02/2025 21:15:44
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+4091002880
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      48        0     2408        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - UA Benchmark
+
+ No input file inputua.data. Using compiled defaults
+ Levels of refinement:               8
+ Adaptation frequency:               5
+ Time steps:                       200    dt:    0.156250E-03
+ CG iterations:                     10
+ Heat source radius:            0.0670
+ Number of available threads:        4
+
+Step    0: elements refined, merged, total:    4563       0   31942
+Step    5: elements refined, merged, total:     168    1160   32103
+Step   10: elements refined, merged, total:     173    1464   32033
+Step   15: elements refined, merged, total:     182    1728   31795
+Step   20: elements refined, merged, total:     156    1288   31760
+Step   25: elements refined, merged, total:     169    1520   31613
+Step   30: elements refined, merged, total:     210    1256   31984
+Step   35: elements refined, merged, total:     213    1480   32180
+Step   40: elements refined, merged, total:     161    1248   32215
+Step   45: elements refined, merged, total:     166    1672   31914
+Step   50: elements refined, merged, total:     188    1712   31732
+Step   55: elements refined, merged, total:     141    1528   31382
+Step   60: elements refined, merged, total:     173    1248   31501
+Step   65: elements refined, merged, total:     235    1400   31921
+Step   70: elements refined, merged, total:     193    1288   32145
+Step   75: elements refined, merged, total:     166    1560   31942
+Step   80: elements refined, merged, total:     188    1440   31998
+Step   85: elements refined, merged, total:     176    1496   31921
+Step   90: elements refined, merged, total:     159    1264   31928
+Step   95: elements refined, merged, total:     182    1376   31998
+Step  100: elements refined, merged, total:     201    1544   32054
+Step  105: elements refined, merged, total:     162    1200   32138
+Step  110: elements refined, merged, total:     180    1384   32187
+Step  115: elements refined, merged, total:     186    1664   32033
+Step  120: elements refined, merged, total:     152    1384   31886
+Step  125: elements refined, merged, total:     165    1488   31739
+Step  130: elements refined, merged, total:     174    1224   31886
+Step  135: elements refined, merged, total:     228    1464   32201
+Step  140: elements refined, merged, total:     162    1208   32278
+Step  145: elements refined, merged, total:     168    1664   31998
+Step  150: elements refined, merged, total:     189    1656   31872
+Step  155: elements refined, merged, total:     139    1272   31732
+Step  160: elements refined, merged, total:     196    1336   31935
+Step  165: elements refined, merged, total:     195    1424   32054
+Step  170: elements refined, merged, total:     182    1312   32180
+Step  175: elements refined, merged, total:     168    1504   32040
+Step  180: elements refined, merged, total:     183    1504   32005
+Step  185: elements refined, merged, total:     175    1776   31676
+Step  190: elements refined, merged, total:     151    1216   31669
+Step  195: elements refined, merged, total:     165    1352   31641
+
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of temperature integrals
+           0.1544736587100E-04 0.1544736587100E-04 0.5549148960281E-13
+ Verification Successful
+
+
+ UA Benchmark Completed.
+ Class           =                        C
+ Size            =                        8
+ Iterations      =                      200
+ Time in seconds =                   183.37
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                    47.88
+ Mop/s/thread    =                    11.97
+ Operation type  =     coll. point advanced
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              30 Nov 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 3:04.45
+Segundos de CPU: 0.30
+Media de Memoria total (KB): 0
+Major page fault: 0
+Minor page faults: 123362
+Swaps totais: 0
+Trocas de contexto: 4327
+Esperas com troca de contexto voluntarias: 204
+Uso da CPU para este JOB: 399%
+OUTPUT COMPLETO
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - UA Benchmark
+
+ No input file inputua.data. Using compiled defaults
+ Levels of refinement:               8
+ Adaptation frequency:               5
+ Time steps:                       200    dt:    0.156250E-03
+ CG iterations:                     10
+ Heat source radius:            0.0670
+ Number of available threads:        4
+
+Step    0: elements refined, merged, total:    4563       0   31942
+Step    5: elements refined, merged, total:     168    1160   32103
+Step   10: elements refined, merged, total:     173    1464   32033
+Step   15: elements refined, merged, total:     182    1728   31795
+Step   20: elements refined, merged, total:     156    1288   31760
+Step   25: elements refined, merged, total:     169    1520   31613
+Step   30: elements refined, merged, total:     210    1256   31984
+Step   35: elements refined, merged, total:     213    1480   32180
+Step   40: elements refined, merged, total:     161    1248   32215
+Step   45: elements refined, merged, total:     166    1672   31914
+Step   50: elements refined, merged, total:     188    1712   31732
+Step   55: elements refined, merged, total:     141    1528   31382
+Step   60: elements refined, merged, total:     173    1248   31501
+Step   65: elements refined, merged, total:     235    1400   31921
+Step   70: elements refined, merged, total:     193    1288   32145
+Step   75: elements refined, merged, total:     166    1560   31942
+Step   80: elements refined, merged, total:     188    1440   31998
+Step   85: elements refined, merged, total:     176    1496   31921
+Step   90: elements refined, merged, total:     159    1264   31928
+Step   95: elements refined, merged, total:     182    1376   31998
+Step  100: elements refined, merged, total:     201    1544   32054
+Step  105: elements refined, merged, total:     162    1200   32138
+Step  110: elements refined, merged, total:     180    1384   32187
+Step  115: elements refined, merged, total:     186    1664   32033
+Step  120: elements refined, merged, total:     152    1384   31886
+Step  125: elements refined, merged, total:     165    1488   31739
+Step  130: elements refined, merged, total:     174    1224   31886
+Step  135: elements refined, merged, total:     228    1464   32201
+Step  140: elements refined, merged, total:     162    1208   32278
+Step  145: elements refined, merged, total:     168    1664   31998
+Step  150: elements refined, merged, total:     189    1656   31872
+Step  155: elements refined, merged, total:     139    1272   31732
+Step  160: elements refined, merged, total:     196    1336   31935
+Step  165: elements refined, merged, total:     195    1424   32054
+Step  170: elements refined, merged, total:     182    1312   32180
+Step  175: elements refined, merged, total:     168    1504   32040
+Step  180: elements refined, merged, total:     183    1504   32005
+Step  185: elements refined, merged, total:     175    1776   31676
+Step  190: elements refined, merged, total:     151    1216   31669
+Step  195: elements refined, merged, total:     165    1352   31641
+
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of temperature integrals
+           0.1544736587100E-04 0.1544736587100E-04 0.5527215565181E-13
+ Verification Successful
+
+
+ UA Benchmark Completed.
+ Class           =                        C
+ Size            =                        8
+ Iterations      =                      200
+ Time in seconds =                   182.98
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                    47.99
+ Mop/s/thread    =                    12.00
+ Operation type  =     coll. point advanced
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              30 Nov 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+	Command being timed: "./NPB-OMP/bin/ua.C.x"
+	User time (seconds): 734.36
+	System time (seconds): 0.28
+	Percent of CPU this job got: 399%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:04.05
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 496128
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 123363
+	Voluntary context switches: 202
+	Involuntary context switches: 4282
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+4091002880
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      48        0     2408        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+[TIME] Benchmark finalizado: 28/02/2025 21:21:53
+[INFO] Teste 2
+[INFO] Iniciado benchmark com 100% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 28/02/2025 21:21:53
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+4091002880
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      48        0     2408        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - UA Benchmark
+
+ No input file inputua.data. Using compiled defaults
+ Levels of refinement:               8
+ Adaptation frequency:               5
+ Time steps:                       200    dt:    0.156250E-03
+ CG iterations:                     10
+ Heat source radius:            0.0670
+ Number of available threads:        4
+
+Step    0: elements refined, merged, total:    4563       0   31942
+Step    5: elements refined, merged, total:     168    1160   32103
+Step   10: elements refined, merged, total:     173    1464   32033
+Step   15: elements refined, merged, total:     182    1728   31795
+Step   20: elements refined, merged, total:     156    1288   31760
+Step   25: elements refined, merged, total:     169    1520   31613
+Step   30: elements refined, merged, total:     210    1256   31984
+Step   35: elements refined, merged, total:     213    1480   32180
+Step   40: elements refined, merged, total:     161    1248   32215
+Step   45: elements refined, merged, total:     166    1672   31914
+Step   50: elements refined, merged, total:     188    1712   31732
+Step   55: elements refined, merged, total:     141    1528   31382
+Step   60: elements refined, merged, total:     173    1248   31501
+Step   65: elements refined, merged, total:     235    1400   31921
+Step   70: elements refined, merged, total:     193    1288   32145
+Step   75: elements refined, merged, total:     166    1560   31942
+Step   80: elements refined, merged, total:     188    1440   31998
+Step   85: elements refined, merged, total:     176    1496   31921
+Step   90: elements refined, merged, total:     159    1264   31928
+Step   95: elements refined, merged, total:     182    1376   31998
+Step  100: elements refined, merged, total:     201    1544   32054
+Step  105: elements refined, merged, total:     162    1200   32138
+Step  110: elements refined, merged, total:     180    1384   32187
+Step  115: elements refined, merged, total:     186    1664   32033
+Step  120: elements refined, merged, total:     152    1384   31886
+Step  125: elements refined, merged, total:     165    1488   31739
+Step  130: elements refined, merged, total:     174    1224   31886
+Step  135: elements refined, merged, total:     228    1464   32201
+Step  140: elements refined, merged, total:     162    1208   32278
+Step  145: elements refined, merged, total:     168    1664   31998
+Step  150: elements refined, merged, total:     189    1656   31872
+Step  155: elements refined, merged, total:     139    1272   31732
+Step  160: elements refined, merged, total:     196    1336   31935
+Step  165: elements refined, merged, total:     195    1424   32054
+Step  170: elements refined, merged, total:     182    1312   32180
+Step  175: elements refined, merged, total:     168    1504   32040
+Step  180: elements refined, merged, total:     183    1504   32005
+Step  185: elements refined, merged, total:     175    1776   31676
+Step  190: elements refined, merged, total:     151    1216   31669
+Step  195: elements refined, merged, total:     165    1352   31641
+
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of temperature integrals
+           0.1544736587100E-04 0.1544736587100E-04 0.5527215565181E-13
+ Verification Successful
+
+
+ UA Benchmark Completed.
+ Class           =                        C
+ Size            =                        8
+ Iterations      =                      200
+ Time in seconds =                   182.93
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                    48.00
+ Mop/s/thread    =                    12.00
+ Operation type  =     coll. point advanced
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              30 Nov 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+Tempo real: 3:04.00
+Segundos de CPU: 0.28
+Media de Memoria total (KB): 0
+Major page fault: 0
+Minor page faults: 123363
+Swaps totais: 0
+Trocas de contexto: 4193
+Esperas com troca de contexto voluntarias: 205
+Uso da CPU para este JOB: 399%
+OUTPUT COMPLETO
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - UA Benchmark
+
+ No input file inputua.data. Using compiled defaults
+ Levels of refinement:               8
+ Adaptation frequency:               5
+ Time steps:                       200    dt:    0.156250E-03
+ CG iterations:                     10
+ Heat source radius:            0.0670
+ Number of available threads:        4
+
+Step    0: elements refined, merged, total:    4563       0   31942
+Step    5: elements refined, merged, total:     168    1160   32103
+Step   10: elements refined, merged, total:     173    1464   32033
+Step   15: elements refined, merged, total:     182    1728   31795
+Step   20: elements refined, merged, total:     156    1288   31760
+Step   25: elements refined, merged, total:     169    1520   31613
+Step   30: elements refined, merged, total:     210    1256   31984
+Step   35: elements refined, merged, total:     213    1480   32180
+Step   40: elements refined, merged, total:     161    1248   32215
+Step   45: elements refined, merged, total:     166    1672   31914
+Step   50: elements refined, merged, total:     188    1712   31732
+Step   55: elements refined, merged, total:     141    1528   31382
+Step   60: elements refined, merged, total:     173    1248   31501
+Step   65: elements refined, merged, total:     235    1400   31921
+Step   70: elements refined, merged, total:     193    1288   32145
+Step   75: elements refined, merged, total:     166    1560   31942
+Step   80: elements refined, merged, total:     188    1440   31998
+Step   85: elements refined, merged, total:     176    1496   31921
+Step   90: elements refined, merged, total:     159    1264   31928
+Step   95: elements refined, merged, total:     182    1376   31998
+Step  100: elements refined, merged, total:     201    1544   32054
+Step  105: elements refined, merged, total:     162    1200   32138
+Step  110: elements refined, merged, total:     180    1384   32187
+Step  115: elements refined, merged, total:     186    1664   32033
+Step  120: elements refined, merged, total:     152    1384   31886
+Step  125: elements refined, merged, total:     165    1488   31739
+Step  130: elements refined, merged, total:     174    1224   31886
+Step  135: elements refined, merged, total:     228    1464   32201
+Step  140: elements refined, merged, total:     162    1208   32278
+Step  145: elements refined, merged, total:     168    1664   31998
+Step  150: elements refined, merged, total:     189    1656   31872
+Step  155: elements refined, merged, total:     139    1272   31732
+Step  160: elements refined, merged, total:     196    1336   31935
+Step  165: elements refined, merged, total:     195    1424   32054
+Step  170: elements refined, merged, total:     182    1312   32180
+Step  175: elements refined, merged, total:     168    1504   32040
+Step  180: elements refined, merged, total:     183    1504   32005
+Step  185: elements refined, merged, total:     175    1776   31676
+Step  190: elements refined, merged, total:     151    1216   31669
+Step  195: elements refined, merged, total:     165    1352   31641
+
+ Verification being performed for class C
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of temperature integrals
+           0.1544736587100E-04 0.1544736587100E-04 0.5505282170081E-13
+ Verification Successful
+
+
+ UA Benchmark Completed.
+ Class           =                        C
+ Size            =                        8
+ Iterations      =                      200
+ Time in seconds =                   182.88
+ Total threads   =                        4
+ Avail threads   =                        4
+ Mop/s total     =                    48.01
+ Mop/s/thread    =                    12.00
+ Operation type  =     coll. point advanced
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.3
+ Compile date    =              30 Nov 2024
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+	Command being timed: "./NPB-OMP/bin/ua.C.x"
+	User time (seconds): 733.95
+	System time (seconds): 0.28
+	Percent of CPU this job got: 399%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:03.95
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 496256
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 123363
+	Voluntary context switches: 200
+	Involuntary context switches: 4129
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+4091002880
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      48        0     2408        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+[TIME] Benchmark finalizado: 28/02/2025 21:28:01
+
+[TIME] Benchmark totalmente finalizado: 28/02/2025 as 21:28:01
