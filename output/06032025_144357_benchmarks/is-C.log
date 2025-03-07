@@ -1,0 +1,654 @@
+-~~-~~-~~-~~-~~-~~- Benchmark is - classe C -~~-~~-~~-~~-~~-~~-
+[TIME] Benchmark totalmente iniciado: 06/03/2025 as 15:31:58
+
+-~~-~~-~~-~~-~~-~~- 0% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Teste 1
+[INFO] Iniciado benchmark com 0% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 06/03/2025 15:32:08
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+1007415296
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      50        0     2408        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+Command terminated by signal 11
+Tempo real: 0:00.00
+Segundos de CPU: 0.00
+Media de Memoria total (KB): 0
+Major page fault: 0
+Minor page faults: 14
+Swaps totais: 0
+Trocas de contexto: 0
+Esperas com troca de contexto voluntarias: 1
+Uso da CPU para este JOB: 73%
+OUTPUT COMPLETO
+Command terminated by signal 11
+	Command being timed: "./NPB-OMP/bin/is.C.x"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 78%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 256
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 14
+	Voluntary context switches: 1
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+[INFO] Teste 2
+[INFO] Iniciado benchmark com 0% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 06/03/2025 15:32:08
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+1007415296
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      50        0     2408        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+Command terminated by signal 11
+Tempo real: 0:00.00
+Segundos de CPU: 0.00
+Media de Memoria total (KB): 0
+Major page fault: 0
+Minor page faults: 14
+Swaps totais: 0
+Trocas de contexto: 0
+Esperas com troca de contexto voluntarias: 1
+Uso da CPU para este JOB: 72%
+OUTPUT COMPLETO
+Command terminated by signal 11
+	Command being timed: "./NPB-OMP/bin/is.C.x"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 72%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 256
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 14
+	Voluntary context switches: 1
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+-~~-~~-~~-~~-~~-~~- 25% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Teste 1
+[INFO] Iniciado benchmark com 25% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 06/03/2025 15:32:19
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+251854848
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      51        0     2400        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       73    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+Command terminated by signal 9
+Tempo real: 0:04.70
+Segundos de CPU: 0.91
+Media de Memoria total (KB): 0
+Major page fault: 0
+Minor page faults: 180645
+Swaps totais: 0
+Trocas de contexto: 230
+Esperas com troca de contexto voluntarias: 28
+Uso da CPU para este JOB: 389%
+OUTPUT COMPLETO
+Command terminated by signal 9
+	Command being timed: "./NPB-OMP/bin/is.C.x"
+	User time (seconds): 17.42
+	System time (seconds): 0.87
+	Percent of CPU this job got: 377%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.84
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 714880
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 3
+	Minor (reclaiming a frame) page faults: 184004
+	Voluntary context switches: 84
+	Involuntary context switches: 512
+	Swaps: 0
+	File system inputs: 984
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+[INFO] Teste 2
+[INFO] Iniciado benchmark com 25% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 06/03/2025 15:32:29
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+251854848
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+     187        0     3488        2   120167        0   961336      577        0      300      579        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0   112404
+STATS mm: 
+32587776  9652705 11161600        0 245088256      210        0        4   112085
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+Command terminated by signal 9
+Tempo real: 0:04.73
+Segundos de CPU: 0.82
+Media de Memoria total (KB): 0
+Major page fault: 3
+Minor page faults: 183962
+Swaps totais: 0
+Trocas de contexto: 314
+Esperas com troca de contexto voluntarias: 82
+Uso da CPU para este JOB: 385%
+OUTPUT COMPLETO
+Command terminated by signal 9
+	Command being timed: "./NPB-OMP/bin/is.C.x"
+	User time (seconds): 17.43
+	System time (seconds): 0.83
+	Percent of CPU this job got: 379%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.82
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 728448
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 3
+	Minor (reclaiming a frame) page faults: 184854
+	Voluntary context switches: 40
+	Involuntary context switches: 1630
+	Swaps: 0
+	File system inputs: 920
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+-~~-~~-~~-~~-~~-~~- 50% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Teste 1
+[INFO] Iniciado benchmark com 50% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 06/03/2025 15:32:53
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+503709696
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      51        0     2392        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       73    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+Command terminated by signal 9
+Tempo real: 0:04.92
+Segundos de CPU: 1.36
+Media de Memoria total (KB): 0
+Major page fault: 3
+Minor page faults: 178571
+Swaps totais: 0
+Trocas de contexto: 276
+Esperas com troca de contexto voluntarias: 79
+Uso da CPU para este JOB: 382%
+OUTPUT COMPLETO
+Command terminated by signal 9
+	Command being timed: "./NPB-OMP/bin/is.C.x"
+	User time (seconds): 17.44
+	System time (seconds): 1.36
+	Percent of CPU this job got: 373%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.03
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 712576
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 3
+	Minor (reclaiming a frame) page faults: 205276
+	Voluntary context switches: 92
+	Involuntary context switches: 645
+	Swaps: 0
+	File system inputs: 920
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+[INFO] Teste 2
+[INFO] Iniciado benchmark com 50% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 06/03/2025 15:33:03
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+503709696
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+     239        0     3896        1   243297        0  1946376     1013        0      546     1014        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0   238494
+STATS mm: 
+24989696  6693355  8110080        0 497897472      266        7       25   213304
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+Command terminated by signal 9
+Tempo real: 0:04.91
+Segundos de CPU: 1.36
+Media de Memoria total (KB): 0
+Major page fault: 3
+Minor page faults: 187889
+Swaps totais: 0
+Trocas de contexto: 465
+Esperas com troca de contexto voluntarias: 79
+Uso da CPU para este JOB: 382%
+OUTPUT COMPLETO
+Command terminated by signal 9
+	Command being timed: "./NPB-OMP/bin/is.C.x"
+	User time (seconds): 17.43
+	System time (seconds): 1.30
+	Percent of CPU this job got: 379%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.93
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 730496
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 3
+	Minor (reclaiming a frame) page faults: 185223
+	Voluntary context switches: 23
+	Involuntary context switches: 1737
+	Swaps: 0
+	File system inputs: 1040
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+-~~-~~-~~-~~-~~-~~- 75% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Teste 1
+[INFO] Iniciado benchmark com 75% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 06/03/2025 15:33:26
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+755564544
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      52        0     2384        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+Command terminated by signal 9
+Tempo real: 0:05.12
+Segundos de CPU: 1.85
+Media de Memoria total (KB): 0
+Major page fault: 4
+Minor page faults: 227189
+Swaps totais: 0
+Trocas de contexto: 342
+Esperas com troca de contexto voluntarias: 85
+Uso da CPU para este JOB: 376%
+OUTPUT COMPLETO
+Command terminated by signal 9
+	Command being timed: "./NPB-OMP/bin/is.C.x"
+	User time (seconds): 17.44
+	System time (seconds): 1.85
+	Percent of CPU this job got: 372%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.18
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 716032
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 4
+	Minor (reclaiming a frame) page faults: 226878
+	Voluntary context switches: 94
+	Involuntary context switches: 842
+	Swaps: 0
+	File system inputs: 928
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+[INFO] Teste 2
+[INFO] Iniciado benchmark com 75% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 06/03/2025 15:33:37
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+755564544
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+     407        0     5224        1   368773        0  2950184     1321        0      723     1322        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0   361925
+STATS mm: 
+31682560  9572392 11046912        0 547876864      294       33       14   262146
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+Command terminated by signal 9
+Tempo real: 0:05.09
+Segundos de CPU: 1.78
+Media de Memoria total (KB): 0
+Major page fault: 4
+Minor page faults: 225572
+Swaps totais: 0
+Trocas de contexto: 372
+Esperas com troca de contexto voluntarias: 79
+Uso da CPU para este JOB: 378%
+OUTPUT COMPLETO
+Command terminated by signal 9
+	Command being timed: "./NPB-OMP/bin/is.C.x"
+	User time (seconds): 17.45
+	System time (seconds): 1.80
+	Percent of CPU this job got: 375%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.12
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 730240
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 4
+	Minor (reclaiming a frame) page faults: 225913
+	Voluntary context switches: 28
+	Involuntary context switches: 2213
+	Swaps: 0
+	File system inputs: 928
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+-~~-~~-~~-~~-~~-~~- 100% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Teste 1
+[INFO] Iniciado benchmark com 100% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 06/03/2025 15:34:00
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+1007415296
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      50        0     2408        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+Command terminated by signal 9
+Tempo real: 0:06.00
+Segundos de CPU: 3.74
+Media de Memoria total (KB): 0
+Major page fault: 178511
+Minor page faults: 262509
+Swaps totais: 0
+Trocas de contexto: 770
+Esperas com troca de contexto voluntarias: 42
+Uso da CPU para este JOB: 361%
+OUTPUT COMPLETO
+Command terminated by signal 9
+	Command being timed: "./NPB-OMP/bin/is.C.x"
+	User time (seconds): 18.05
+	System time (seconds): 3.64
+	Percent of CPU this job got: 359%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:06.02
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 740992
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 176655
+	Minor (reclaiming a frame) page faults: 263021
+	Voluntary context switches: 62
+	Involuntary context switches: 1394
+	Swaps: 0
+	File system inputs: 1414856
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+[INFO] Teste 2
+[INFO] Iniciado benchmark com 100% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 06/03/2025 15:34:13
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+1007415296
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+  355819        0  2848560      253   840629        0  6725032     2659        0     1741     2912        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0   829854
+STATS mm: 
+56627200 16043604 18522112        0 652767232      383      578        9   579735
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+Command terminated by signal 9
+Tempo real: 0:05.98
+Segundos de CPU: 3.94
+Media de Memoria total (KB): 0
+Major page fault: 177019
+Minor page faults: 262832
+Swaps totais: 0
+Trocas de contexto: 828
+Esperas com troca de contexto voluntarias: 76
+Uso da CPU para este JOB: 368%
+OUTPUT COMPLETO
+Command terminated by signal 9
+	Command being timed: "./NPB-OMP/bin/is.C.x"
+	User time (seconds): 18.08
+	System time (seconds): 3.69
+	Percent of CPU this job got: 365%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.95
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 745600
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 176163
+	Minor (reclaiming a frame) page faults: 263258
+	Voluntary context switches: 31
+	Involuntary context switches: 1308
+	Swaps: 0
+	File system inputs: 1410648
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+[TIME] Benchmark totalmente finalizado: 06/03/2025 as 15:34:26

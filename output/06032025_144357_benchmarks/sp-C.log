@@ -1,0 +1,744 @@
+-~~-~~-~~-~~-~~-~~- Benchmark sp - classe C -~~-~~-~~-~~-~~-~~-
+[TIME] Benchmark totalmente iniciado: 06/03/2025 as 16:20:48
+
+-~~-~~-~~-~~-~~-~~- 0% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Teste 1
+[INFO] Iniciado benchmark com 0% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 06/03/2025 16:20:59
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+1007415296
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+   10693        0    87552       44   964839        0  7718712      901        0      853      945        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0   969107
+STATS mm: 
+    4096       74    12288        0 12808192        0        4        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - SP Benchmark
+
+ No input file inputsp.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  400    dt:    0.0006700
+ Number of available threads:     4
+
+Command terminated by signal 9
+Tempo real: 0:00.46
+Segundos de CPU: 0.34
+Media de Memoria total (KB): 0
+Major page fault: 6
+Minor page faults: 174918
+Swaps totais: 0
+Trocas de contexto: 18
+Esperas com troca de contexto voluntarias: 18
+Uso da CPU para este JOB: 321%
+OUTPUT COMPLETO
+Command terminated by signal 9
+	Command being timed: "./NPB-OMP/bin/sp.C.x"
+	User time (seconds): 1.12
+	System time (seconds): 0.36
+	Percent of CPU this job got: 163%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.90
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 698240
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 18
+	Minor (reclaiming a frame) page faults: 174218
+	Voluntary context switches: 93
+	Involuntary context switches: 39
+	Swaps: 0
+	File system inputs: 5608
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+[INFO] Teste 2
+[INFO] Iniciado benchmark com 0% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 06/03/2025 16:21:01
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+1007415296
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+   10693        0    87552       44   964839        0  7718712      901        0      853      945        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0   969107
+STATS mm: 
+    4096       74    12288        0 12808192        0        4        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - SP Benchmark
+
+ No input file inputsp.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  400    dt:    0.0006700
+ Number of available threads:     4
+
+Command terminated by signal 9
+Tempo real: 0:00.53
+Segundos de CPU: 0.36
+Media de Memoria total (KB): 0
+Major page fault: 11
+Minor page faults: 174638
+Swaps totais: 0
+Trocas de contexto: 62
+Esperas com troca de contexto voluntarias: 102
+Uso da CPU para este JOB: 281%
+OUTPUT COMPLETO
+Command terminated by signal 9
+	Command being timed: "./NPB-OMP/bin/sp.C.x"
+	User time (seconds): 1.15
+	System time (seconds): 0.31
+	Percent of CPU this job got: 171%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.85
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 695808
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 18
+	Minor (reclaiming a frame) page faults: 173553
+	Voluntary context switches: 180
+	Involuntary context switches: 123
+	Swaps: 0
+	File system inputs: 5496
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+-~~-~~-~~-~~-~~-~~- 25% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Teste 1
+[INFO] Iniciado benchmark com 25% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 06/03/2025 16:21:16
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+251854848
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      51        0     2400        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       73    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - SP Benchmark
+
+ No input file inputsp.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  400    dt:    0.0006700
+ Number of available threads:     4
+
+Command terminated by signal 9
+Tempo real: 0:00.80
+Segundos de CPU: 0.98
+Media de Memoria total (KB): 0
+Major page fault: 5366
+Minor page faults: 182458
+Swaps totais: 0
+Trocas de contexto: 130
+Esperas com troca de contexto voluntarias: 46
+Uso da CPU para este JOB: 270%
+OUTPUT COMPLETO
+Command terminated by signal 9
+	Command being timed: "./NPB-OMP/bin/sp.C.x"
+	User time (seconds): 1.19
+	System time (seconds): 0.80
+	Percent of CPU this job got: 175%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.13
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 722432
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 3406
+	Minor (reclaiming a frame) page faults: 184222
+	Voluntary context switches: 146
+	Involuntary context switches: 190
+	Swaps: 0
+	File system inputs: 32600
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+[INFO] Teste 2
+[INFO] Iniciado benchmark com 25% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 06/03/2025 16:21:19
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+251854848
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+    9170        0    75352       15   128142        0  1025136      615        0      351      630        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0   118152
+STATS mm: 
+45363200 12848104 14659584        0 225431552      370       89        5   113822
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - SP Benchmark
+
+ No input file inputsp.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  400    dt:    0.0006700
+ Number of available threads:     4
+
+Command terminated by signal 9
+Tempo real: 0:05.53
+Segundos de CPU: 1.11
+Media de Memoria total (KB): 0
+Major page fault: 59450
+Minor page faults: 207558
+Swaps totais: 0
+Trocas de contexto: 642
+Esperas com troca de contexto voluntarias: 1497
+Uso da CPU para este JOB: 84%
+OUTPUT COMPLETO
+Command terminated by signal 9
+	Command being timed: "./NPB-OMP/bin/sp.C.x"
+	User time (seconds): 2.40
+	System time (seconds): 1.01
+	Percent of CPU this job got: 103%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.30
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 730880
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 38073
+	Minor (reclaiming a frame) page faults: 185762
+	Voluntary context switches: 1441
+	Involuntary context switches: 699
+	Swaps: 0
+	File system inputs: 368168
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+-~~-~~-~~-~~-~~-~~- 50% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Teste 1
+[INFO] Iniciado benchmark com 50% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 06/03/2025 16:21:41
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+503709696
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      51        0     2392        1        1        0        8        0        0        1        1        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       73    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - SP Benchmark
+
+ No input file inputsp.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  400    dt:    0.0006700
+ Number of available threads:     4
+
+Command terminated by signal 9
+Tempo real: 0:01.01
+Segundos de CPU: 1.55
+Media de Memoria total (KB): 0
+Major page fault: 5674
+Minor page faults: 180062
+Swaps totais: 0
+Trocas de contexto: 261
+Esperas com troca de contexto voluntarias: 161
+Uso da CPU para este JOB: 268%
+OUTPUT COMPLETO
+Command terminated by signal 9
+	Command being timed: "./NPB-OMP/bin/sp.C.x"
+	User time (seconds): 1.19
+	System time (seconds): 1.35
+	Percent of CPU this job got: 204%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.24
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 713856
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2606
+	Minor (reclaiming a frame) page faults: 182158
+	Voluntary context switches: 129
+	Involuntary context switches: 421
+	Swaps: 0
+	File system inputs: 28504
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+[INFO] Teste 2
+[INFO] Iniciado benchmark com 50% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 06/03/2025 16:21:45
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+503709696
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+    8608        0    70848        6   252368        0  2018944     1142        0      642     1148        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0   242911
+STATS mm: 
+43872256 12419835 14565376        0 481660928      329       72        4   236788
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - SP Benchmark
+
+ No input file inputsp.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  400    dt:    0.0006700
+ Number of available threads:     4
+
+Command terminated by signal 9
+Tempo real: 0:00.98
+Segundos de CPU: 1.15
+Media de Memoria total (KB): 0
+Major page fault: 3044
+Minor page faults: 183976
+Swaps totais: 0
+Trocas de contexto: 291
+Esperas com troca de contexto voluntarias: 62
+Uso da CPU para este JOB: 239%
+OUTPUT COMPLETO
+Command terminated by signal 9
+	Command being timed: "./NPB-OMP/bin/sp.C.x"
+	User time (seconds): 7.65
+	System time (seconds): 4.33
+	Percent of CPU this job got: 231%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.17
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 731008
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 545842
+	Minor (reclaiming a frame) page faults: 358500
+	Voluntary context switches: 280
+	Involuntary context switches: 3492
+	Swaps: 0
+	File system inputs: 4379176
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+-~~-~~-~~-~~-~~-~~- 75% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Teste 1
+[INFO] Iniciado benchmark com 75% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 06/03/2025 16:22:04
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+755564544
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      52        0     2384        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - SP Benchmark
+
+ No input file inputsp.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  400    dt:    0.0006700
+ Number of available threads:     4
+
+Command terminated by signal 9
+Tempo real: 0:01.28
+Segundos de CPU: 2.09
+Media de Memoria total (KB): 0
+Major page fault: 12495
+Minor page faults: 183176
+Swaps totais: 0
+Trocas de contexto: 329
+Esperas com troca de contexto voluntarias: 103
+Uso da CPU para este JOB: 256%
+OUTPUT COMPLETO
+Command terminated by signal 9
+	Command being timed: "./NPB-OMP/bin/sp.C.x"
+	User time (seconds): 1.18
+	System time (seconds): 1.66
+	Percent of CPU this job got: 180%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.58
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 717056
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 4010
+	Minor (reclaiming a frame) page faults: 183827
+	Voluntary context switches: 137
+	Involuntary context switches: 724
+	Swaps: 0
+	File system inputs: 38752
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+[INFO] Teste 2
+[INFO] Iniciado benchmark com 75% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 06/03/2025 16:22:08
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+755564544
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+   16946        0   137536       15   381634        0  3053072     1737        0      941     1752        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0   370671
+STATS mm: 
+52264960 14716408 17346560        0 719532032      382       33        4   359735
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - SP Benchmark
+
+ No input file inputsp.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  400    dt:    0.0006700
+ Number of available threads:     4
+
+Command terminated by signal 9
+Tempo real: 0:01.31
+Segundos de CPU: 1.58
+Media de Memoria total (KB): 0
+Major page fault: 3210
+Minor page faults: 184353
+Swaps totais: 0
+Trocas de contexto: 497
+Esperas com troca de contexto voluntarias: 139
+Uso da CPU para este JOB: 209%
+OUTPUT COMPLETO
+Command terminated by signal 9
+	Command being timed: "./NPB-OMP/bin/sp.C.x"
+	User time (seconds): 1.23
+	System time (seconds): 1.12
+	Percent of CPU this job got: 144%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.63
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 720896
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2575
+	Minor (reclaiming a frame) page faults: 184497
+	Voluntary context switches: 126
+	Involuntary context switches: 282
+	Swaps: 0
+	File system inputs: 26384
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+-~~-~~-~~-~~-~~-~~- 100% (0 gb) de ZRAM -~~-~~-~~-~~-~~-~~-
+[INFO] Teste 1
+[INFO] Iniciado benchmark com 100% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 06/03/2025 16:22:24
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+1007415296
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+      50        0     2408        0        1        0        8        0        0        0        0        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0        0
+STATS mm: 
+    4096       74    12288        0    12288        0        0        0        0
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - SP Benchmark
+
+ No input file inputsp.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  400    dt:    0.0006700
+ Number of available threads:     4
+
+Command terminated by signal 9
+Tempo real: 0:01.43
+Segundos de CPU: 2.09
+Media de Memoria total (KB): 0
+Major page fault: 9510
+Minor page faults: 185051
+Swaps totais: 0
+Trocas de contexto: 972
+Esperas com troca de contexto voluntarias: 236
+Uso da CPU para este JOB: 232%
+OUTPUT COMPLETO
+Command terminated by signal 9
+	Command being timed: "./NPB-OMP/bin/sp.C.x"
+	User time (seconds): 1.22
+	System time (seconds): 2.16
+	Percent of CPU this job got: 164%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.05
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 717952
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 4804
+	Minor (reclaiming a frame) page faults: 185048
+	Voluntary context switches: 697
+	Involuntary context switches: 656
+	Swaps: 0
+	File system inputs: 59040
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+[INFO] Teste 2
+[INFO] Iniciado benchmark com 100% (0 gb) de ZRAM
+[TIME] Benchmark iniciado: 06/03/2025 16:22:29
+---------------- RESULTADOS ZRAM (bytes) ---------------- 
+More information: https://docs.kernel.org/admin-guide/blockdev/zram.html
+
+DISKSIZE: 
+1007415296
+INITSTATE: 
+1
+WRITEBACK_LIMIT_ENABLE: 
+0
+MAX_COMP_STREAMS: 
+COMP_ALGORITHM: 
+lzo [lzo-rle] lz4 lz4hc 842 zstd 
+DEBUG_STAT: 
+version: 1
+       0        0
+BACKING_DEV: 
+none
+STATS: 
+   15199        0   123600       10   397826        0  3182608     1849        0     1168     1859        0        0        0        0        0        0
+STATS I/O: 
+       0        0 0   384512
+STATS mm: 
+54538240 15355515 18149376        0 762597376      391      328        5   373989
+STATS bd: 
+       0        0        0
+--------------------------------------------------------- 
+
+
+ NAS Parallel Benchmarks (NPB3.4-OMP) - SP Benchmark
+
+ No input file inputsp.data. Using compiled defaults
+ Size:  162x 162x 162
+ Iterations:  400    dt:    0.0006700
+ Number of available threads:     4
+
+Command terminated by signal 9
+Tempo real: 0:01.57
+Segundos de CPU: 1.23
+Media de Memoria total (KB): 0
+Major page fault: 3251
+Minor page faults: 184382
+Swaps totais: 0
+Trocas de contexto: 73
+Esperas com troca de contexto voluntarias: 107
+Uso da CPU para este JOB: 155%
+OUTPUT COMPLETO
+Command terminated by signal 9
+	Command being timed: "./NPB-OMP/bin/sp.C.x"
+	User time (seconds): 1.21
+	System time (seconds): 1.59
+	Percent of CPU this job got: 116%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.40
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 711680
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 3891
+	Minor (reclaiming a frame) page faults: 184437
+	Voluntary context switches: 660
+	Involuntary context switches: 495
+	Swaps: 0
+	File system inputs: 75816
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+[TIME] Benchmark totalmente finalizado: 06/03/2025 as 16:22:34
