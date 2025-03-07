@@ -4,8 +4,6 @@
 
 ## Disposição de pastas
 
-* Na pasta docs:
-  * Documentações do projeto e pdfs antigos
 * Na pasta output
   * Saidas do script
 * Na pasta results
@@ -18,7 +16,7 @@
 ### Testar os algoritmos compatíveis do ZRAM e swap
 
 ```bash
-# Checar o SWAP e ZRAM ALG
+# Checar dependencias dos benchmarks e scripts
 ./check_algorithms.sh
 
 # Mudar as variaveis de ambiente e trabalho

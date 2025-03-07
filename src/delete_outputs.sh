@@ -7,8 +7,6 @@ echo "Esta escolha nao tem volta! [y|N]"
 
 read C
 
-echo "Memoria: $memoria_calculada"
-
 if [[ $C = 'y' ]]; then
     echo "Deletando"
     rm -f $RESULT_SOURCE/*.csv
