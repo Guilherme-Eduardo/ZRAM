@@ -1,5 +1,9 @@
 # ZRAM
 
+## Artigo
+
+* DOI: [10.14210/cotb.v16.p494-501](https://doi.org/10.14210/cotb.v16.p494-501)
+
 * Benchmark usado de base (NPB3.4.3): http://www.nas.nasa.gov/Software/NPB
 
 ## Disposição de pastas
